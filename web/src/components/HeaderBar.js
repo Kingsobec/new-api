@@ -232,30 +232,38 @@ const HeaderBar = () => {
                 chat: '/chat',
               };
               return (
-                <div onClick={(e) => {
-                  if (props.itemKey === 'home') {
-                    styleDispatch({ type: 'SET_INNER_PADDING', payload: false });
-                    styleDispatch({ type: 'SET_SIDER', payload: false });
-                  } else {
-                    styleDispatch({ type: 'SET_INNER_PADDING', payload: true });
-                    if (!styleState.isMobile) {
-                      styleDispatch({ type: 'SET_SIDER', payload: true });
+                <div
+                  onClick={(e) => {
+                    if (props.itemKey === 'home') {
+                      styleDispatch({
+                        type: 'SET_INNER_PADDING',
+                        payload: false,
+                      });
+                      styleDispatch({ type: 'SET_SIDER', payload: false });
+                    } else {
+                      styleDispatch({
+                        type: 'SET_INNER_PADDING',
+                        payload: true,
+                      });
+                      if (!styleState.isMobile) {
+                        styleDispatch({ type: 'SET_SIDER', payload: true });
+                      }
                     }
-                  }
-                }}>
+                  }}
+                >
                   {props.isExternal ? (
                     <a
-                      className="header-bar-text"
+                      className='header-bar-text'
                       style={{ textDecoration: 'none' }}
                       href={props.externalLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target='_blank'
+                      rel='noopener noreferrer'
                     >
                       {itemElement}
                     </a>
                   ) : (
                     <Link
-                      className="header-bar-text"
+                      className='header-bar-text'
                       style={{ textDecoration: 'none' }}
                       to={routerMap[props.itemKey]}
                     >
@@ -268,67 +276,98 @@ const HeaderBar = () => {
             selectedKeys={[]}
             // items={headerButtons}
             onSelect={(key) => {}}
-            header={styleState.isMobile?{
-              logo: (
-                <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
-                  {
-                    !styleState.showSider ?
-                      <Button icon={<IconMenu />} theme="light" aria-label={t('展开侧边栏')} onClick={
-                        () => styleDispatch({ type: 'SET_SIDER', payload: true })
-                      } />:
-                      <Button icon={<IconIndentLeft />} theme="light" aria-label={t('闭侧边栏')} onClick={
-                        () => styleDispatch({ type: 'SET_SIDER', payload: false })
-                      } />
+            header={
+              styleState.isMobile
+                ? {
+                    logo: (
+                      <div
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          position: 'relative',
+                        }}
+                      >
+                        {!styleState.showSider ? (
+                          <Button
+                            icon={<IconMenu />}
+                            theme='light'
+                            aria-label={t('展开侧边栏')}
+                            onClick={() =>
+                              styleDispatch({
+                                type: 'SET_SIDER',
+                                payload: true,
+                              })
+                            }
+                          />
+                        ) : (
+                          <Button
+                            icon={<IconIndentLeft />}
+                            theme='light'
+                            aria-label={t('闭侧边栏')}
+                            onClick={() =>
+                              styleDispatch({
+                                type: 'SET_SIDER',
+                                payload: false,
+                              })
+                            }
+                          />
+                        )}
+                        {(isSelfUseMode || isDemoSiteMode) && (
+                          <Tag
+                            color={isSelfUseMode ? 'purple' : 'blue'}
+                            style={{
+                              position: 'absolute',
+                              top: '-8px',
+                              right: '-15px',
+                              fontSize: '0.7rem',
+                              padding: '0 4px',
+                              height: 'auto',
+                              lineHeight: '1.2',
+                              zIndex: 1,
+                              pointerEvents: 'none',
+                            }}
+                          >
+                            {isSelfUseMode ? t('自用模式') : t('演示站点')}
+                          </Tag>
+                        )}
+                      </div>
+                    ),
                   }
-                  {(isSelfUseMode || isDemoSiteMode) && (
-                    <Tag 
-                      color={isSelfUseMode ? 'purple' : 'blue'}
-                      style={{ 
-                        position: 'absolute',
-                        top: '-8px',
-                        right: '-15px',
-                        fontSize: '0.7rem',
-                        padding: '0 4px',
-                        height: 'auto',
-                        lineHeight: '1.2',
-                        zIndex: 1,
-                        pointerEvents: 'none'
-                      }}
-                    >
-                      {isSelfUseMode ? t('自用模式') : t('演示站点')}
-                    </Tag>
-                  )}
-                </div>
-              ),
-            }:{
-              logo: (
-                <div style={logoStyle}>
-                  <img src={logo} alt='logo' style={{ height: '28px' }} />
-                </div>
-              ),
-              text: (
-                <div style={{ position: 'relative', display: 'inline-block' }}>
-                  <span style={systemNameStyle}>{systemName}</span>
-                  {(isSelfUseMode || isDemoSiteMode) && (
-                    <Tag 
-                      color={isSelfUseMode ? 'purple' : 'blue'}
-                      style={{ 
-                        position: 'absolute', 
-                        top: '-10px', 
-                        right: '-25px', 
-                        fontSize: '0.7rem',
-                        padding: '0 4px',
-                        whiteSpace: 'nowrap',
-                        zIndex: 1,
-                        boxShadow: '0 0 3px rgba(255, 255, 255, 0.7)'
-                      }}
-                    >
-                      {isSelfUseMode ? t('自用模式') : t('演示站点')}
-                    </Tag>
-                  )}
-                </div>
-              ),
-            }}
+                : {
+                    logo: (
+                      <div style={logoStyle}>
+                        <img src={logo} alt='logo' style={{ height: '28px' }} />
+                      </div>
+                    ),
+                    text: (
+                      <div
+                        style={{
+                          position: 'relative',
+                          display: 'inline-block',
+                        }}
+                      >
+                        <span style={systemNameStyle}>{systemName}</span>
+                        {(isSelfUseMode || isDemoSiteMode) && (
+                          <Tag
+                            color={isSelfUseMode ? 'purple' : 'blue'}
+                            style={{
+                              position: 'absolute',
+                              top: '-10px',
+                              right: '-25px',
+                              fontSize: '0.7rem',
+                              padding: '0 4px',
+                              whiteSpace: 'nowrap',
+                              zIndex: 1,
+                              boxShadow: '0 0 3px rgba(255, 255, 255, 0.7)',
+                            }}
+                          >
+                            {isSelfUseMode ? t('自用模式') : t('演示站点')}
+                          </Tag>
+                        )}
+                      </div>
+                    ),
+                  }
+            }
             items={buttons}
             footer={
               <>
@@ -351,7 +390,7 @@ const HeaderBar = () => {
                 <>
                   <Switch
                     checkedText='🌞'
-                    size={styleState.isMobile?'default':'large'}
+                    size={styleState.isMobile ? 'default' : 'large'}
                     checked={theme === 'dark'}
                     uncheckedText='🌙'
                     style={switchStyle}
@@ -376,12 +415,28 @@ const HeaderBar = () => {
                       >
                         English
                       </Dropdown.Item>
+                      <Dropdown.Item
+                        onClick={() => handleLanguageChange('ja')}
+                        type={currentLang === 'ja' ? 'primary' : 'tertiary'}
+                      >
+                        日本語
+                      </Dropdown.Item>
                     </Dropdown.Menu>
                   }
                 >
                   <Nav.Item
                     itemKey={'language'}
-                    icon={<IconLanguage style={headerIconStyle} />}
+                    icon={
+                      currentLang === 'zh' ? (
+                        <IconLanguage style={headerIconStyle} />
+                      ) : (
+                        <p>
+                          {currentLang !== 'zh' && currentLang === 'en'
+                            ? 'EN'
+                            : '日本語'}
+                        </p>
+                      )
+                    }
                   />
                 </Dropdown>
                 {userState.user ? (
@@ -390,7 +445,9 @@ const HeaderBar = () => {
                       position='bottomRight'
                       render={
                         <Dropdown.Menu style={dropdownStyle}>
-                          <Dropdown.Item onClick={logout}>{t('退出')}</Dropdown.Item>
+                          <Dropdown.Item onClick={logout}>
+                            {t('退出')}
+                          </Dropdown.Item>
                         </Dropdown.Menu>
                       }
                     >
@@ -401,14 +458,18 @@ const HeaderBar = () => {
                       >
                         {userState.user.username[0]}
                       </Avatar>
-                      {styleState.isMobile?null:<Text style={{ marginLeft: '4px', fontWeight: '500' }}>{userState.user.username}</Text>}
+                      {styleState.isMobile ? null : (
+                        <Text style={{ marginLeft: '4px', fontWeight: '500' }}>
+                          {userState.user.username}
+                        </Text>
+                      )}
                     </Dropdown>
                   </>
                 ) : (
                   <>
                     <Nav.Item
                       itemKey={'login'}
-                      text={!styleState.isMobile?t('登录'):null}
+                      text={!styleState.isMobile ? t('登录') : null}
                       icon={<IconUser style={headerIconStyle} />}
                     />
                     {
