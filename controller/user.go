@@ -16,6 +16,7 @@ import (
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt"
 )
 
 type LoginRequest struct {
@@ -239,7 +240,7 @@ func Register(c *gin.Context) {
 		"success": true,
 		"message": "",
 	})
-	return
+	// return
 }
 
 func GetAllUsers(c *gin.Context) {
@@ -269,7 +270,7 @@ func GetAllUsers(c *gin.Context) {
 			"page_size": pageSize,
 		},
 	})
-	return
+	// return
 }
 
 func SearchUsers(c *gin.Context) {
@@ -302,7 +303,7 @@ func SearchUsers(c *gin.Context) {
 			"page_size": pageSize,
 		},
 	})
-	return
+	// return
 }
 
 func GetUser(c *gin.Context) {
@@ -335,7 +336,7 @@ func GetUser(c *gin.Context) {
 		"message": "",
 		"data":    user,
 	})
-	return
+	// return
 }
 
 func GenerateAccessToken(c *gin.Context) {
@@ -382,7 +383,89 @@ func GenerateAccessToken(c *gin.Context) {
 		"message": "",
 		"data":    user.AccessToken,
 	})
-	return
+	// return
+}
+
+func GetUserFromToken(c *gin.Context) {
+    authHeader := c.GetHeader("Authorization")
+    if authHeader == "" {
+        c.JSON(http.StatusUnauthorized, gin.H{"error": "Missing auth token"})
+        return
+    }
+    tokenString := strings.TrimPrefix(authHeader, "Bearer ")
+    token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
+        return []byte("b722576c8883a5bbed110e098e690be0647782107d3311925aeafd4d65c9224a"), nil
+    })
+
+    if !token.Valid || err != nil {
+        c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+        return
+    }
+
+    if claims, ok := token.Claims.(jwt.MapClaims); ok {
+        email, _ := claims["email"].(string)
+        
+        // Check if user exists
+        user, err := model.GetUserByEmail(email)
+        if err != nil {
+            // Create new user if not exists
+            newUser := model.User{
+                Email:    email,
+                Username: strings.Split(email, "@")[0], // Or use name claim
+                Password: "google_auth", // Dummy password
+            }
+            if err := model.CreateUser(&newUser); err != nil {
+                c.JSON(http.StatusInternalServerError, gin.H{"error": "User creation failed"})
+                return
+            }
+            user = newUser
+        }
+
+        c.JSON(http.StatusOK, gin.H{"user": user})
+    } else {
+        c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token claims"})
+    }
+}
+func GoogleLogin(c *gin.Context) {
+    var req struct {
+        Credential string `json:"credential"`
+    }
+    if err := c.ShouldBindJSON(&req); err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"success": false, "message": "无效的参数"})
+        return
+    }
+
+    payload, err := VerifyGoogleToken(req.Credential)
+    if err != nil {
+        c.JSON(http.StatusUnauthorized, gin.H{"success": false, "message": "Google认证失败"})
+        return
+    }
+
+    email := payload["email"].(string)
+    user, err := model.GetUserByEmail(email)
+    if err != nil {
+        newUser := model.User{
+            Email:    email,
+            Username: strings.Split(email, "@")[0],
+            Password: "google_auth",
+            Status:   common.UserStatusEnabled,
+        }
+        if err := newUser.Insert(0); err != nil {
+            c.JSON(http.StatusInternalServerError, gin.H{"success": false, "message": "用户创建失败"})
+            return
+        }
+        user = newUser
+    }
+
+    c.JSON(http.StatusOK, gin.H{
+        "success": true,
+        "message": "",
+        "data": gin.H{
+            "id":       user.Id,
+            "username": user.Username,
+            "email":    user.Email,
+        },
+    })
 }
 
 type TransferAffQuotaRequest struct {
@@ -446,14 +529,14 @@ func GetAffCode(c *gin.Context) {
 		"message": "",
 		"data":    user.AffCode,
 	})
-	return
+	// return
 }
 
 func GetSelf(c *gin.Context) {
 	id := c.GetInt("id")
 	user, err := model.GetUserById(id, false)
 	if err != nil {
-		c.JSON(http.StatusOK, gin.H{
+		c.JSON(http.StatusNotFound, gin.H{
 			"success": false,
 			"message": err.Error(),
 		})
@@ -464,7 +547,7 @@ func GetSelf(c *gin.Context) {
 		"message": "",
 		"data":    user,
 	})
-	return
+	// return
 }
 
 func GetUserModels(c *gin.Context) {
@@ -494,7 +577,7 @@ func GetUserModels(c *gin.Context) {
 		"message": "",
 		"data":    models,
 	})
-	return
+	// return
 }
 
 func UpdateUser(c *gin.Context) {
@@ -558,7 +641,7 @@ func UpdateUser(c *gin.Context) {
 		"success": true,
 		"message": "",
 	})
-	return
+	// return
 }
 
 func UpdateSelf(c *gin.Context) {
@@ -605,7 +688,7 @@ func UpdateSelf(c *gin.Context) {
 		"success": true,
 		"message": "",
 	})
-	return
+	// return
 }
 
 func DeleteUser(c *gin.Context) {
@@ -667,7 +750,7 @@ func DeleteSelf(c *gin.Context) {
 		"success": true,
 		"message": "",
 	})
-	return
+	// return
 }
 
 func CreateUser(c *gin.Context) {
@@ -717,7 +800,7 @@ func CreateUser(c *gin.Context) {
 		"success": true,
 		"message": "",
 	})
-	return
+	// return
 }
 
 type ManageRequest struct {
@@ -834,7 +917,7 @@ func ManageUser(c *gin.Context) {
 		"message": "",
 		"data":    clearUser,
 	})
-	return
+	// return
 }
 
 func EmailBind(c *gin.Context) {
@@ -874,7 +957,7 @@ func EmailBind(c *gin.Context) {
 		"success": true,
 		"message": "",
 	})
-	return
+	// return
 }
 
 type topUpRequest struct {
@@ -909,7 +992,7 @@ func TopUp(c *gin.Context) {
 		"message": "",
 		"data":    quota,
 	})
-	return
+	// return
 }
 
 type UpdateUserSettingRequest struct {

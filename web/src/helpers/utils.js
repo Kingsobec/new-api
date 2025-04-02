@@ -40,6 +40,11 @@ export function getUserIdFromLocalStorage() {
   return user.id;
 }
 
+export function getTokenFromLocalStorage() {
+  let token = localStorage.getItem('token');
+  if (!token) return '';
+  return token;
+}
 export function getFooterHTML() {
   return localStorage.getItem('footer_html');
 }

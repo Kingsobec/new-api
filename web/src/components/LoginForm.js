@@ -9,7 +9,11 @@ import {
   showSuccess,
   updateAPI,
 } from '../helpers';
-import {onGitHubOAuthClicked, onOIDCClicked, onLinuxDOOAuthClicked} from './utils';
+import {
+  onGitHubOAuthClicked,
+  onOIDCClicked,
+  onLinuxDOOAuthClicked,
+} from './utils';
 import Turnstile from 'react-turnstile';
 import {
   Button,
@@ -30,6 +34,7 @@ import WeChatIcon from './WeChatIcon';
 import { setUserData } from '../helpers/data.js';
 import LinuxDoIcon from './LinuxDoIcon.js';
 import { useTranslation } from 'react-i18next';
+import Login from './GoogleAuth.js';
 
 const LoginForm = () => {
   const [inputs, setInputs] = useState({
@@ -70,7 +75,6 @@ const LoginForm = () => {
       }
     }
   }, []);
-
 
   const onWeChatLoginClicked = () => {
     setShowWeChatLoginModal(true);
@@ -124,8 +128,8 @@ const LoginForm = () => {
         showSuccess('登录成功！');
         if (username === 'root' && password === '123456') {
           Modal.error({
-            title: '您正在使用默认密码！',
-            content: '请立刻修改默认密码！',
+            title: t('您正在使用默认密码！'),
+            content: t('请立刻修改默认密码！'),
             centered: true,
           });
         }
@@ -167,6 +171,42 @@ const LoginForm = () => {
       navigate('/');
     } else {
       showError(message);
+    }
+  };
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const googleToken = params.get('token');
+
+    if (googleToken) {
+      localStorage.setItem('token', googleToken);
+      fetchUserData(googleToken);
+    }
+  }, [searchParams]);
+  const fetchUserData = async (token) => {
+    try {
+      const response = await API.get(`/api/user/self`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const { success, message, data } = response.data;
+      if (success) {
+        userDispatch({ type: 'login', payload: data });
+        localStorage.setItem('user', JSON.stringify(data));
+        setUserData(data);
+        console.log(data);
+        updateAPI();
+        showSuccess('Google 登录成功！');
+        navigate('/token');
+      } else {
+        showError(message);
+      }
+    } catch (error) {
+      console.error('error fetching user data', error);
+      if (error.response && error.response.status === 401) {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+      }
+      showError(t('无法获取用户数据！'));
     }
   };
 
@@ -214,6 +254,8 @@ const LoginForm = () => {
                   >
                     {t('登录')}
                   </Button>
+
+                  <Login />
                 </Form>
                 <div
                   style={{
@@ -223,7 +265,8 @@ const LoginForm = () => {
                   }}
                 >
                   <Text>
-                    {t('没有账户？')} <Link to='/register'>{t('点击注册')}</Link>
+                    {t('没有账户？')}{' '}
+                    <Link to='/register'>{t('点击注册')}</Link>
                   </Text>
                   <Text>
                     {t('忘记密码？')} <Link to='/reset'>{t('点击重置')}</Link>
@@ -257,15 +300,18 @@ const LoginForm = () => {
                         <></>
                       )}
                       {status.oidc_enabled ? (
-                          <Button
-                              type='primary'
-                              icon={<OIDCIcon />}
-                              onClick={() =>
-                                  onOIDCClicked(status.oidc_authorization_endpoint, status.oidc_client_id)
-                              }
-                          />
+                        <Button
+                          type='primary'
+                          icon={<OIDCIcon />}
+                          onClick={() =>
+                            onOIDCClicked(
+                              status.oidc_authorization_endpoint,
+                              status.oidc_client_id,
+                            )
+                          }
+                        />
                       ) : (
-                          <></>
+                        <></>
                       )}
                       {status.linuxdo_oauth ? (
                         <Button
@@ -331,7 +377,9 @@ const LoginForm = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <p>
-                      {t('微信扫码关注公众号，输入「验证码」获取验证码（三分钟内有效）')}
+                      {t(
+                        '微信扫码关注公众号，输入「验证码」获取验证码（三分钟内有效）',
+                      )}
                     </p>
                   </div>
                   <Form size='large'>

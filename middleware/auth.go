@@ -1,13 +1,15 @@
 package middleware
 
 import (
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"one-api/common"
 	"one-api/model"
 	"strconv"
 	"strings"
+
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt"
 )
 
 func validUserInfo(username string, role int) bool {
@@ -135,9 +137,55 @@ func TryUserAuth() func(c *gin.Context) {
 	}
 }
 
-func UserAuth() func(c *gin.Context) {
+func UserAuth() gin.HandlerFunc {
+
 	return func(c *gin.Context) {
-		authHelper(c, common.RoleCommonUser)
+		session := sessions.Default(c)
+		username := session.Get("username")
+		if username != nil {
+			authHelper(c, common.RoleCommonUser)
+			return
+		}
+		authHeader := c.GetHeader("Authorization")
+		if authHeader == "" {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Missing auth token"})
+			c.Abort()
+			return
+		}
+		tokenString := strings.TrimPrefix(authHeader, "Bearer ")
+		token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
+			return []byte("b722576c8883a5bbed110e098e690be0647782107d3311925aeafd4d65c9224a"), nil
+		})
+		if err != nil || !token.Valid {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+			c.Abort()
+			return
+		}
+		if claims, ok := token.Claims.(jwt.MapClaims); ok {
+			id, idOk := claims["id"].(float64) // JWT numbers come as float64
+			email, emailOk := claims["email"].(string)
+			if !idOk || !emailOk {
+				c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token claims"})
+				c.Abort()
+				return
+			}
+			user, err := model.GetUserByEmail(email)
+			if err != nil  {
+				c.JSON(http.StatusUnauthorized, gin.H{"error": "User not found"})
+				c.Abort()
+				return
+			}
+			if user.Id != int(id) {
+				c.JSON(http.StatusUnauthorized, gin.H{"error": "Token ID mismatch"})
+				c.Abort()
+				return
+			}
+			c.Set("id", user.Id)
+			c.Next()
+		} else {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token claims"})
+			c.Abort()
+		}
 	}
 }
 

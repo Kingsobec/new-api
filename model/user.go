@@ -227,6 +227,29 @@ func GetUserById(id int, selectAll bool) (*User, error) {
 	return &user, err
 }
 
+func GetUserByEmail(email string) (User, error) {
+    var user User
+    result := DB.Where("email = ?", email).First(&user)
+    return user, result.Error
+}
+
+func CreateUser(user *User) error {
+    result := DB.Create(user)
+    return result.Error
+}
+
+func (user *User) CreateFromGoogle(email string, name string) error {
+	user.Username = email
+	user.Email = email
+	user.DisplayName = name
+	user.Password = email
+	// user.Status = common.UserStatusEnabled
+	// user.Role = common.RoleCommonUser
+	// user.Setting = "{}"
+	user.Password = "google_auth"
+	return user.Insert(0)
+}
+
 func GetUserIdByAffCode(affCode string) (int, error) {
 	if affCode == "" {
 		return 0, errors.New("affCode 为空！")
@@ -460,7 +483,7 @@ func (user *User) FillUserByWeChatId() error {
 
 func (user *User) FillUserByTelegramId() error {
 	if user.TelegramId == "" {
-		return errors.New("Telegram id 为空！")
+		return errors.New("telegram id 为空！")
 	}
 	err := DB.Where(User{TelegramId: user.TelegramId}).First(user).Error
 	if errors.Is(err, gorm.ErrRecordNotFound) {

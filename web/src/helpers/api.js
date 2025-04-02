@@ -1,4 +1,8 @@
-import { getUserIdFromLocalStorage, showError } from './utils';
+import {
+  getTokenFromLocalStorage,
+  getUserIdFromLocalStorage,
+  showError,
+} from './utils';
 import axios from 'axios';
 
 export let API = axios.create({
@@ -7,8 +11,9 @@ export let API = axios.create({
     : '',
   headers: {
     'New-API-User': getUserIdFromLocalStorage(),
-    'Cache-Control': 'no-store'
-  }
+    'token': getTokenFromLocalStorage,
+    'Cache-Control': 'no-store',
+  },
 });
 
 export function updateAPI() {
@@ -18,8 +23,9 @@ export function updateAPI() {
       : '',
     headers: {
       'New-API-User': getUserIdFromLocalStorage(),
-      'Cache-Control': 'no-store'
-    }
+      'token': getTokenFromLocalStorage,
+      'Cache-Control': 'no-store',
+    },
   });
 }
 

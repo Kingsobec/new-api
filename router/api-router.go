@@ -33,6 +33,8 @@ func SetApiRouter(router *gin.Engine) {
 		apiRouter.GET("/oauth/email/bind", middleware.CriticalRateLimit(), controller.EmailBind)
 		apiRouter.GET("/oauth/telegram/login", middleware.CriticalRateLimit(), controller.TelegramLogin)
 		apiRouter.GET("/oauth/telegram/bind", middleware.CriticalRateLimit(), controller.TelegramBind)
+		apiRouter.GET("/auth/google/login", middleware.CriticalRateLimit(), controller.HandleGoogleLogin)
+		apiRouter.GET("/auth/google/callback", middleware.CriticalRateLimit(), controller.HandleGoogleCallback)
 
 		userRoute := apiRouter.Group("/user")
 		{
@@ -42,6 +44,8 @@ func SetApiRouter(router *gin.Engine) {
 			userRoute.GET("/logout", controller.Logout)
 			userRoute.GET("/epay/notify", controller.EpayNotify)
 			userRoute.GET("/groups", controller.GetUserGroups)
+			userRoute.GET("/from-token", middleware.UserAuth(), controller.GetUserFromToken)
+			userRoute.POST("/google-login", middleware.CriticalRateLimit(), controller.GoogleLogin)
 
 			selfRoute := userRoute.Group("/")
 			selfRoute.Use(middleware.UserAuth())

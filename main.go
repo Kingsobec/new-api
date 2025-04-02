@@ -14,8 +14,10 @@ import (
 	"one-api/service"
 	"os"
 	"strconv"
+	"time"
 
 	"github.com/bytedance/gopkg/util/gopool"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
@@ -131,6 +133,14 @@ func main() {
 
 	// Initialize HTTP server
 	server := gin.New()
+	server.Use(cors.New(cors.Config{
+		AllowOrigins:     []string{"http://localhost:4000", "http://localhost:5173"},
+		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
+		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
+		ExposeHeaders:    []string{"Content-Length"},
+		AllowCredentials: true,
+		MaxAge:           12 * time.Hour,
+	}))
 	server.Use(gin.CustomRecovery(func(c *gin.Context, err any) {
 		common.SysError(fmt.Sprintf("panic detected: %v", err))
 		c.JSON(http.StatusInternalServerError, gin.H{
@@ -154,6 +164,8 @@ func main() {
 		SameSite: http.SameSiteStrictMode,
 	})
 	server.Use(sessions.Sessions("session", store))
+
+	router.SetGoogleRouter(server, buildFS, indexPage)
 
 	router.SetRouter(server, buildFS, indexPage)
 	var port = os.Getenv("PORT")
