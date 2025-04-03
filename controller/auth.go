@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"net/http"
 	"one-api/model"
+	"os"
 	"strings"
 
 	// "os"
@@ -19,22 +20,22 @@ import (
 	"gorm.io/gorm"
 )
 
-var googleOAuthConfig = &oauth2.Config{
-	ClientID:     "299282953393-kn18d7es4lst9shrbp36eoskvgm04maf.apps.googleusercontent.com",
-	ClientSecret: "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",
-	RedirectURL:  "http://localhost:4000/auth/google/callback",
+func googleOAuthConfig() *oauth2.Config{
+	return &oauth2.Config {ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
+	ClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
+	RedirectURL:  os.Getenv("GOOGLE_REDIRECT_URL"),
 	Scopes:       []string{"https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile"},
-	Endpoint:     google.Endpoint,
+	Endpoint:     google.Endpoint,}
 }
 
 const oauthStateString = "random_state"
 
 func HandleGoogleLogin(c *gin.Context) {
-	if googleOAuthConfig.ClientID == "" {
+	if googleOAuthConfig().ClientID == "" {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Google OAuth not configured properly"})
 		return
 	}
-	url := googleOAuthConfig.AuthCodeURL(oauthStateString, oauth2.AccessTypeOffline)
+	url := googleOAuthConfig().AuthCodeURL(oauthStateString, oauth2.AccessTypeOffline)
 	c.Redirect(http.StatusTemporaryRedirect, url)
 }
 
@@ -46,13 +47,13 @@ func HandleGoogleCallback(c *gin.Context) {
 	}
 
 	code := c.Query("code")
-	token, err := googleOAuthConfig.Exchange(context.Background(), code)
+	token, err := googleOAuthConfig().Exchange(context.Background(), code)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to exchange token"})
 		return
 	}
 
-	client := googleOAuthConfig.Client(context.Background(), token)
+	client := googleOAuthConfig().Client(context.Background(), token)
 	resp, err := client.Get("https://www.googleapis.com/oauth2/v2/userinfo")
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get user info"})
@@ -77,7 +78,7 @@ func HandleGoogleCallback(c *gin.Context) {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
 			newUser := model.User{
 				Email:    userInfo.Email,
-				Username: userInfo.Name,
+				Username: strings.Split(userInfo.Name, " ")[0],
 				Status:   1,
 			}
 			if newUser.Username == "" {
@@ -94,17 +95,9 @@ func HandleGoogleCallback(c *gin.Context) {
 		}
 	}
 
-	fmt.Println("User successfully logged in!")
-	fmt.Println("uer")
-	fmt.Println("uer")
-	fmt.Println("uer")
 	fmt.Println(user)
-	fmt.Println("uer")
-	fmt.Println("uer")
-	fmt.Println("uer")
-	fmt.Println("uer")
 
-	jwtSecret := "b722576c8883a5bbed110e098e690be0647782107d3311925aeafd4d65c9224a"
+	jwtSecret := os.Getenv("JWT_SECRET")
 	if jwtSecret == "" {
 		panic("JWT_SECRET is not set!")
 	}
@@ -116,7 +109,6 @@ func HandleGoogleCallback(c *gin.Context) {
 	}
 
 	// c.JSON(http.StatusOK, gin.H{"token": jwtToken})
-	fmt.Println("new token:", jwtToken)
 	redirectURL := "http://localhost:4000/login?token=" + jwtToken
 	c.Redirect(http.StatusSeeOther, redirectURL)
 }
@@ -134,7 +126,7 @@ func generateJWT(id int, email string) (string, error) {
 
 func VerifyGoogleToken(tokenString string) (jwt.MapClaims, error) {
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
-		return []byte("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"), nil
+		return []byte(googleOAuthConfig().ClientSecret), nil
 	})
 
 	if err != nil {

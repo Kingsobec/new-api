@@ -24,7 +24,7 @@ func GetAllQuotaDates(c *gin.Context) {
 		"message": "",
 		"data":    dates,
 	})
-	return
+	// return
 }
 
 func GetUserQuotaDates(c *gin.Context) {
@@ -52,5 +52,5 @@ func GetUserQuotaDates(c *gin.Context) {
 		"message": "",
 		"data":    dates,
 	})
-	return
+	// return
 }
