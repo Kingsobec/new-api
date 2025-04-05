@@ -35,6 +35,7 @@ func SetApiRouter(router *gin.Engine) {
 		apiRouter.GET("/oauth/telegram/bind", middleware.CriticalRateLimit(), controller.TelegramBind)
 		apiRouter.GET("/auth/google/login", middleware.CriticalRateLimit(), controller.HandleGoogleLogin)
 		apiRouter.GET("/auth/google/callback", middleware.CriticalRateLimit(), controller.HandleGoogleCallback)
+		apiRouter.POST("/stripe/webhook", controller.StripeWebhook)
 
 		userRoute := apiRouter.Group("/user")
 		{
@@ -59,6 +60,7 @@ func SetApiRouter(router *gin.Engine) {
 				selfRoute.GET("/aff", controller.GetAffCode)
 				selfRoute.POST("/topup", controller.TopUp)
 				selfRoute.POST("/pay", controller.RequestEpay)
+				
 				selfRoute.POST("/amount", controller.RequestAmount)
 				selfRoute.POST("/aff_transfer", controller.TransferAffQuota)
 				selfRoute.PUT("/setting", controller.UpdateUserSetting)

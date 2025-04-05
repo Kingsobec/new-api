@@ -28,6 +28,7 @@ require (
 	github.com/samber/lo v1.39.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/shopspring/decimal v1.4.0
+	github.com/stripe/stripe-go/v82 v82.0.0
 	golang.org/x/crypto v0.36.0
 	golang.org/x/image v0.23.0
 	golang.org/x/net v0.37.0

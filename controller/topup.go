@@ -2,7 +2,12 @@ package controller
 
 import (
 	"fmt"
+	"io"
+	"os"
+
+	// "io/ioutil"
 	"log"
+	"net/http"
 	"net/url"
 	"one-api/common"
 	"one-api/model"
@@ -16,6 +21,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/samber/lo"
 	"github.com/shopspring/decimal"
+	"github.com/stripe/stripe-go/v82"
+	"github.com/stripe/stripe-go/v82/checkout/session"
+	"github.com/stripe/stripe-go/v82/customer"
+	"github.com/stripe/stripe-go/v82/webhook"
 )
 
 type EpayRequest struct {
@@ -97,6 +106,77 @@ func RequestEpay(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "error", "data": "充值金额过低"})
 		return
 	}
+
+	if req.PaymentMethod == "stripe" {
+		stripe.Key = os.Getenv("STRIPE_SECRET_KEY")
+		if stripe.Key == "" {
+			c.JSON(200, gin.H{"message": "error", "data": "Stripe未配置"})
+			fmt.Println("Can't find secret key")
+			return
+		}
+
+		user, err := model.GetUserById(id, false)
+		if err != nil {
+			c.JSON(200, gin.H{"message": "error", "data": "获取用户信息失败"})
+			return
+		}
+
+		var stripeCustomerID string
+		if user.StripeCustomerId == "" {
+			customerParams := &stripe.CustomerParams{
+				Email: stripe.String(user.Email),
+			}
+			cust, err := customer.New(customerParams)
+			if err != nil {
+				c.JSON(200, gin.H{"message": "error", "data": "创建 Stripe 客户失败"})
+				return
+			}
+			stripeCustomerID = cust.ID
+			user.StripeCustomerId = stripeCustomerID
+			if err := user.Update(false); err != nil {
+				c.JSON(200, gin.H{"message": "error", "data": "更新用户信息失败"})
+				return
+			}
+		} else {
+			stripeCustomerID = user.StripeCustomerId
+		}
+
+		sessionParams := &stripe.CheckoutSessionParams{
+			PaymentMethodTypes: stripe.StringSlice([]string{"card"}),
+			LineItems: []*stripe.CheckoutSessionLineItemParams{
+				{
+					PriceData: &stripe.CheckoutSessionLineItemPriceDataParams{
+						Currency: stripe.String("usd"),
+						ProductData: &stripe.CheckoutSessionLineItemPriceDataProductDataParams{
+							Name: stripe.String("Top-Up"),
+						},
+						UnitAmount: stripe.Int64(int64(payMoney * 100 / 7.3)), // Convert to cents
+					},
+					Quantity: stripe.Int64(1),
+				},
+			},
+			Mode:       stripe.String("payment"),
+			SuccessURL: stripe.String(setting.ServerAddress + "/topup-success"),
+			CancelURL:  stripe.String(setting.ServerAddress + "/topup"),
+			Customer:   stripe.String(stripeCustomerID),
+			Metadata: map[string]string{
+				"topUpCount": strconv.FormatInt(req.Amount, 10),
+				"userId":     strconv.Itoa(id),
+			},
+		}
+		session, err := session.New(sessionParams)
+		if err != nil {
+			c.JSON(200, gin.H{"message": "error", "data": "创建 Stripe Checkout 会话失败"})
+			return
+		}
+
+		c.JSON(200, gin.H{
+			"message":   "success",
+			"sessionId": session.ID,
+		})
+		return
+	}
+
 	payType := "wxpay"
 	if req.PaymentMethod == "zfb" {
 		payType = "alipay"
@@ -148,6 +228,39 @@ func RequestEpay(c *gin.Context) {
 		return
 	}
 	c.JSON(200, gin.H{"message": "success", "data": params, "url": uri})
+}
+
+func StripeWebhook(c *gin.Context) {
+    payload, err := io.ReadAll(c.Request.Body)
+    if err != nil {
+        c.JSON(400, gin.H{"message": "error", "data": "读取请求体失败"})
+        return
+    }
+
+    sigHeader := c.GetHeader("Stripe-Signature")
+    event, err := webhook.ConstructEvent(payload, sigHeader, os.Getenv("STRIPE_WEBHOOK_SECRET"))
+    if err != nil {
+        c.JSON(400, gin.H{"message": "error", "data": "验证签名失败"})
+        return
+    }
+    if event.Type == "checkout.session.completed" {
+        session := event.Data.Object
+        topUpCount, _ := strconv.ParseInt(session["metadata"].(map[string]interface{})["topUpCount"].(string), 10, 64)
+        userId, _ := strconv.Atoi(session["metadata"].(map[string]interface{})["userId"].(string))
+
+        dAmount := decimal.NewFromInt(topUpCount)
+        dQuotaPerUnit := decimal.NewFromFloat(common.QuotaPerUnit)
+        quotaToAdd := int(dAmount.Mul(dQuotaPerUnit).IntPart())
+
+        err = model.IncreaseUserQuota(userId, quotaToAdd, true)
+        if err != nil {
+            log.Printf("Stripe webhook failed to update user quota: %v", err)
+            return
+        }
+        model.RecordLog(userId, model.LogTypeTopup, fmt.Sprintf("Stripe Checkout succeeded, quota added: %v", common.LogQuota(quotaToAdd)))
+    }
+
+    c.Status(http.StatusOK)
 }
 
 // tradeNo lock

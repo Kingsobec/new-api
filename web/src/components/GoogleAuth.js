@@ -5,7 +5,7 @@ import { showError } from '../helpers';
 
 const Login = () => {
   const handleLoginSuccess = async (credentialResponse) => {
-    // window.location.href = 'http://localhost:4000/api/auth/google/login';
+    window.location.href = 'http://localhost:4000/api/auth/google/login';
   };
 
   return (

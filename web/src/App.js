@@ -12,6 +12,7 @@ import PasswordResetForm from './components/PasswordResetForm';
 import PasswordResetConfirm from './components/PasswordResetConfirm';
 import Channel from './pages/Channel';
 import Token from './pages/Token';
+import TopUpSuccess from './pages/TopUpSuccess';
 import EditChannel from './pages/Channel/EditChannel';
 import Redemption from './pages/Redemption';
 import TopUp from './pages/TopUp';
@@ -199,6 +200,16 @@ function App() {
             <PrivateRoute>
               <Suspense fallback={<Loading></Loading>} key={location.pathname}>
                 <TopUp />
+              </Suspense>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path='/topup-success'
+          element={
+            <PrivateRoute>
+              <Suspense fallback={<Loading></Loading>} key={location.pathname}>
+                <TopUpSuccess />
               </Suspense>
             </PrivateRoute>
           }

@@ -1345,5 +1345,6 @@
   "提示缓存倍率": "Prompt cache ratio",
   "缓存：${{price}} * {{ratio}} = ${{total}} / 1M tokens (缓存倍率: {{cacheRatio}})": "Cache: ${{price}} * {{ratio}} = ${{total}} / 1M tokens (cache ratio: {{cacheRatio}})",
   "提示 {{nonCacheInput}} tokens + 缓存 {{cacheInput}} tokens * {{cacheRatio}} / 1M tokens * ${{price}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} = ${{total}}": "Prompt {{nonCacheInput}} tokens + cache {{cacheInput}} tokens * {{cacheRatio}} / 1M tokens * ${{price}} + completion {{completion}} tokens / 1M tokens * ${{compPrice}} * group {{ratio}} = ${{total}}",
-  "缓存 Tokens": "Cache Tokens"
+  "缓存 Tokens": "Cache Tokens",
+  "暂无数据": "No data available"
 }

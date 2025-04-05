@@ -1345,5 +1345,6 @@
   "提示缓存倍率": "プロンプトキャッシュ倍率",
   "缓存：${{price}} * {{ratio}} = ${{total}} / 1M tokens (缓存倍率: {{cacheRatio}})": "キャッシュ：${{price}} * {{ratio}} = ${{total}} / 100万トークン (キャッシュ倍率: {{cacheRatio}})",
   "提示 {{nonCacheInput}} tokens + 缓存 {{cacheInput}} tokens * {{cacheRatio}} / 1M tokens * ${{price}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} = ${{total}}": "プロンプト {{nonCacheInput}} トークン + キャッシュ {{cacheInput}} トークン * {{cacheRatio}} / 100万トークン * ${{price}} + 補完 {{completion}} トークン / 100万トークン * ${{compPrice}} * グループ {{ratio}} = ${{total}}",
-  "缓存 Tokens": "キャッシュトークン"
+  "缓存 Tokens": "キャッシュトークン",
+  "暂无数据": "データなし"
 }

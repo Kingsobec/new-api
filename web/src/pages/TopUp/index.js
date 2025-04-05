@@ -22,6 +22,11 @@ import Title from '@douyinfe/semi-ui/lib/es/typography/title';
 import Text from '@douyinfe/semi-ui/lib/es/typography/text';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { loadStripe } from '@stripe/stripe-js';
+
+const stripePromise = loadStripe(
+  'pk_test_51RAVIaPwCxCQsHzBAclzfbtSMOpAQ1hRGYqPVJ0jc7TjVWbrWkNfOd9RXTXZLrgceHjnziXup3iCrcREcawQEnOl00tD6qy9Nn',
+);
 
 const TopUp = () => {
   const { t } = useTranslation();
@@ -32,7 +37,7 @@ const TopUp = () => {
   const [amount, setAmount] = useState(0.0);
   const [minTopUp, setMinTopUp] = useState(1);
   const [topUpLink, setTopUpLink] = useState('');
-  const [enableOnlineTopUp, setEnableOnlineTopUp] = useState(false);
+  const [enableOnlineTopUp, setEnableOnlineTopUp] = useState(true);
   const [userQuota, setUserQuota] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [open, setOpen] = useState(false);
@@ -174,6 +179,32 @@ const TopUp = () => {
     getUserQuota().then();
   }, []);
 
+  const handleStripePayment = async () => {
+    if (topUpCount < minTopUp) {
+      showError(`${t('充值数量不能小于')} ${minTopUp}`);
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const response = await API.post('/api/user/pay', {
+        amount: parseInt(topUpCount),
+        payment_method: 'stripe',
+      });
+      console.log(response)
+      const { sessionId } = response.data;
+
+      const stripe = await stripePromise;
+      const { error } = await stripe.redirectToCheckout({ sessionId });
+      if (error) {
+        showError(error.message);
+      }
+    } catch (err) {
+      showError(`Failed to initiate Stripe payment: ${err.message}`);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const renderAmount = () => {
     // console.log(amount);
     return amount + ' ' + t('元');
@@ -228,8 +259,12 @@ const TopUp = () => {
             size={'small'}
             centered={true}
           >
-            <p>{t('充值数量')}：{topUpCount}</p>
-            <p>{t('实付金额')}：{renderAmount()}</p>
+            <p>
+              {t('充值数量')}：{topUpCount}
+            </p>
+            <p>
+              {t('实付金额')}：{renderAmount()}
+            </p>
             <p>{t('是否确认充值？')}</p>
           </Modal>
           <div
@@ -280,7 +315,9 @@ const TopUp = () => {
                     disabled={!enableOnlineTopUp}
                     field={'redemptionCount'}
                     label={t('实付金额：') + ' ' + renderAmount()}
-                    placeholder={t('充值数量，最低 ') + renderQuotaWithAmount(minTopUp)}
+                    placeholder={
+                      t('充值数量，最低 ') + renderQuotaWithAmount(minTopUp)
+                    }
                     name='redemptionCount'
                     type={'number'}
                     value={topUpCount}
@@ -313,6 +350,13 @@ const TopUp = () => {
                       }}
                     >
                       {t('微信')}
+                    </Button>
+                    <Button
+                      type={'primary'}
+                      disabled={isSubmitting}
+                      theme={'solid'}
+                      onClick={handleStripePayment}>
+                      {isSubmitting ? t('充值中...') : t('Stripe')}
                     </Button>
                   </Space>
                 </Form>
