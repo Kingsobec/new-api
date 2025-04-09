@@ -1346,5 +1346,10 @@
   "缓存：${{price}} * {{ratio}} = ${{total}} / 1M tokens (缓存倍率: {{cacheRatio}})": "Cache: ${{price}} * {{ratio}} = ${{total}} / 1M tokens (cache ratio: {{cacheRatio}})",
   "提示 {{nonCacheInput}} tokens + 缓存 {{cacheInput}} tokens * {{cacheRatio}} / 1M tokens * ${{price}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} = ${{total}}": "Prompt {{nonCacheInput}} tokens + cache {{cacheInput}} tokens * {{cacheRatio}} / 1M tokens * ${{price}} + completion {{completion}} tokens / 1M tokens * ${{compPrice}} * group {{ratio}} = ${{total}}",
   "缓存 Tokens": "Cache Tokens",
-  "暂无数据": "No data available"
+  "暂无数据": "No data available",
+  "开始使用": "Get Started",
+  "了解更多": "Learn More",
+  "200+ AI 模型": "200+ AI Models",
+  "正常运行时间 99%": "Uptime 99%",
+  "通过我们的安全 API 集成 AI 功能": "Integrate AI features via our secure API"
 }
