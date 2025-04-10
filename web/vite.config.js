@@ -1,9 +1,11 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig, transformWithEsbuild } from 'vite';
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+  tailwindcss(),
     {
       name: 'treat-js-files-as-jsx',
       async transform(code, id) {
