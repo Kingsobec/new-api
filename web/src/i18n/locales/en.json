@@ -1351,5 +1351,165 @@
   "了解更多": "Learn More",
   "200+ AI 模型": "200+ AI Models",
   "正常运行时间 99%": "Uptime 99%",
-  "通过我们的安全 API 集成 AI 功能": "Integrate AI features via our secure API"
+  "通过我们的安全 API 集成 AI 功能": "Integrate AI features via our secure API",
+
+
+
+  
+  "common": {
+    "appName": "aimlapi",
+    "login": "Login",
+    "register": "Register",
+    "currentBalance": "Current Balance"
+  },
+  "navbar": {
+    "apiList": "API List",
+    "pricing": "Pricing",
+    "docs": "Documentation",
+    "support": "Support",
+    "blog": "Blog"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語"
+  },
+  "home": {
+    "hero": {
+      "title": "Powerful AI API Platform",
+      "subtitle": "One-stop access to various AI models for easy AI application building",
+      "description": "Support text generation, image recognition, speech recognition, video processing and more",
+      "getStarted": "Get Started",
+      "viewDocs": "View Documentation"
+    },
+    "features": {
+      "title": "Core Features",
+      "secureAuth": {
+        "title": "Secure Authentication",
+        "desc1": "Industry-standard API key authentication",
+        "desc2": "OAuth 2.0 authorization mechanism",
+        "desc3": "Ensures your API calls are secure and reliable"
+      },
+      "highPerformance": {
+        "title": "High Performance Service",
+        "desc1": "Global distributed architecture",
+        "desc2": "Low latency response",
+        "desc3": "99.9% service availability guarantee"
+      },
+      "flexibleBilling": {
+        "title": "Flexible Billing",
+        "desc1": "Pay-as-you-go, no minimum spending",
+        "desc2": "Multiple payment methods: USDT, Stripe",
+        "desc3": "Enterprise bulk purchase discounts"
+      }
+    },
+    "apis": {
+      "title": "Popular API Services",
+      "search": "Search API services...",
+      "textGeneration": {
+        "title": "Text Generation",
+        "desc1": "Based on large language models",
+        "desc2": "Intelligently generate text content",
+        "badge": "Popular"
+      },
+      "imageRecognition": {
+        "title": "Image Recognition",
+        "desc1": "Accurate recognition of objects",
+        "desc2": "and scenes in images",
+        "badge": "Recommended"
+      },
+      "translation": {
+        "title": "Translation API",
+        "desc1": "Support for 100+ languages",
+        "desc2": "Real-time high-quality translation",
+        "badge": "New"
+      },
+      "speech": {
+        "title": "Speech Synthesis",
+        "desc1": "Natural and fluid speech",
+        "desc2": "Multiple voices available",
+        "badge": "Popular"
+      }
+    }
+  },
+  "dashboard": {
+    "overview": "Dashboard Overview",
+    "timeFilter": "Past 30 days",
+    "today": "Today",
+    "stats": {
+      "apiCalls": "Total API Calls",
+      "balance": "Account Balance",
+      "topUp": "Top Up",
+      "activeApis": "Active APIs",
+      "viewDetails": "View Details"
+    },
+    "trends": "API Call Trends",
+    "text": "Text Generation API",
+    "image": "Image Recognition API",
+    "recentCalls": "Recent API Calls",
+    "tableHeaders": {
+      "time": "Time",
+      "api": "API",
+      "status": "Status",
+      "latency": "Latency",
+      "cost": "Cost",
+      "actions": "Actions"
+    },
+    "status": {
+      "success": "Success",
+      "failed": "Failed"
+    },
+    "details": "Details"
+  },
+  "payment": {
+    "title": "Account Top-Up",
+    "usdtTitle": "Account Top-Up - USDT Payment",
+    "selectAmount": "Select Top-Up Amount",
+    "customAmount": "Custom Amount:",
+    "enterAmount": "Enter amount",
+    "currencyUSD": "USD",
+    "selectPayment": "Select Payment Method",
+    "methods": {
+      "stripe": "Stripe",
+      "usdt": "USDT",
+      "paypal": "PayPal",
+      "bank": "Bank Transfer"
+    },
+    "notAvailable": "This payment method is not available yet",
+    "creditCard": {
+      "number": "Card Number",
+      "name": "Cardholder Name",
+      "expiry": "Expiry Date",
+      "cvv": "CVV",
+      "confirm": "Confirm Payment"
+    },
+    "usdt": {
+      "details": "USDT Transfer Details",
+      "qrCode": "USDT QR Code",
+      "scanToTransfer": "Scan QR code to transfer",
+      "network": "Network",
+      "address": "Receiving Address",
+      "amount": "Transfer Amount",
+      "note1": "After completing the transfer, please submit the transaction hash or screenshot for confirmation.",
+      "note2": "Usually processed within 10-30 minutes.",
+      "completed": "I have completed the payment"
+    }
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "apiKeys": "API Keys",
+    "usage": "Usage Statistics",
+    "billing": "Billing Management",
+    "topUp": "Top-Up Center",
+    "settings": "Settings",
+    "documentation": "Documentation",
+    "tools": "Tools & Integration",
+    "help": "Help Center",
+    "developer": "Developer Account"
+  },
+  "floating": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "topUp": "Top-Up"
+  }
 }

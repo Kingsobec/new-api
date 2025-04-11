@@ -1351,6 +1351,166 @@
   "了解更多": "もっと知る",
   "200+ AI 模型": "200+ AIモデル",
   "正常运行时间 99%": "稼働時間99%",
-  "通过我们的安全 API 集成 AI 功能": "私たちの安全なAPIを通じてAI機能を統合"
+  "通过我们的安全 API 集成 AI 功能": "私たちの安全なAPIを通じてAI機能を統合",
+
+
+
+  
+  "common": {
+    "appName": "aimlapi",
+    "login": "ログイン",
+    "register": "登録",
+    "currentBalance": "現在の残高"
+  },
+  "navbar": {
+    "apiList": "APIリスト",
+    "pricing": "料金",
+    "docs": "ドキュメント",
+    "support": "サポート",
+    "blog": "ブログ"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語"
+  },
+  "home": {
+    "hero": {
+      "title": "強力なAI APIプラットフォーム",
+      "subtitle": "様々なAIモデルにワンストップでアクセスし、簡単にAIアプリケーションを構築",
+      "description": "テキスト生成、画像認識、音声認識、動画処理など様々な機能をサポート",
+      "getStarted": "使い始める",
+      "viewDocs": "ドキュメントを見る"
+    },
+    "features": {
+      "title": "主な機能",
+      "secureAuth": {
+        "title": "安全な認証",
+        "desc1": "業界標準のAPIキー認証",
+        "desc2": "OAuth2.0認証メカニズム",
+        "desc3": "APIコールの安全性と信頼性を確保"
+      },
+      "highPerformance": {
+        "title": "高性能サービス",
+        "desc1": "グローバル分散アーキテクチャ",
+        "desc2": "低レイテンシーレスポンス",
+        "desc3": "99.9%のサービス可用性保証"
+      },
+      "flexibleBilling": {
+        "title": "柔軟な料金体系",
+        "desc1": "従量課金制、最低消費なし",
+        "desc2": "複数の支払い方法：USDT、Stripe",
+        "desc3": "企業の一括購入割引をサポート"
+      }
+    },
+    "apis": {
+      "title": "人気のAPIサービス",
+      "search": "APIサービスを検索...",
+      "textGeneration": {
+        "title": "テキスト生成",
+        "desc1": "大規模言語モデルに基づく",
+        "desc2": "テキストコンテンツをインテリジェントに生成",
+        "badge": "人気"
+      },
+      "imageRecognition": {
+        "title": "画像認識",
+        "desc1": "画像内のオブジェクトと",
+        "desc2": "シーンを正確に認識",
+        "badge": "おすすめ"
+      },
+      "translation": {
+        "title": "翻訳API",
+        "desc1": "100以上の言語をサポート",
+        "desc2": "リアルタイムの高品質翻訳",
+        "badge": "新登場"
+      },
+      "speech": {
+        "title": "音声合成",
+        "desc1": "自然で流暢な音声",
+        "desc2": "複数の音声を選択可能",
+        "badge": "人気"
+      }
+    }
+  },
+  "dashboard": {
+    "overview": "ダッシュボード概要",
+    "timeFilter": "過去30日間",
+    "today": "今日",
+    "stats": {
+      "apiCalls": "API呼び出し総数",
+      "balance": "アカウント残高",
+      "topUp": "チャージ",
+      "activeApis": "アクティブAPI",
+      "viewDetails": "詳細を見る"
+    },
+    "trends": "API呼び出しの傾向",
+    "text": "テキスト生成API",
+    "image": "画像認識API",
+    "recentCalls": "最近のAPI呼び出し",
+    "tableHeaders": {
+      "time": "時間",
+      "api": "API",
+      "status": "ステータス",
+      "latency": "レイテンシー",
+      "cost": "費用",
+      "actions": "アクション"
+    },
+    "status": {
+      "success": "成功",
+      "failed": "失敗"
+    },
+    "details": "詳細"
+  },
+  "payment": {
+    "title": "アカウントチャージ",
+    "usdtTitle": "アカウントチャージ - USDT支払い",
+    "selectAmount": "チャージ金額を選択",
+    "customAmount": "カスタム金額：",
+    "enterAmount": "金額を入力",
+    "currencyUSD": "USD",
+    "selectPayment": "支払い方法を選択",
+    "methods": {
+      "stripe": "Stripe",
+      "usdt": "USDT",
+      "paypal": "PayPal",
+      "bank": "銀行振込"
+    },
+    "notAvailable": "この支払い方法はまだ利用できません",
+    "creditCard": {
+      "number": "カード番号",
+      "name": "カード所有者名",
+      "expiry": "有効期限",
+      "cvv": "CVV",
+      "confirm": "支払いを確認"
+    },
+    "usdt": {
+      "details": "USDT送金詳細",
+      "qrCode": "USDT QRコード",
+      "scanToTransfer": "QRコードをスキャンして送金",
+      "network": "ネットワーク",
+      "address": "受取アドレス",
+      "amount": "送金額",
+      "note1": "送金完了後、取引ハッシュまたはスクリーンショットを確認のために提出してください。",
+      "note2": "通常10〜30分以内に処理されます。",
+      "completed": "支払いが完了しました"
+    }
+  },
+  "sidebar": {
+    "dashboard": "ダッシュボード",
+    "apiKeys": "APIキー",
+    "usage": "使用統計",
+    "billing": "請求管理",
+    "topUp": "チャージセンター",
+    "settings": "設定",
+    "documentation": "ドキュメント",
+    "tools": "ツール＆統合",
+    "help": "ヘルプセンター",
+    "developer": "開発者アカウント"
+  },
+  "floating": {
+    "home": "ホーム",
+    "dashboard": "ダッシュボード",
+    "topUp": "チャージ"
+  }
 
 }

@@ -1,4 +1,10 @@
-import { createContext, useCallback, useContext, useState } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 
 const ThemeContext = createContext(null);
 export const useTheme = () => useContext(ThemeContext);
@@ -9,23 +15,40 @@ export const useSetTheme = () => useContext(SetThemeContext);
 export const ThemeProvider = ({ children }) => {
   const [theme, _setTheme] = useState(() => {
     try {
-      return localStorage.getItem('theme-mode') || null;
+      return localStorage.getItem('theme-mode') || 'light';
     } catch {
-      return null;
+      return 'light';
     }
   });
 
   const setTheme = useCallback((input) => {
-    _setTheme(input ? 'dark' : 'light');
-
-    const body = document.body;
-    if (!input) {
-      body.removeAttribute('theme-mode');
-      localStorage.setItem('theme-mode', 'light');
-    } else {
-      body.setAttribute('theme-mode', 'dark');
-      localStorage.setItem('theme-mode', 'dark');
+    const newTheme = input ? 'dark' : 'light';
+    _setTheme(newTheme);
+    try {
+      localStorage.setItem('theme-mode', newTheme);
+    } catch {
+      console.warn('Failed to save theme to localStorage');
     }
+    const root = document.documentElement;
+    const body = document.body;
+    // Toggle 'dark' class on both <html> and <body>
+    root.classList.toggle('dark', newTheme === 'dark');
+    body.classList.toggle('dark', newTheme === 'dark');
+  }, []);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme-mode');
+    const systemPrefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)',
+    ).matches;
+    const effectiveTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+    const root = document.documentElement;
+    const body = document.body;
+    // Set initial 'dark' class on both <html> and <body>
+    root.classList.toggle('dark', effectiveTheme === 'dark');
+    body.classList.toggle('dark', effectiveTheme === 'dark');
+    _setTheme(effectiveTheme);
   }, []);
 
   return (

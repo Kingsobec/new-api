@@ -44,7 +44,7 @@ const PageLayout = () => {
 
   useEffect(() => {
     loadUser();
-    loadStatus().catch(console.error);
+    // loadStatus().catch(console.error);
     let systemName = getSystemName();
     if (systemName) {
       document.title = systemName;
