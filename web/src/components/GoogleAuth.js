@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <GoogleOAuthProvider clientId='299282953393-kn18d7es4lst9shrbp36eoskvgm04maf.apps.googleusercontent.com'>
-      <div className='login'>
+      <div className='login mt-5'>
         <GoogleLogin
           onSuccess={handleLoginSuccess}
           onError={() => showError('Login Failed')}

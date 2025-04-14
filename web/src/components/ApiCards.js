@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 const ApiCard = ({ abbreviation, titleKey, descKeys, badgeKey }) => {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ const ApiCard = ({ abbreviation, titleKey, descKeys, badgeKey }) => {
 
 const ApiCards = () => {
   const { t } = useTranslation();
+  const [searchQuery, setSearchQuery] = useState('');
 
   const apis = [
     {
@@ -36,7 +38,7 @@ const ApiCards = () => {
       titleKey: 'home.apis.textGeneration.title',
       descKeys: [
         'home.apis.textGeneration.desc1',
-        'home.apis.textGeneration.desc2'
+        'home.apis.textGeneration.desc2',
       ],
       badgeKey: 'home.apis.textGeneration.badge',
     },
@@ -45,29 +47,37 @@ const ApiCards = () => {
       titleKey: 'home.apis.imageRecognition.title',
       descKeys: [
         'home.apis.imageRecognition.desc1',
-        'home.apis.imageRecognition.desc2'
+        'home.apis.imageRecognition.desc2',
       ],
       badgeKey: 'home.apis.imageRecognition.badge',
     },
     {
       abbreviation: 'TL',
       titleKey: 'home.apis.translation.title',
-      descKeys: [
-        'home.apis.translation.desc1',
-        'home.apis.translation.desc2'
-      ],
+      descKeys: ['home.apis.translation.desc1', 'home.apis.translation.desc2'],
       badgeKey: 'home.apis.translation.badge',
     },
     {
       abbreviation: 'SP',
       titleKey: 'home.apis.speech.title',
-      descKeys: [
-        'home.apis.speech.desc1',
-        'home.apis.speech.desc2'
-      ],
+      descKeys: ['home.apis.speech.desc1', 'home.apis.speech.desc2'],
       badgeKey: 'home.apis.speech.badge',
     },
   ];
+
+  // Filter APIs based on search query
+  const filteredApis = apis.filter((api) => {
+    const query = searchQuery.toLowerCase();
+    const title = t(api.titleKey).toLowerCase();
+    const abbreviation = api.abbreviation.toLowerCase();
+    const badge = t(api.badgeKey).toLowerCase();
+
+    return (
+      title.includes(query) ||
+      abbreviation.includes(query) ||
+      badge.includes(query)
+    );
+  });
 
   return (
     <section className='my-16'>
@@ -82,6 +92,8 @@ const ApiCards = () => {
             type='text'
             placeholder={t('home.apis.search')}
             className='w-full bg-secondary border border-border rounded-full py-2.5 px-5 text-muted'
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
           <div className='absolute right-4 top-1/2 transform -translate-y-1/2'>
             <svg
@@ -104,15 +116,21 @@ const ApiCards = () => {
 
       {/* API Cards Grid */}
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5'>
-        {apis.map((api, index) => (
-          <ApiCard
-            key={index}
-            abbreviation={api.abbreviation}
-            titleKey={api.titleKey}
-            descKeys={api.descKeys}
-            badgeKey={api.badgeKey}
-          />
-        ))}
+        {filteredApis.length > 0 ? (
+          filteredApis.map((api, index) => (
+            <ApiCard
+              key={index}
+              abbreviation={api.abbreviation}
+              titleKey={api.titleKey}
+              descKeys={api.descKeys}
+              badgeKey={api.badgeKey}
+            />
+          ))
+        ) : (
+          <p className='text-center text-muted col-span-full'>
+            {t('home.apis.noResults')}
+          </p>
+        )}
       </div>
     </section>
   );

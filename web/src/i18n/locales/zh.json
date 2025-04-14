@@ -85,7 +85,8 @@
         "desc1": "自然流畅的语音",
         "desc2": "多种音色可选",
         "badge": "热门"
-      }
+      },
+      "noResults": "没有找到相关API"
     }
   },
   "dashboard": {

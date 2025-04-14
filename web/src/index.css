@@ -1,32 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: 0 0% 100%; /* white */
-  --foreground: 0 0% 0%; /* black */
-  --card: 0 0% 98%; /* very light gray */
-  --card-foreground: 0 0% 0%; /* black */
-  --popover: 0 0% 98%; /* very light gray */
-  --popover-foreground: 0 0% 0%; /* black */
-  --primary: 217 100% 50%; /* blue */
-  --primary-foreground: 0 0% 100%; /* white */
-  --secondary: 0 0% 90%; /* light gray */
-  --secondary-foreground: 0 0% 0%; /* black */
-  --muted: 0 0% 80%; /* gray */
-  --muted-foreground: 0 0% 40%; /* dark gray */
-  --accent: 0 0% 90%; /* light gray */
-  --accent-foreground: 0 0% 0%; /* black */
-  --destructive: 0 100% 50%; /* red */
-  --destructive-foreground: 0 0% 100%; /* white */
-  --success: 120 100% 40%; /* green */
-  --success-foreground: 0 0% 100%; /* white */
-  --border: 0 0% 80%; /* gray */
-  --input: 0 0% 90%; /* light gray */
-  --ring: 217 100% 50%; /* blue */
+  --background: 0 0% 95%; /* #ffffff */
+  --foreground: 222 31% 11%; /* #131626 */
+  --card: 0 0% 100%; /* #ffffff */
+  --card-foreground: 222 31% 11%; /* #131626 */
+  --popover: 0 0% 100%; /* #ffffff */
+  --popover-foreground: 222 31% 11%; /* #131626 */
+  --primary: 217 100% 60%; /* #3B8EFF */
+  --primary-foreground: 0 0% 100%; /* #ffffff */
+  --secondary: 225 20% 100%; /* #f1f3fa */
+  --secondary-foreground: 222 31% 11%; /* #131626 */
+  --muted: 222 15% 20%; /* #b6c2d9 */
+  --muted-foreground: 222 15% 50%; /* #7f8fa8 */
+  --accent: 216 100% 65%; /* #5CA9FF */
+  --accent-foreground: 0 0% 100%; /* #ffffff */
+  --destructive: 0 91% 60%; /* #ef4444 */
+  --destructive-foreground: 0 0% 100%; /* #ffffff */
+  --success: 142 76% 36%; /* #4ADE80 */
+  --success-foreground: 0 0% 100%; /* #ffffff */
+  --border: 222 15% 90%; /* #e5eaf4 */
+  --input: 222 15% 96%; /* #f8f9fc */
+  --ring: 217 100% 60%; /* #3B8EFF */
   --radius: 0.5rem;
-  --dark: 0 0% 20%; /* dark gray */
-  --darker: 0 0% 10%; /* darker gray */
-  --chart-1: 217 100% 50%; /* blue */
-  --chart-2: 216 100% 60%; /* lighter blue */
+  --dark: 222 15% 20%; /* #2e3445 */
+  --darker: 222 15% 15%; /* #232738 */
+  --chart-1: 217 100% 60%; /* #3B8EFF */
+  --chart-2: 216 100% 65%; /* #5CA9FF */
 }
 
 /* Dark mode variables */
@@ -57,6 +57,9 @@
   --darker: 224 24% 18%; /* #232538 */
   --chart-1: 217 100% 65%; /* #4A9FFF */
   --chart-2: 216 100% 70%; /* #6FB1FF */
+  --gradient-hero: linear-gradient(to bottom right, #252738, #1D1F31);
+  --gradient-button: linear-gradient(to right, #4A9FFF, #3D72E4);
+  --gradient-active-nav: linear-gradient(to right, rgba(74, 159, 255, 0.2), #171926);
 }
 
 /* Define custom theme for Tailwind */
@@ -89,6 +92,9 @@
   --border-radius-lg: var(--radius);
   --border-radius-md: calc(var(--radius) - 2px);
   --border-radius-sm: calc(var(--radius) - 4px);
+  --gradient-hero: var(--gradient-hero);
+  --gradient-button: var(--gradient-button);
+  --gradient-active-nav: var(--gradient-active-nav);
 }
 
 @layer utilities {
@@ -110,13 +116,22 @@
     animation: accordion-up 0.2s ease-out;
   }
   .animate-float1 {
-    animation: float1 5s ease-in-out infinite;
+    animation: float1 20s ease-in-out infinite;
   }
   .animate-float2 {
-    animation: float2 6s ease-in-out infinite;
+    animation: float2 15s ease-in-out infinite;
   }
   .animate-float3 {
-    animation: float3 7s ease-in-out infinite;
+    animation: float3 18s ease-in-out infinite;
+  }
+  .animate-filter1 {
+    animation: filter1 60s ease-in-out infinite;
+  }
+  .animate-filter2 {
+    animation: filter2 60s ease-in-out infinite;
+  }
+  .animate-filter3 {
+    animation: filter3 90s ease-in-out infinite;
   }
 }
 
@@ -132,16 +147,31 @@
   }
   @keyframes float1 {
     0%, 100% { transform: translateY(0) translateX(0); }
-    50% { transform: translateY(-10px) translateX(5px); }
+    50% { transform: translateY(-100px) translateX(50px); }
   }
   @keyframes float2 {
     0%, 100% { transform: translateY(0) translateX(0); }
-    50% { transform: translateY(10px) translateX(-5px); }
+    50% { transform: translateY(100px) translateX(-50px); }
   }
   @keyframes float3 {
     0%, 100% { transform: translateY(0) translateX(0); }
-    50% { transform: translateY(-8px) translateX(8px); }
+    50% { transform: translateY(-80px) translateX(80px); }
   }
+  @keyframes filter1 {
+    0%, 100% { top: 0; left: 0;}
+    50% { top: calc(100% - 300px); left: calc(100% - 300px);}
+  }
+  @keyframes filter2 {
+    0%, 100% { top: 0; right: 0;}
+    50% { top: 90%; right: calc(100% - 300px);}
+  }
+  @keyframes filter3 {
+    0%, 100% { top: 50%; left: 5%;}
+    50% { top: 0; right: 0;}
+  }
+}
+html{
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 body {
   margin: 0;
@@ -152,7 +182,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: none;
   color: var(--semi-color-text-0) !important;
-  background-color: var(--semi-color-bg-0) !important;
+  background-color: var(--color-background) !important;
   height: 100vh;
 }
 

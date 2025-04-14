@@ -31,7 +31,6 @@ export const ThemeProvider = ({ children }) => {
     }
     const root = document.documentElement;
     const body = document.body;
-    // Toggle 'dark' class on both <html> and <body>
     root.classList.toggle('dark', newTheme === 'dark');
     body.classList.toggle('dark', newTheme === 'dark');
   }, []);
@@ -45,7 +44,6 @@ export const ThemeProvider = ({ children }) => {
 
     const root = document.documentElement;
     const body = document.body;
-    // Set initial 'dark' class on both <html> and <body>
     root.classList.toggle('dark', effectiveTheme === 'dark');
     body.classList.toggle('dark', effectiveTheme === 'dark');
     _setTheme(effectiveTheme);

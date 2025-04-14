@@ -255,8 +255,8 @@ const LoginForm = () => {
                     {t('登录')}
                   </Button>
 
-                  <Login />
                 </Form>
+                  <Login />
                 <div
                   style={{
                     display: 'flex',

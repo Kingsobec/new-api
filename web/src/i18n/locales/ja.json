@@ -1355,7 +1355,7 @@
 
 
 
-  
+
   "common": {
     "appName": "aimlapi",
     "login": "ログイン",
@@ -1429,7 +1429,8 @@
         "desc1": "自然で流暢な音声",
         "desc2": "複数の音声を選択可能",
         "badge": "人気"
-      }
+      },
+      "noResults": "結果が見つかりませんでした"
     }
   },
   "dashboard": {

@@ -10,24 +10,44 @@ import FeatureCards from '../../components/FeatureCards.js';
 import ApiCards from '../../components/ApiCards.js';
 
 const Home = () => {
+  const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+  const [isDark, setIsDark] = useState(
+    document.body.classList.contains('dark'),
+  );
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.body.classList.contains('dark'));
+    });
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <div className='min-h-screen bg-background trans text-white font-sans px-[5%] py-[5%]'>
+      <div className='min-h-screen bg-background trans text-white font-sans px-[5%] py-[5%] overflow-hidden'>
+        <div className='w-[100px] h-[100px] bg-primary blur-3xl absolute animate-filter1 z-0'></div>
+        <div className='w-[100px] h-[100px] bg-primary blur-3xl absolute animate-filter2 z-0'></div>
+        <div className='w-[100px] h-[100px] bg-primary blur-3xl absolute animate-filter3 z-0'></div>
         {/* Hero Section */}
 
-        <div className='bg-hero-gradient rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center relative overflow-hidden  mx-auto min-h-[500px] '>
+        <div
+          className={`rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center relative overflow-hidden trans mx-auto min-h-[500px] ${isDark ? 'bg-[linear-gradient(to_bottom,#252738,#1D1F31)]' : 'bg-[linear-gradient(to_bottom,#ffffff,#4A9FFF11)]'} `}
+        >
           <div className='absolute inset-0 pointer-events-none'>
-            <div className='absolute top-[50px] left-[100px] w-3 h-3 bg-primary opacity-30 rounded-full animate-float1'></div>
-            <div className='absolute top-[120px] left-[200px] w-2 h-2 bg-accent opacity-40 rounded-full animate-float2'></div>
-            <div className='absolute top-[170px] left-[300px] w-4 h-4 bg-accent opacity-20 rounded-full animate-float3'></div>
-            <div className='absolute top-[70px] left-[400px] w-3 h-3 bg-primary opacity-30 rounded-full animate-float1'></div>
-            <div className='absolute top-[150px] left-[500px] w-2 h-2 bg-accent opacity-50 rounded-full animate-float2'></div>
-            <div className='absolute top-[40px] left-[600px] w-3 h-3 bg-primary opacity-40 rounded-full animate-float3'></div>
-            <div className='absolute top-[90px] left-[700px] w-4 h-4 bg-accent opacity-30 rounded-full animate-float2'></div>
-            <div className='absolute top-[170px] left-[800px] w-2 h-2 bg-primary opacity-20 rounded-full animate-float2'></div>
-            <div className='absolute top-[50px] left-[850px] w-3 h-3 bg-accent opacity-40 rounded-full animate-float3'></div>
+            <div className='absolute top-[200px] left-[10%] w-5 h-5 bg-primary opacity-30 rounded-full animate-float1'></div>
+            <div className='absolute top-[120px] left-[10%] w-4 h-4 bg-accent opacity-40 rounded-full animate-float2'></div>
+            <div className='absolute top-[170px] left-[30%] w-4 h-4 bg-accent opacity-20 rounded-full animate-float3'></div>
+            <div className='absolute top-[470px] left-[40%] w-5 h-5 bg-primary opacity-30 rounded-full animate-float1'></div>
+            <div className='absolute top-[150px] left-[50%] w-4 h-4 bg-accent opacity-50 rounded-full animate-float2'></div>
+            <div className='absolute top-[140px] left-[50%] w-5 h-5 bg-primary opacity-40 rounded-full animate-float3'></div>
+            <div className='absolute top-[390px] left-[70%] w-4 h-4 bg-accent opacity-30 rounded-full animate-float2'></div>
+            <div className='absolute top-[270px] left-[80%] w-4 h-4 bg-primary opacity-20 rounded-full animate-float2'></div>
+            <div className='absolute top-[150px] left-[90%] w-5 h-5 bg-accent opacity-40 rounded-full animate-float3'></div>
           </div>
 
           <div className='md:w-1/2 z-10 mb-10 md:mb-0'>
@@ -78,8 +98,10 @@ const Home = () => {
           </div>
         </div>
 
-        <FeatureCards />
-        <ApiCards />
+        <div className='z-50'>
+          <FeatureCards />
+          <ApiCards />
+        </div>
       </div>
     </>
   );
