@@ -1,13 +1,18 @@
-FROM oven/bun:latest AS builder
+# ---------- Frontend Build ----------
+FROM oven/bun:latest AS frontend
 
 WORKDIR /build
-COPY web/package.json .
-RUN bun install
-COPY ./web .
-COPY ./VERSION .
-RUN DISABLE_ESLINT_PLUGIN='true' VITE_REACT_APP_VERSION=$(cat VERSION) bun run build
+COPY web/package.json web/bun.lockb ./web/
+RUN cd web && bun install
 
-FROM golang:alpine AS builder2
+COPY ./web ./web
+COPY ./VERSION ./VERSION
+
+WORKDIR /build/web
+RUN DISABLE_ESLINT_PLUGIN='true' VITE_REACT_APP_VERSION=$(cat ../VERSION) bun run build
+
+# ---------- Backend Build ----------
+FROM golang:alpine AS backend
 
 ENV GO111MODULE=on \
     CGO_ENABLED=0 \
@@ -15,13 +20,19 @@ ENV GO111MODULE=on \
 
 WORKDIR /build
 
-ADD go.mod go.sum ./
+COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
-COPY --from=builder /build/dist ./web/dist
-RUN go build -ldflags "-s -w -X 'one-api/common.Version=$(cat VERSION)'" -o one-api
 
+# Copy built frontend into correct spot
+COPY --from=frontend /build/web/dist ./web/dist
+
+# Inject version string directly in build command
+ARG VERSION
+RUN go build -ldflags "-s -w -X 'one-api/common.Version=${VERSION}'" -o one-api
+
+# ---------- Final Image ----------
 FROM alpine
 
 RUN apk update \
@@ -29,7 +40,10 @@ RUN apk update \
     && apk add --no-cache ca-certificates tzdata ffmpeg \
     && update-ca-certificates
 
-COPY --from=builder2 /build/one-api /
-EXPOSE 3000
 WORKDIR /data
+
+COPY --from=backend /build/one-api /one-api
+
+EXPOSE 3000
+
 ENTRYPOINT ["/one-api"]

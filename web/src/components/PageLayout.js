@@ -94,8 +94,8 @@ const PageLayout = () => {
       </Header>
       <Layout
         style={{
-          marginTop: styleState.isMobile ? '0' : '56px',
-          height: styleState.isMobile ? 'auto' : 'calc(100vh - 56px)',
+          marginTop: styleState.isMobile ? '0' : '70px',
+          height: styleState.isMobile ? 'auto' : 'calc(100vh - 70px)',
           overflow: styleState.isMobile ? 'visible' : 'auto',
           display: 'flex',
           flexDirection: 'column',
@@ -106,13 +106,13 @@ const PageLayout = () => {
             style={{
               position: 'fixed',
               left: 0,
-              top: '56px',
+              top: '70px',
               zIndex: 99,
               background: 'var(--semi-color-bg-1)',
               boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
               border: 'none',
               paddingRight: '0',
-              height: 'calc(100vh - 56px)',
+              height: 'calc(100vh - 70px)',
             }}
           >
             <SiderBar />

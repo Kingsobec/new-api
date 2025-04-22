@@ -109,7 +109,7 @@ func HandleGoogleCallback(c *gin.Context) {
 	}
 
 	// c.JSON(http.StatusOK, gin.H{"token": jwtToken})
-	redirectURL := "http://localhost:4000/login?token=" + jwtToken
+	redirectURL := "https://71c4-197-210-79-131.ngrok-free.app/login?token=" + jwtToken
 	c.Redirect(http.StatusSeeOther, redirectURL)
 }
 

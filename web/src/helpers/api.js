@@ -5,8 +5,8 @@ import {
 } from './utils';
 import axios from 'axios';
 
-const userId = getUserIdFromLocalStorage()
-const token = getTokenFromLocalStorage()
+const userId = getUserIdFromLocalStorage();
+const token = getTokenFromLocalStorage();
 
 export let API = axios.create({
   baseURL: import.meta.env.VITE_REACT_APP_SERVER_URL
@@ -14,7 +14,7 @@ export let API = axios.create({
     : '',
   headers: {
     'New-API-User': userId,
-    'Authorization': `Bearer ${token}`,
+    Authorization: `Bearer ${token}`,
     'Cache-Control': 'no-store',
   },
 });
@@ -26,7 +26,7 @@ export function updateAPI() {
       : '',
     headers: {
       'New-API-User': getUserIdFromLocalStorage(),
-      'Authorization': `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,
       'Cache-Control': 'no-store',
     },
   });

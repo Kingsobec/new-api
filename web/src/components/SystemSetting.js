@@ -8,9 +8,16 @@ import {
   Message,
   Modal,
 } from 'semantic-ui-react';
-import { API, removeTrailingSlash, showError, showSuccess, verifyJSON } from '../helpers';
+import {
+  API,
+  removeTrailingSlash,
+  showError,
+  showSuccess,
+  verifyJSON,
+} from '../helpers';
 
 import { useTheme } from '../context/Theme';
+
 
 const SystemSetting = () => {
   let [inputs, setInputs] = useState({
@@ -63,6 +70,10 @@ const SystemSetting = () => {
     LinuxDOOAuthEnabled: '',
     LinuxDOClientId: '',
     LinuxDOClientSecret: '',
+    GoogleClientId: '',
+    GoogleClientSecret: '',
+    StripeSecretKey: '',
+    StripeWebhookSecret: '',
   });
   const [originInputs, setOriginInputs] = useState({});
   let [loading, setLoading] = useState(false);
@@ -78,6 +89,7 @@ const SystemSetting = () => {
     const res = await API.get('/api/option/');
     const { success, message, data } = res.data;
     if (success) {
+      console.log(data)
       let newInputs = {};
       data.forEach((item) => {
         if (item.key === 'TopupGroupRatio') {
@@ -183,7 +195,11 @@ const SystemSetting = () => {
       name === 'TelegramBotToken' ||
       name === 'TelegramBotName' ||
       name === 'LinuxDOClientId' ||
-      name === 'LinuxDOClientSecret'
+      name === 'LinuxDOClientSecret' ||
+      name === 'GoogleClientId' ||
+      name === 'GoogleClientSecret' ||
+      name === 'StripeSecretKey' ||
+      name === 'StripeWebhookSecret'
     ) {
       setInputs((inputs) => ({ ...inputs, [name]: value }));
     } else {
@@ -302,19 +318,25 @@ const SystemSetting = () => {
 
   const submitOIDCSettings = async () => {
     if (inputs['oidc.well_known'] !== '') {
-      if (!inputs['oidc.well_known'].startsWith('http://') && !inputs['oidc.well_known'].startsWith('https://')) {
+      if (
+        !inputs['oidc.well_known'].startsWith('http://') &&
+        !inputs['oidc.well_known'].startsWith('https://')
+      ) {
         showError('Well-Known URL 必须以 http:// 或 https:// 开头');
         return;
       }
       try {
         const res = await API.get(inputs['oidc.well_known']);
-        inputs['oidc.authorization_endpoint'] = res.data['authorization_endpoint'];
+        inputs['oidc.authorization_endpoint'] =
+          res.data['authorization_endpoint'];
         inputs['oidc.token_endpoint'] = res.data['token_endpoint'];
         inputs['oidc.user_info_endpoint'] = res.data['userinfo_endpoint'];
         showSuccess('获取 OIDC 配置成功！');
       } catch (err) {
         console.error(err);
-        showError("获取 OIDC 配置失败，请检查网络状况和 Well-Known URL 是否正确");
+        showError(
+          '获取 OIDC 配置失败，请检查网络状况和 Well-Known URL 是否正确',
+        );
       }
     }
 
@@ -324,19 +346,34 @@ const SystemSetting = () => {
     if (originInputs['oidc.client_id'] !== inputs['oidc.client_id']) {
       await updateOption('oidc.client_id', inputs['oidc.client_id']);
     }
-    if (originInputs['oidc.client_secret'] !== inputs['oidc.client_secret'] && inputs['oidc.client_secret'] !== '') {
+    if (
+      originInputs['oidc.client_secret'] !== inputs['oidc.client_secret'] &&
+      inputs['oidc.client_secret'] !== ''
+    ) {
       await updateOption('oidc.client_secret', inputs['oidc.client_secret']);
     }
-    if (originInputs['oidc.authorization_endpoint'] !== inputs['oidc.authorization_endpoint']) {
-      await updateOption('oidc.authorization_endpoint', inputs['oidc.authorization_endpoint']);
+    if (
+      originInputs['oidc.authorization_endpoint'] !==
+      inputs['oidc.authorization_endpoint']
+    ) {
+      await updateOption(
+        'oidc.authorization_endpoint',
+        inputs['oidc.authorization_endpoint'],
+      );
     }
     if (originInputs['oidc.token_endpoint'] !== inputs['oidc.token_endpoint']) {
       await updateOption('oidc.token_endpoint', inputs['oidc.token_endpoint']);
     }
-    if (originInputs['oidc.user_info_endpoint'] !== inputs['oidc.user_info_endpoint']) {
-      await updateOption('oidc.user_info_endpoint', inputs['oidc.user_info_endpoint']);
+    if (
+      originInputs['oidc.user_info_endpoint'] !==
+      inputs['oidc.user_info_endpoint']
+    ) {
+      await updateOption(
+        'oidc.user_info_endpoint',
+        inputs['oidc.user_info_endpoint'],
+      );
     }
-  }
+  };
 
   const submitTelegramSettings = async () => {
     // await updateOption('TelegramOAuthEnabled', inputs.TelegramOAuthEnabled);
@@ -390,6 +427,33 @@ const SystemSetting = () => {
     }
   };
 
+  const submitGoogleOAuth = async () => {
+    if (originInputs['GoogleClientId'] !== inputs.GoogleClientId) {
+      await updateOption('GoogleClientId', inputs.GoogleClientId);
+    }
+    if (
+      originInputs['GoogleClientSecret'] !== inputs.GoogleClientSecret &&
+      inputs.GoogleClientSecret !== ''
+    ) {
+      await updateOption('GoogleClientSecret', inputs.GoogleClientSecret);
+    }
+  };
+
+  const submitStripeSettings = async () => {
+    if (
+      originInputs['StripeSecretKey'] !== inputs.StripeSecretKey &&
+      inputs.StripeSecretKey !== ''
+    ) {
+      await updateOption('StripeSecretKey', inputs.StripeSecretKey);
+    }
+    if (
+      originInputs['StripeWebhookSecret'] !== inputs.StripeWebhookSecret &&
+      inputs.StripeWebhookSecret !== ''
+    ) {
+      await updateOption('StripeWebhookSecret', inputs.StripeWebhookSecret);
+    }
+  };
+
   return (
     <Grid columns={1}>
       <Grid.Column>
@@ -421,13 +485,15 @@ const SystemSetting = () => {
             ）
           </Header>
           <Message info>
-            注意：代理功能仅对图片请求和 Webhook 请求生效，不会影响其他 API 请求。如需配置 API 请求代理，请参考
+            注意：代理功能仅对图片请求和 Webhook 请求生效，不会影响其他 API
+            请求。如需配置 API 请求代理，请参考
             <a
               href='https://github.com/Calcium-Ion/new-api/blob/main/docs/channel/other_setting.md'
               target='_blank'
               rel='noreferrer'
             >
-              {' '}API 代理设置文档
+              {' '}
+              API 代理设置文档
             </a>
             。
           </Message>
@@ -514,6 +580,35 @@ const SystemSetting = () => {
           <Form.Button onClick={submitPayAddress}>更新支付设置</Form.Button>
           <Divider />
           <Header as='h3' inverted={isDark}>
+            配置 Stripe
+            <Header.Subheader>用以支持 Stripe 支付</Header.Subheader>
+          </Header>
+          <Form.Group widths={2}>
+            <Form.Input
+              label='Stripe Secret Key'
+              name='StripeSecretKey'
+              onChange={handleInputChange}
+              type='password'
+              autoComplete='new-password'
+              value={inputs.StripeSecretKey}
+              placeholder='敏感信息不会发送到前端显示'
+            />
+            <Form.Input
+              label='Stripe Webhook Secret'
+              name='StripeWebhookSecret'
+              onChange={handleInputChange}
+              type='password'
+              autoComplete='new-password'
+              value={inputs.StripeWebhookSecret}
+              placeholder='敏感信息不会发送到前端显示'
+            />
+          </Form.Group>
+          <Form.Button onClick={submitStripeSettings}>
+            保存 Stripe 设置
+          </Form.Button>
+          <Divider />
+
+          <Header as='h3' inverted={isDark}>
             配置登录注册
           </Header>
           <Form.Group inline>
@@ -571,10 +666,10 @@ const SystemSetting = () => {
               onChange={handleInputChange}
             />
             <Form.Checkbox
-                checked={inputs['oidc.enabled'] === 'true'}
-                label='允许通过 OIDC 登录 & 注册'
-                name='oidc.enabled'
-                onChange={handleInputChange}
+              checked={inputs['oidc.enabled'] === 'true'}
+              label='允许通过 OIDC 登录 & 注册'
+              name='oidc.enabled'
+              onChange={handleInputChange}
             />
             <Form.Checkbox
               checked={inputs.LinuxDOOAuthEnabled === 'true'}
@@ -930,59 +1025,101 @@ const SystemSetting = () => {
             </Header.Subheader>
           </Header>
           <Message>
-            主页链接填 <code>{ inputs.ServerAddress }</code>，
-            重定向 URL 填 <code>{ `${ inputs.ServerAddress }/oauth/oidc` }</code>
+            主页链接填 <code>{inputs.ServerAddress}</code>， 重定向 URL 填{' '}
+            <code>{`${inputs.ServerAddress}/oauth/oidc`}</code>
           </Message>
           <Message>
-            若你的 OIDC Provider 支持 Discovery Endpoint，你可以仅填写 OIDC Well-Known URL，系统会自动获取 OIDC 配置
+            若你的 OIDC Provider 支持 Discovery Endpoint，你可以仅填写 OIDC
+            Well-Known URL，系统会自动获取 OIDC 配置
           </Message>
           <Form.Group widths={3}>
             <Form.Input
-                label='Client ID'
-                name='oidc.client_id'
-                onChange={handleInputChange}
-                value={inputs['oidc.client_id']}
-                placeholder='输入 OIDC 的 Client ID'
+              label='Client ID'
+              name='oidc.client_id'
+              onChange={handleInputChange}
+              value={inputs['oidc.client_id']}
+              placeholder='输入 OIDC 的 Client ID'
             />
             <Form.Input
-                label='Client Secret'
-                name='oidc.client_secret'
-                onChange={handleInputChange}
-                type='password'
-                value={inputs['oidc.client_secret']}
-                placeholder='敏感信息不会发送到前端显示'
+              label='Client Secret'
+              name='oidc.client_secret'
+              onChange={handleInputChange}
+              type='password'
+              value={inputs['oidc.client_secret']}
+              placeholder='敏感信息不会发送到前端显示'
             />
             <Form.Input
-                label='Well-Known URL'
-                name='oidc.well_known'
-                onChange={handleInputChange}
-                value={inputs['oidc.well_known']}
-                placeholder='请输入 OIDC 的 Well-Known URL'
+              label='Well-Known URL'
+              name='oidc.well_known'
+              onChange={handleInputChange}
+              value={inputs['oidc.well_known']}
+              placeholder='请输入 OIDC 的 Well-Known URL'
             />
             <Form.Input
-                label='Authorization Endpoint'
-                name='oidc.authorization_endpoint'
-                onChange={handleInputChange}
-                value={inputs['oidc.authorization_endpoint']}
-                placeholder='输入 OIDC 的 Authorization Endpoint'
+              label='Authorization Endpoint'
+              name='oidc.authorization_endpoint'
+              onChange={handleInputChange}
+              value={inputs['oidc.authorization_endpoint']}
+              placeholder='输入 OIDC 的 Authorization Endpoint'
             />
             <Form.Input
-                label='Token Endpoint'
-                name='oidc.token_endpoint'
-                onChange={handleInputChange}
-                value={inputs['oidc.token_endpoint']}
-                placeholder='输入 OIDC 的 Token Endpoint'
+              label='Token Endpoint'
+              name='oidc.token_endpoint'
+              onChange={handleInputChange}
+              value={inputs['oidc.token_endpoint']}
+              placeholder='输入 OIDC 的 Token Endpoint'
             />
             <Form.Input
-                label='Userinfo Endpoint'
-                name='oidc.user_info_endpoint'
-                onChange={handleInputChange}
-                value={inputs['oidc.user_info_endpoint']}
-                placeholder='输入 OIDC 的 Userinfo Endpoint'
+              label='Userinfo Endpoint'
+              name='oidc.user_info_endpoint'
+              onChange={handleInputChange}
+              value={inputs['oidc.user_info_endpoint']}
+              placeholder='输入 OIDC 的 Userinfo Endpoint'
             />
           </Form.Group>
-          <Form.Button onClick={submitOIDCSettings}>
-            保存 OIDC 设置
+          <Form.Button onClick={submitOIDCSettings}>保存 OIDC 设置</Form.Button>
+          <Divider />
+
+          <Header as='h3' inverted={isDark}>
+            配置 Google OAuth
+            <Header.Subheader>
+              用以支持通过 Google 进行登录注册，
+              <a
+                href='https://console.developers.google.com/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                点击此处
+              </a>
+              管理你的 Google OAuth App
+            </Header.Subheader>
+          </Header>
+          <Message>
+            Homepage URL 填 <code>{inputs.ServerAddress}</code>，Authorization
+            callback URL 填{' '}
+            <code>{`${inputs.ServerAddress}/oauth/google`}</code>
+          </Message>
+          <Form.Group widths={3}>
+            <Form.Input
+              label='Google Client ID'
+              name='GoogleClientId'
+              onChange={handleInputChange}
+              autoComplete='new-password'
+              value={inputs.GoogleClientId}
+              placeholder='输入你注册的 Google OAuth APP 的 ID'
+            />
+            <Form.Input
+              label='Google Client Secret'
+              name='GoogleClientSecret'
+              onChange={handleInputChange}
+              type='password'
+              autoComplete='new-password'
+              value={inputs.GoogleClientSecret}
+              placeholder='敏感信息不会发送到前端显示'
+            />
+          </Form.Group>
+          <Form.Button onClick={submitGoogleOAuth}>
+            保存 Google OAuth 设置
           </Form.Button>
         </Form>
       </Grid.Column>

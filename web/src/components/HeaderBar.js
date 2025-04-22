@@ -32,6 +32,7 @@ const HeaderBar = () => {
   const logo = getLogo();
   const theme = useTheme();
   const setTheme = useSetTheme();
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const currentDate = new Date();
   const isNewYear = currentDate.getMonth() === 0 && currentDate.getDate() === 1;
@@ -43,7 +44,7 @@ const HeaderBar = () => {
     await API.get('/api/user/logout');
     showSuccess(t('注销成功!'));
     userDispatch({ type: 'logout' });
-    localStorage.removeItem('user');
+    localStorage.clear();
     navigate('/login');
   }
 
@@ -124,7 +125,7 @@ const HeaderBar = () => {
         </div>
 
         {/* Right Side Controls */}
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-3 '>
           {isNewYear && (
             <Dropdown
               position='bottomRight'
@@ -173,7 +174,13 @@ const HeaderBar = () => {
               </Dropdown.Menu>
             }
           >
-            <Button icon={<IconLanguage />} theme='borderless' />
+            <Button>
+              {currentLang === 'zh'
+                ? '中文'
+                : currentLang === 'en'
+                  ? 'ENG'
+                  : '日本語'}
+            </Button>
           </Dropdown>
 
           {userState.user ? (
@@ -203,19 +210,102 @@ const HeaderBar = () => {
           ) : (
             <>
               <Link to='/login'>
-                <button className='border-2 border-primary text-primary rounded-full px-4 py-1.5 text-sm font-medium'>
+                <button className='border-2 border-primary text-primary rounded-md md:p-3 p-2 text-sm font-medium max-md:hidden'>
                   {t('登录')}
                 </button>
               </Link>
               {!isSelfUseMode && (
                 <Link to='/register'>
-                  <button className='bg-primary text-white rounded-full px-4 py-1.5 text-sm font-bold'>
+                  <button className='bg-primary text-white rounded-md md:p-3 p-2 text-sm font-bold max-md:hidden'>
                     {t('注册')}
                   </button>
                 </Link>
               )}
             </>
           )}
+          <div className=' md:hidden'>
+            <IconMenu
+              size='large'
+              onClick={() => setShowMobileMenu((prev) => !prev)}
+            />
+          </div>
+
+          <div
+            className={`trans md:hidden fixed top-[70px] left-0 w-screen h-[calc(100vh-70px)] flex justify-between p-0 ${showMobileMenu ? '' : 'translate-x-[100%]'}`}
+          >
+            <div
+              className='w-1/2 h-full opacity-50 bg-background'
+              onClick={() => setShowMobileMenu(false)}
+            ></div>
+            <ul
+              className={` bg-background  overflow-hidden h-full w-1/2 trans border-l border-primary text-foreground hover:text-primary p-0 uppercase font-bold flex flex-col gap-3  ${showMobileMenu ? '' : 'translate-x-[100%]'} `}
+            >
+              <Link
+                to='/'
+                className='border-b border-dashed border-primary p-4'
+                onClick={() => setShowMobileMenu(false)}
+              >
+                {t('首页')}
+              </Link>
+              <Link
+                to='/detail'
+                className='border-b border-dashed border-primary p-4'
+                onClick={() => setShowMobileMenu(false)}
+              >
+                {t('控制台')}
+              </Link>
+              <Link
+                to='/pricing'
+                className='border-b border-dashed border-primary p-4'
+                onClick={() => setShowMobileMenu(false)}
+              >
+                {t('定价')}
+              </Link>
+              {docsLink && (
+                <a
+                  href={docsLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='border-b border-dashed border-primary p-4'
+                  onClick={() => setShowMobileMenu(false)}
+                >
+                  {t('文档')}
+                </a>
+              )}
+              <Link
+                to='/about'
+                className='border-b border-dashed border-primary p-4'
+                onClick={() => setShowMobileMenu(false)}
+              >
+                {t('关于')}
+              </Link>
+              {userState.user ? (
+                ''
+              ) : (
+                <>
+                  {' '}
+                  <Link to='/login'>
+                    <button
+                      className='border-t-2 border-b-2 border-dashed border-primary text-primary rounded-md md:p-3 p-4 w-full'
+                      onClick={() => setShowMobileMenu(false)}
+                    >
+                      {t('登录')}
+                    </button>
+                  </Link>
+                  {!isSelfUseMode && (
+                    <Link to='/register'>
+                      <button
+                        className='bg-primary text-white rounded-md md:p-3 p-4 w-full'
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        {t('注册')}
+                      </button>
+                    </Link>
+                  )}
+                </>
+              )}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

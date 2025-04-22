@@ -56,11 +56,11 @@ export async function copy(text) {
   } catch (e) {
     try {
       // 构建input 执行 复制命令
-      var _input = window.document.createElement("input");
+      var _input = window.document.createElement('input');
       _input.value = text;
       window.document.body.appendChild(_input);
       _input.select();
-      window.document.execCommand("Copy");
+      window.document.execCommand('Copy');
       window.document.body.removeChild(_input);
     } catch (e) {
       okay = false;
@@ -101,7 +101,7 @@ export function showError(error) {
       switch (error.response.status) {
         case 401:
           // toast.error('错误：未登录或登录已过期，请重新登录！', showErrorOptions);
-          window.location.href = '/login?expired=true';
+          // window.location.href = '/login?expired=true';
           break;
         case 429:
           Toast.error('错误：请求次数过多，请稍后再试！');
@@ -196,7 +196,7 @@ export function timestamp2string1(timestamp, dataExportDefaultTime = 'hour') {
   let day = date.getDate().toString();
   let hour = date.getHours().toString();
   if (day === '24') {
-    console.log("timestamp", timestamp);
+    console.log('timestamp', timestamp);
   }
   if (month.length === 1) {
     month = '0' + month;
@@ -251,7 +251,6 @@ export function verifyJSONPromise(value) {
     return Promise.reject('不是合法的 JSON 字符串');
   }
 }
-
 
 export function shouldShowPrompt(id) {
   let prompt = localStorage.getItem(`prompt-${id}`);

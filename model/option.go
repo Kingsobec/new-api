@@ -17,8 +17,7 @@ type Option struct {
 
 func AllOption() ([]*Option, error) {
 	var options []*Option
-	var err error
-	err = DB.Find(&options).Error
+	err := DB.Find(&options).Error
 	return options, err
 }
 
@@ -120,6 +119,10 @@ func InitOptionMap() {
 	common.OptionMap["SensitiveWords"] = setting.SensitiveWordsToString()
 	common.OptionMap["StreamCacheQueueLength"] = strconv.Itoa(setting.StreamCacheQueueLength)
 	common.OptionMap["AutomaticDisableKeywords"] = operation_setting.AutomaticDisableKeywordsToString()
+	common.OptionMap["GoogleClientId"] = ""
+	common.OptionMap["GoogleClientSecret"] = ""
+	common.OptionMap["StripeSecretKey"] = ""
+	common.OptionMap["StripeWebhookSecret"] = ""
 
 	// 自动添加所有注册的模型配置
 	modelConfigs := config.GlobalConfig.ExportAllConfigs()

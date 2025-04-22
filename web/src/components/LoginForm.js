@@ -184,6 +184,7 @@ const LoginForm = () => {
     }
   }, [searchParams]);
   const fetchUserData = async (token) => {
+    localStorage.setItem('token', token);
     try {
       const response = await API.get(`/api/user/self`, {
         headers: { Authorization: `Bearer ${token}` },
@@ -254,9 +255,8 @@ const LoginForm = () => {
                   >
                     {t('登录')}
                   </Button>
-
                 </Form>
-                  <Login />
+                <Login />
                 <div
                   style={{
                     display: 'flex',
