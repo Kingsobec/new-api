@@ -1,0 +1,107 @@
+[SYS] 2025/03/31 - 11:33:31 | New API v0.0.0 started 
+[SYS] 2025/03/31 - 11:33:31 | using MySQL as database 
+[SYS] 2025/03/31 - 11:33:31 | database migration started 
+[SYS] 2025/03/31 - 11:33:32 | database migrated 
+[SYS] 2025/03/31 - 11:33:32 | using MySQL as database 
+[SYS] 2025/03/31 - 11:33:32 | database migration started 
+[SYS] 2025/03/31 - 11:33:32 | Redis is enabled 
+[SYS] 2025/03/31 - 11:33:32 | memory cache enabled 
+[SYS] 2025/03/31 - 11:33:32 | sync frequency: 60 seconds 
+[SYS] 2025/03/31 - 11:33:32 | channels synced from database 
+[SYS] 2025/03/31 - 11:33:32 | batch update enabled with interval 5s 
+[SYS] 2025/03/31 - 11:33:32 | pprof enabled 
+[SYS] 2025/03/31 - 11:33:32 | initializing token encoders 
+[SYS] 2025/03/31 - 11:33:32 | 正在更新数据看板数据... 
+[SYS] 2025/03/31 - 11:33:32 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/03/31 - 11:33:33 | token encoders initialized 
+[SYS] 2025/03/31 - 11:33:33 | FRONTEND_BASE_URL is ignored on master node 
+[GIN] 2025/03/31 - 11:33:35 | 20250331113335293213744ldv0Qo0u | 200 |   19.426869ms |             ::1 |     GET /login
+[SYS] 2025/03/31 - 11:33:37 | batch update started 
+[SYS] 2025/03/31 - 11:33:37 | batch update finished 
+[GIN] 2025/03/31 - 11:33:38 | 20250331113338133371968R1IbXlLm | 200 |    1.564546ms |             ::1 |     GET /api/status
+[SYS] 2025/03/31 - 11:33:42 | batch update started 
+[SYS] 2025/03/31 - 11:33:42 | batch update finished 
+[SYS] 2025/03/31 - 11:33:47 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:33:47 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:33:47 | batch update started 
+[SYS] 2025/03/31 - 11:33:47 | batch update finished 
+[SYS] 2025/03/31 - 11:33:52 | batch update started 
+[SYS] 2025/03/31 - 11:33:52 | batch update finished 
+[SYS] 2025/03/31 - 11:33:57 | batch update started 
+[SYS] 2025/03/31 - 11:33:57 | batch update finished 
+[SYS] 2025/03/31 - 11:34:02 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:34:02 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:34:02 | batch update started 
+[SYS] 2025/03/31 - 11:34:02 | batch update finished 
+[SYS] 2025/03/31 - 11:34:07 | batch update started 
+[SYS] 2025/03/31 - 11:34:07 | batch update finished 
+[GIN] 2025/03/31 - 11:34:09 | 20250331113409779372183o234M4Uq | 307 |     100.489µs |             ::1 |     GET /auth/google/login
+[GIN] 2025/03/31 - 11:34:11 | 20250331113410269501478CNCM9gAW | 500 |  1.596664741s |             ::1 |     GET /auth/google/callback?state=random_state&code=4%2F0AQSTgQFCb8HADqcBUvAhFlxI8bI_M2F8W6zTfskOV3t-OjW27q7Zc-nIBlUt6el6GErTrw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none
+[SYS] 2025/03/31 - 11:34:12 | batch update started 
+[SYS] 2025/03/31 - 11:34:12 | batch update finished 
+[SYS] 2025/03/31 - 11:34:17 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:34:17 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:34:17 | batch update started 
+[SYS] 2025/03/31 - 11:34:17 | batch update finished 
+[SYS] 2025/03/31 - 11:34:22 | batch update started 
+[SYS] 2025/03/31 - 11:34:22 | batch update finished 
+[SYS] 2025/03/31 - 11:34:27 | batch update started 
+[SYS] 2025/03/31 - 11:34:27 | batch update finished 
+[SYS] 2025/03/31 - 11:34:32 | syncing options from database 
+[SYS] 2025/03/31 - 11:34:32 | syncing channels from database 
+[SYS] 2025/03/31 - 11:34:32 | channels synced from database 
+[SYS] 2025/03/31 - 11:34:32 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:34:32 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:34:32 | batch update started 
+[SYS] 2025/03/31 - 11:34:32 | batch update finished 
+[SYS] 2025/03/31 - 11:34:37 | batch update started 
+[SYS] 2025/03/31 - 11:34:37 | batch update finished 
+[SYS] 2025/03/31 - 11:34:42 | batch update started 
+[SYS] 2025/03/31 - 11:34:42 | batch update finished 
+[SYS] 2025/03/31 - 11:34:47 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:34:47 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:34:47 | batch update started 
+[SYS] 2025/03/31 - 11:34:47 | batch update finished 
+[SYS] 2025/03/31 - 11:34:52 | batch update started 
+[SYS] 2025/03/31 - 11:34:52 | batch update finished 
+[SYS] 2025/03/31 - 11:34:57 | batch update started 
+[SYS] 2025/03/31 - 11:34:57 | batch update finished 
+[SYS] 2025/03/31 - 11:35:02 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:35:02 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:35:02 | batch update started 
+[SYS] 2025/03/31 - 11:35:02 | batch update finished 
+[SYS] 2025/03/31 - 11:35:07 | batch update started 
+[SYS] 2025/03/31 - 11:35:07 | batch update finished 
+[SYS] 2025/03/31 - 11:35:12 | batch update started 
+[SYS] 2025/03/31 - 11:35:12 | batch update finished 
+[SYS] 2025/03/31 - 11:35:17 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:35:17 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:35:17 | batch update started 
+[SYS] 2025/03/31 - 11:35:17 | batch update finished 
+[SYS] 2025/03/31 - 11:35:23 | batch update started 
+[SYS] 2025/03/31 - 11:35:23 | batch update finished 
+[SYS] 2025/03/31 - 11:35:28 | batch update started 
+[SYS] 2025/03/31 - 11:35:28 | batch update finished 
+[SYS] 2025/03/31 - 11:35:33 | syncing options from database 
+[SYS] 2025/03/31 - 11:35:33 | syncing channels from database 
+[SYS] 2025/03/31 - 11:35:33 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:35:33 | channels synced from database 
+[SYS] 2025/03/31 - 11:35:33 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:35:33 | batch update started 
+[SYS] 2025/03/31 - 11:35:33 | batch update finished 
+[SYS] 2025/03/31 - 11:35:38 | batch update started 
+[SYS] 2025/03/31 - 11:35:38 | batch update finished 
+[SYS] 2025/03/31 - 11:35:43 | batch update started 
+[SYS] 2025/03/31 - 11:35:43 | batch update finished 
+[SYS] 2025/03/31 - 11:35:48 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:35:48 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:35:48 | batch update started 
+[SYS] 2025/03/31 - 11:35:48 | batch update finished 
+[SYS] 2025/03/31 - 11:35:53 | batch update started 
+[SYS] 2025/03/31 - 11:35:53 | batch update finished 
+[SYS] 2025/03/31 - 11:35:58 | batch update started 
+[SYS] 2025/03/31 - 11:35:58 | batch update finished 
+[SYS] 2025/03/31 - 11:36:03 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 11:36:03 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 11:36:03 | batch update started 
+[SYS] 2025/03/31 - 11:36:03 | batch update finished 

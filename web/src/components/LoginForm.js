@@ -197,7 +197,8 @@ const LoginForm = () => {
         console.log(data);
         updateAPI();
         showSuccess('Google 登录成功！');
-        navigate('/token');
+        window.location.href =
+          'https://71c4-197-210-79-131.ngrok-free.app/token';
       } else {
         showError(message);
       }

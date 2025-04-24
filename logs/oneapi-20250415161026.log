@@ -1,0 +1,44 @@
+[SYS] 2025/04/15 - 16:10:26 | New API v0.0.0 started 
+[SYS] 2025/04/15 - 16:10:26 | using MySQL as database 
+[SYS] 2025/04/15 - 16:10:27 | database migration started 
+[SYS] 2025/04/15 - 16:10:29 | database migrated 
+[SYS] 2025/04/15 - 16:10:29 | using MySQL as database 
+[SYS] 2025/04/15 - 16:10:29 | database migration started 
+[SYS] 2025/04/15 - 16:10:30 | Redis is enabled 
+[SYS] 2025/04/15 - 16:10:30 | memory cache enabled 
+[SYS] 2025/04/15 - 16:10:30 | sync frequency: 60 seconds 
+[SYS] 2025/04/15 - 16:10:30 | channels synced from database 
+[SYS] 2025/04/15 - 16:10:30 | 正在更新数据看板数据... 
+[SYS] 2025/04/15 - 16:10:30 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/15 - 16:10:30 | batch update enabled with interval 5s 
+[SYS] 2025/04/15 - 16:10:30 | pprof enabled 
+[SYS] 2025/04/15 - 16:10:30 | initializing token encoders 
+[SYS] 2025/04/15 - 16:10:35 | batch update started 
+[SYS] 2025/04/15 - 16:10:35 | batch update finished 
+[SYS] 2025/04/15 - 16:10:38 | batch update started 
+[SYS] 2025/04/15 - 16:10:38 | batch update finished 
+[SYS] 2025/04/15 - 16:10:43 | batch update started 
+[SYS] 2025/04/15 - 16:10:43 | batch update finished 
+[SYS] 2025/04/15 - 16:10:43 | 任务进度轮询开始 
+[SYS] 2025/04/15 - 16:10:43 | 任务进度轮询完成 
+[SYS] 2025/04/15 - 16:10:45 | token encoders initialized 
+[SYS] 2025/04/15 - 16:10:45 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/04/15 - 16:10:48 | batch update started 
+[SYS] 2025/04/15 - 16:10:48 | batch update finished 
+[GIN] 2025/04/15 - 16:10:51 | 20250415161051358319583nbgHTfs1 | 200 |    17.23235ms |             ::1 |     GET /
+[SYS] 2025/04/15 - 16:10:53 | batch update started 
+[SYS] 2025/04/15 - 16:10:53 | batch update finished 
+[SYS] 2025/04/15 - 16:10:58 | 任务进度轮询开始 
+[SYS] 2025/04/15 - 16:10:58 | batch update started 
+[SYS] 2025/04/15 - 16:10:58 | batch update finished 
+[SYS] 2025/04/15 - 16:10:58 | 任务进度轮询完成 
+[GIN] 2025/04/15 - 16:11:02 | 20250415161102498271188kEmROL99 | 200 |    4.081227ms |             ::1 |     GET /
+[SYS] 2025/04/15 - 16:11:03 | batch update started 
+[SYS] 2025/04/15 - 16:11:03 | batch update finished 
+[GIN] 2025/04/15 - 16:11:05 | 20250415161105451457448hs3zpSo3 | 200 |     1.60383ms |             ::1 |     GET /
+[SYS] 2025/04/15 - 16:11:08 | batch update started 
+[SYS] 2025/04/15 - 16:11:08 | batch update finished 
+[SYS] 2025/04/15 - 16:11:11 | 任务进度轮询开始 
+[SYS] 2025/04/15 - 16:11:11 | 任务进度轮询完成 
+[SYS] 2025/04/15 - 16:11:11 | batch update started 
+[SYS] 2025/04/15 - 16:11:11 | batch update finished 

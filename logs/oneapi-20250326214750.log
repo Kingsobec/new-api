@@ -1,0 +1,3 @@
+[SYS] 2025/03/26 - 21:47:50 | New API v0.6.0.3 started 
+[SYS] 2025/03/26 - 21:47:50 | using MySQL as database 
+[FATAL] 2025/03/26 - 21:47:50 | [dial tcp 172.18.0.2:3306: connect: connection refused] 

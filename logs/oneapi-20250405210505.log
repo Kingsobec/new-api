@@ -1,0 +1,1545 @@
+[SYS] 2025/04/05 - 21:05:05 | New API v0.0.0 started 
+[SYS] 2025/04/05 - 21:05:05 | using MySQL as database 
+[SYS] 2025/04/05 - 21:05:05 | database migration started 
+[SYS] 2025/04/05 - 21:05:06 | database migrated 
+[SYS] 2025/04/05 - 21:05:06 | using MySQL as database 
+[SYS] 2025/04/05 - 21:05:06 | database migration started 
+[SYS] 2025/04/05 - 21:05:06 | Redis is enabled 
+[SYS] 2025/04/05 - 21:05:06 | memory cache enabled 
+[SYS] 2025/04/05 - 21:05:06 | sync frequency: 60 seconds 
+[SYS] 2025/04/05 - 21:05:06 | channels synced from database 
+[SYS] 2025/04/05 - 21:05:06 | batch update enabled with interval 5s 
+[SYS] 2025/04/05 - 21:05:06 | pprof enabled 
+[SYS] 2025/04/05 - 21:05:06 | initializing token encoders 
+[SYS] 2025/04/05 - 21:05:06 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:05:06 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:05:07 | token encoders initialized 
+[SYS] 2025/04/05 - 21:05:07 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/04/05 - 21:05:11 | batch update started 
+[SYS] 2025/04/05 - 21:05:11 | batch update finished 
+[GIN] 2025/04/05 - 21:05:14 | 20250405210514424165524siZopsCv | 200 |    1.160388ms |             ::1 |     GET /topup
+[GIN] 2025/04/05 - 21:05:14 | 20250405210514591537915YPFKcx86 | 200 |   83.779403ms |             ::1 |     GET /assets/index-Dl1QuHvo.js
+[SYS] 2025/04/05 - 21:05:16 | batch update started 
+[SYS] 2025/04/05 - 21:05:16 | batch update finished 
+[GIN] 2025/04/05 - 21:05:16 | 20250405210516777917303tZ5ZOMNe | 200 |    1.100083ms |             ::1 |     GET /api/status
+[GIN] 2025/04/05 - 21:05:16 | 20250405210516775776444WTnxWucI | 200 |    5.647406ms |             ::1 |     GET /api/user/self
+[SYS] 2025/04/05 - 21:05:21 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:05:21 | batch update started 
+[SYS] 2025/04/05 - 21:05:21 | batch update finished 
+[SYS] 2025/04/05 - 21:05:21 | 任务进度轮询完成 
+[GIN] 2025/04/05 - 21:05:28 | 2025040521052892698916zgyeRxhu | 200 |    5.090023ms |             ::1 |    POST /api/user/amount
+[SYS] 2025/04/05 - 21:05:28 | batch update started 
+[SYS] 2025/04/05 - 21:05:28 | batch update finished 
+[GIN] 2025/04/05 - 21:05:28 | 20250405210528679717557IUbMzr1g | 200 |    4.172079ms |             ::1 |    POST /api/user/amount
+[GIN] 2025/04/05 - 21:05:31 | 20250405210531150066326iAseWge3 | 200 |    2.757445ms |             ::1 |    POST /api/user/pay
+[SYS] 2025/04/05 - 21:05:33 | batch update started 
+[SYS] 2025/04/05 - 21:05:33 | batch update finished 
+[SYS] 2025/04/05 - 21:05:38 | batch update started 
+[SYS] 2025/04/05 - 21:05:38 | batch update finished 
+[SYS] 2025/04/05 - 21:05:38 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:05:38 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:05:43 | batch update started 
+[SYS] 2025/04/05 - 21:05:43 | batch update finished 
+[SYS] 2025/04/05 - 21:05:48 | batch update started 
+[SYS] 2025/04/05 - 21:05:48 | batch update finished 
+[SYS] 2025/04/05 - 21:05:53 | batch update started 
+[SYS] 2025/04/05 - 21:05:53 | batch update finished 
+[SYS] 2025/04/05 - 21:05:53 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:05:53 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:05:58 | batch update started 
+[SYS] 2025/04/05 - 21:05:58 | batch update finished 
+[SYS] 2025/04/05 - 21:06:04 | batch update started 
+[SYS] 2025/04/05 - 21:06:04 | batch update finished 
+[SYS] 2025/04/05 - 21:06:09 | syncing channels from database 
+[SYS] 2025/04/05 - 21:06:09 | syncing options from database 
+[SYS] 2025/04/05 - 21:06:09 | channels synced from database 
+[SYS] 2025/04/05 - 21:06:09 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:06:09 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:06:09 | batch update started 
+[SYS] 2025/04/05 - 21:06:09 | batch update finished 
+[SYS] 2025/04/05 - 21:06:14 | batch update started 
+[SYS] 2025/04/05 - 21:06:14 | batch update finished 
+[SYS] 2025/04/05 - 21:06:19 | batch update started 
+[SYS] 2025/04/05 - 21:06:19 | batch update finished 
+[SYS] 2025/04/05 - 21:06:24 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:06:24 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:06:24 | batch update started 
+[SYS] 2025/04/05 - 21:06:24 | batch update finished 
+[SYS] 2025/04/05 - 21:06:29 | batch update started 
+[SYS] 2025/04/05 - 21:06:29 | batch update finished 
+[SYS] 2025/04/05 - 21:06:36 | batch update started 
+[SYS] 2025/04/05 - 21:06:36 | batch update finished 
+[SYS] 2025/04/05 - 21:06:41 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:06:41 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:06:41 | batch update started 
+[SYS] 2025/04/05 - 21:06:41 | batch update finished 
+[SYS] 2025/04/05 - 21:06:46 | batch update started 
+[SYS] 2025/04/05 - 21:06:46 | batch update finished 
+[SYS] 2025/04/05 - 21:06:51 | batch update started 
+[SYS] 2025/04/05 - 21:06:51 | batch update finished 
+[SYS] 2025/04/05 - 21:06:56 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:06:56 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:06:56 | batch update started 
+[SYS] 2025/04/05 - 21:06:56 | batch update finished 
+[SYS] 2025/04/05 - 21:07:01 | batch update started 
+[SYS] 2025/04/05 - 21:07:01 | batch update finished 
+[SYS] 2025/04/05 - 21:07:06 | batch update started 
+[SYS] 2025/04/05 - 21:07:06 | batch update finished 
+[SYS] 2025/04/05 - 21:07:13 | syncing options from database 
+[SYS] 2025/04/05 - 21:07:13 | syncing channels from database 
+[SYS] 2025/04/05 - 21:07:13 | channels synced from database 
+[SYS] 2025/04/05 - 21:07:13 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:07:13 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:07:13 | batch update started 
+[SYS] 2025/04/05 - 21:07:13 | batch update finished 
+[SYS] 2025/04/05 - 21:07:18 | batch update started 
+[SYS] 2025/04/05 - 21:07:18 | batch update finished 
+[SYS] 2025/04/05 - 21:07:23 | batch update started 
+[SYS] 2025/04/05 - 21:07:23 | batch update finished 
+[SYS] 2025/04/05 - 21:07:28 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:07:28 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:07:28 | batch update started 
+[SYS] 2025/04/05 - 21:07:28 | batch update finished 
+[SYS] 2025/04/05 - 21:07:33 | batch update started 
+[SYS] 2025/04/05 - 21:07:33 | batch update finished 
+[SYS] 2025/04/05 - 21:07:38 | batch update started 
+[SYS] 2025/04/05 - 21:07:38 | batch update finished 
+[SYS] 2025/04/05 - 21:07:45 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:07:45 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:07:45 | batch update started 
+[SYS] 2025/04/05 - 21:07:45 | batch update finished 
+[SYS] 2025/04/05 - 21:07:50 | batch update started 
+[SYS] 2025/04/05 - 21:07:50 | batch update finished 
+[SYS] 2025/04/05 - 21:07:55 | batch update started 
+[SYS] 2025/04/05 - 21:07:55 | batch update finished 
+[SYS] 2025/04/05 - 21:08:00 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:08:00 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:08:00 | batch update started 
+[SYS] 2025/04/05 - 21:08:00 | batch update finished 
+[SYS] 2025/04/05 - 21:08:05 | batch update started 
+[SYS] 2025/04/05 - 21:08:05 | batch update finished 
+[SYS] 2025/04/05 - 21:08:10 | batch update started 
+[SYS] 2025/04/05 - 21:08:10 | batch update finished 
+[SYS] 2025/04/05 - 21:08:15 | syncing options from database 
+[SYS] 2025/04/05 - 21:08:15 | syncing channels from database 
+[SYS] 2025/04/05 - 21:08:15 | channels synced from database 
+[SYS] 2025/04/05 - 21:08:15 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:08:15 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:08:15 | batch update started 
+[SYS] 2025/04/05 - 21:08:15 | batch update finished 
+[SYS] 2025/04/05 - 21:08:22 | batch update started 
+[SYS] 2025/04/05 - 21:08:22 | batch update finished 
+[SYS] 2025/04/05 - 21:08:27 | batch update started 
+[SYS] 2025/04/05 - 21:08:27 | batch update finished 
+[SYS] 2025/04/05 - 21:08:32 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:08:32 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:08:32 | batch update started 
+[SYS] 2025/04/05 - 21:08:32 | batch update finished 
+[SYS] 2025/04/05 - 21:08:37 | batch update started 
+[SYS] 2025/04/05 - 21:08:37 | batch update finished 
+[SYS] 2025/04/05 - 21:08:42 | batch update started 
+[SYS] 2025/04/05 - 21:08:42 | batch update finished 
+[SYS] 2025/04/05 - 21:08:47 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:08:47 | batch update started 
+[SYS] 2025/04/05 - 21:08:47 | batch update finished 
+[SYS] 2025/04/05 - 21:08:47 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:08:54 | batch update started 
+[SYS] 2025/04/05 - 21:08:54 | batch update finished 
+[SYS] 2025/04/05 - 21:08:59 | batch update started 
+[SYS] 2025/04/05 - 21:08:59 | batch update finished 
+[SYS] 2025/04/05 - 21:09:04 | batch update started 
+[SYS] 2025/04/05 - 21:09:04 | batch update finished 
+[SYS] 2025/04/05 - 21:09:04 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:09:04 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:09:09 | batch update started 
+[SYS] 2025/04/05 - 21:09:09 | batch update finished 
+[SYS] 2025/04/05 - 21:09:14 | batch update started 
+[SYS] 2025/04/05 - 21:09:14 | batch update finished 
+[SYS] 2025/04/05 - 21:09:19 | syncing options from database 
+[SYS] 2025/04/05 - 21:09:19 | syncing channels from database 
+[SYS] 2025/04/05 - 21:09:19 | channels synced from database 
+[SYS] 2025/04/05 - 21:09:19 | batch update started 
+[SYS] 2025/04/05 - 21:09:19 | batch update finished 
+[SYS] 2025/04/05 - 21:09:19 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:09:19 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:09:24 | batch update started 
+[SYS] 2025/04/05 - 21:09:24 | batch update finished 
+[SYS] 2025/04/05 - 21:09:31 | batch update started 
+[SYS] 2025/04/05 - 21:09:31 | batch update finished 
+[SYS] 2025/04/05 - 21:09:36 | batch update started 
+[SYS] 2025/04/05 - 21:09:36 | batch update finished 
+[SYS] 2025/04/05 - 21:09:36 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:09:36 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:09:41 | batch update started 
+[SYS] 2025/04/05 - 21:09:41 | batch update finished 
+[SYS] 2025/04/05 - 21:09:46 | batch update started 
+[SYS] 2025/04/05 - 21:09:46 | batch update finished 
+[SYS] 2025/04/05 - 21:09:51 | batch update started 
+[SYS] 2025/04/05 - 21:09:51 | batch update finished 
+[SYS] 2025/04/05 - 21:09:51 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:09:51 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:09:56 | batch update started 
+[SYS] 2025/04/05 - 21:09:56 | batch update finished 
+[SYS] 2025/04/05 - 21:10:03 | batch update started 
+[SYS] 2025/04/05 - 21:10:03 | batch update finished 
+[SYS] 2025/04/05 - 21:10:08 | batch update started 
+[SYS] 2025/04/05 - 21:10:08 | batch update finished 
+[SYS] 2025/04/05 - 21:10:08 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:10:08 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:10:13 | batch update started 
+[SYS] 2025/04/05 - 21:10:13 | batch update finished 
+[SYS] 2025/04/05 - 21:10:18 | batch update started 
+[SYS] 2025/04/05 - 21:10:18 | batch update finished 
+[SYS] 2025/04/05 - 21:10:23 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:10:23 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:10:23 | syncing options from database 
+[SYS] 2025/04/05 - 21:10:23 | syncing channels from database 
+[SYS] 2025/04/05 - 21:10:23 | channels synced from database 
+[SYS] 2025/04/05 - 21:10:23 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:10:23 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:10:23 | batch update started 
+[SYS] 2025/04/05 - 21:10:23 | batch update finished 
+[SYS] 2025/04/05 - 21:10:28 | batch update started 
+[SYS] 2025/04/05 - 21:10:28 | batch update finished 
+[SYS] 2025/04/05 - 21:10:33 | batch update started 
+[SYS] 2025/04/05 - 21:10:33 | batch update finished 
+[SYS] 2025/04/05 - 21:10:40 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:10:40 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:10:40 | batch update started 
+[SYS] 2025/04/05 - 21:10:40 | batch update finished 
+[SYS] 2025/04/05 - 21:10:45 | batch update started 
+[SYS] 2025/04/05 - 21:10:45 | batch update finished 
+[SYS] 2025/04/05 - 21:10:50 | batch update started 
+[SYS] 2025/04/05 - 21:10:50 | batch update finished 
+[SYS] 2025/04/05 - 21:10:55 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:10:55 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:10:55 | batch update started 
+[SYS] 2025/04/05 - 21:10:55 | batch update finished 
+[SYS] 2025/04/05 - 21:11:00 | batch update started 
+[SYS] 2025/04/05 - 21:11:00 | batch update finished 
+[SYS] 2025/04/05 - 21:11:05 | batch update started 
+[SYS] 2025/04/05 - 21:11:05 | batch update finished 
+[SYS] 2025/04/05 - 21:11:12 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:11:12 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:11:12 | batch update started 
+[SYS] 2025/04/05 - 21:11:12 | batch update finished 
+[SYS] 2025/04/05 - 21:11:17 | batch update started 
+[SYS] 2025/04/05 - 21:11:17 | batch update finished 
+[SYS] 2025/04/05 - 21:11:22 | batch update started 
+[SYS] 2025/04/05 - 21:11:22 | batch update finished 
+[SYS] 2025/04/05 - 21:11:27 | syncing options from database 
+[SYS] 2025/04/05 - 21:11:27 | syncing channels from database 
+[SYS] 2025/04/05 - 21:11:27 | channels synced from database 
+[SYS] 2025/04/05 - 21:11:27 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:11:27 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:11:27 | batch update started 
+[SYS] 2025/04/05 - 21:11:27 | batch update finished 
+[SYS] 2025/04/05 - 21:11:32 | batch update started 
+[SYS] 2025/04/05 - 21:11:32 | batch update finished 
+[SYS] 2025/04/05 - 21:11:37 | batch update started 
+[SYS] 2025/04/05 - 21:11:37 | batch update finished 
+[SYS] 2025/04/05 - 21:11:42 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:11:42 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:11:42 | batch update started 
+[SYS] 2025/04/05 - 21:11:42 | batch update finished 
+[SYS] 2025/04/05 - 21:11:49 | batch update started 
+[SYS] 2025/04/05 - 21:11:49 | batch update finished 
+[SYS] 2025/04/05 - 21:11:54 | batch update started 
+[SYS] 2025/04/05 - 21:11:54 | batch update finished 
+[SYS] 2025/04/05 - 21:11:59 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:11:59 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:11:59 | batch update started 
+[SYS] 2025/04/05 - 21:11:59 | batch update finished 
+[SYS] 2025/04/05 - 21:12:04 | batch update started 
+[SYS] 2025/04/05 - 21:12:04 | batch update finished 
+[SYS] 2025/04/05 - 21:12:09 | batch update started 
+[SYS] 2025/04/05 - 21:12:09 | batch update finished 
+[SYS] 2025/04/05 - 21:12:14 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:12:14 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:12:14 | batch update started 
+[SYS] 2025/04/05 - 21:12:14 | batch update finished 
+[SYS] 2025/04/05 - 21:12:21 | batch update started 
+[SYS] 2025/04/05 - 21:12:21 | batch update finished 
+[SYS] 2025/04/05 - 21:12:26 | batch update started 
+[SYS] 2025/04/05 - 21:12:26 | batch update finished 
+[SYS] 2025/04/05 - 21:12:30 | syncing options from database 
+[SYS] 2025/04/05 - 21:12:31 | syncing channels from database 
+[SYS] 2025/04/05 - 21:12:31 | channels synced from database 
+[SYS] 2025/04/05 - 21:12:31 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:12:31 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:12:31 | batch update started 
+[SYS] 2025/04/05 - 21:12:31 | batch update finished 
+[SYS] 2025/04/05 - 21:12:36 | batch update started 
+[SYS] 2025/04/05 - 21:12:36 | batch update finished 
+[SYS] 2025/04/05 - 21:12:41 | batch update started 
+[SYS] 2025/04/05 - 21:12:41 | batch update finished 
+[SYS] 2025/04/05 - 21:12:46 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:12:46 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:12:46 | batch update started 
+[SYS] 2025/04/05 - 21:12:46 | batch update finished 
+[SYS] 2025/04/05 - 21:12:51 | batch update started 
+[SYS] 2025/04/05 - 21:12:51 | batch update finished 
+[SYS] 2025/04/05 - 21:12:57 | batch update started 
+[SYS] 2025/04/05 - 21:12:57 | batch update finished 
+[SYS] 2025/04/05 - 21:13:02 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:13:02 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:13:02 | batch update started 
+[SYS] 2025/04/05 - 21:13:02 | batch update finished 
+[SYS] 2025/04/05 - 21:13:07 | batch update started 
+[SYS] 2025/04/05 - 21:13:07 | batch update finished 
+[SYS] 2025/04/05 - 21:13:12 | batch update started 
+[SYS] 2025/04/05 - 21:13:12 | batch update finished 
+[SYS] 2025/04/05 - 21:13:17 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:13:17 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:13:17 | batch update started 
+[SYS] 2025/04/05 - 21:13:17 | batch update finished 
+[SYS] 2025/04/05 - 21:13:22 | batch update started 
+[SYS] 2025/04/05 - 21:13:22 | batch update finished 
+[SYS] 2025/04/05 - 21:13:29 | batch update started 
+[SYS] 2025/04/05 - 21:13:29 | batch update finished 
+[SYS] 2025/04/05 - 21:13:34 | syncing options from database 
+[SYS] 2025/04/05 - 21:13:34 | syncing channels from database 
+[SYS] 2025/04/05 - 21:13:34 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:13:34 | batch update started 
+[SYS] 2025/04/05 - 21:13:34 | batch update finished 
+[SYS] 2025/04/05 - 21:13:34 | channels synced from database 
+[SYS] 2025/04/05 - 21:13:34 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:13:39 | batch update started 
+[SYS] 2025/04/05 - 21:13:39 | batch update finished 
+[SYS] 2025/04/05 - 21:13:44 | batch update started 
+[SYS] 2025/04/05 - 21:13:44 | batch update finished 
+[SYS] 2025/04/05 - 21:13:49 | batch update started 
+[SYS] 2025/04/05 - 21:13:49 | batch update finished 
+[SYS] 2025/04/05 - 21:13:49 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:13:49 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:13:54 | batch update started 
+[SYS] 2025/04/05 - 21:13:54 | batch update finished 
+[SYS] 2025/04/05 - 21:14:01 | batch update started 
+[SYS] 2025/04/05 - 21:14:01 | batch update finished 
+[SYS] 2025/04/05 - 21:14:06 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:14:06 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:14:06 | batch update started 
+[SYS] 2025/04/05 - 21:14:06 | batch update finished 
+[SYS] 2025/04/05 - 21:14:11 | batch update started 
+[SYS] 2025/04/05 - 21:14:11 | batch update finished 
+[SYS] 2025/04/05 - 21:14:16 | batch update started 
+[SYS] 2025/04/05 - 21:14:16 | batch update finished 
+[SYS] 2025/04/05 - 21:14:21 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:14:21 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:14:21 | batch update started 
+[SYS] 2025/04/05 - 21:14:21 | batch update finished 
+[SYS] 2025/04/05 - 21:14:26 | batch update started 
+[SYS] 2025/04/05 - 21:14:26 | batch update finished 
+[SYS] 2025/04/05 - 21:14:31 | batch update started 
+[SYS] 2025/04/05 - 21:14:31 | batch update finished 
+[SYS] 2025/04/05 - 21:14:38 | syncing options from database 
+[SYS] 2025/04/05 - 21:14:38 | syncing channels from database 
+[SYS] 2025/04/05 - 21:14:38 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:14:38 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:14:38 | channels synced from database 
+[SYS] 2025/04/05 - 21:14:38 | batch update started 
+[SYS] 2025/04/05 - 21:14:38 | batch update finished 
+[SYS] 2025/04/05 - 21:14:43 | batch update started 
+[SYS] 2025/04/05 - 21:14:43 | batch update finished 
+[SYS] 2025/04/05 - 21:14:48 | batch update started 
+[SYS] 2025/04/05 - 21:14:48 | batch update finished 
+[SYS] 2025/04/05 - 21:14:53 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:14:53 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:14:53 | batch update started 
+[SYS] 2025/04/05 - 21:14:53 | batch update finished 
+[SYS] 2025/04/05 - 21:14:58 | batch update started 
+[SYS] 2025/04/05 - 21:14:58 | batch update finished 
+[SYS] 2025/04/05 - 21:15:03 | batch update started 
+[SYS] 2025/04/05 - 21:15:03 | batch update finished 
+[SYS] 2025/04/05 - 21:15:08 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:15:08 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:15:08 | batch update started 
+[SYS] 2025/04/05 - 21:15:08 | batch update finished 
+[SYS] 2025/04/05 - 21:15:15 | batch update started 
+[SYS] 2025/04/05 - 21:15:15 | batch update finished 
+[SYS] 2025/04/05 - 21:15:20 | batch update started 
+[SYS] 2025/04/05 - 21:15:20 | batch update finished 
+[SYS] 2025/04/05 - 21:15:25 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:15:25 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:15:25 | batch update started 
+[SYS] 2025/04/05 - 21:15:25 | batch update finished 
+[SYS] 2025/04/05 - 21:15:30 | batch update started 
+[SYS] 2025/04/05 - 21:15:30 | batch update finished 
+[SYS] 2025/04/05 - 21:15:35 | batch update started 
+[SYS] 2025/04/05 - 21:15:35 | batch update finished 
+[SYS] 2025/04/05 - 21:15:40 | testing all channels 
+[SYS] 2025/04/05 - 21:15:40 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:15:40 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:15:40 | channel test finished 
+[SYS] 2025/04/05 - 21:15:40 | syncing options from database 
+[SYS] 2025/04/05 - 21:15:40 | syncing channels from database 
+[SYS] 2025/04/05 - 21:15:40 | channels synced from database 
+[SYS] 2025/04/05 - 21:15:40 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:15:40 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:15:40 | batch update started 
+[SYS] 2025/04/05 - 21:15:40 | batch update finished 
+[SYS] 2025/04/05 - 21:15:47 | batch update started 
+[SYS] 2025/04/05 - 21:15:47 | batch update finished 
+[SYS] 2025/04/05 - 21:15:52 | batch update started 
+[SYS] 2025/04/05 - 21:15:52 | batch update finished 
+[SYS] 2025/04/05 - 21:15:57 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:15:57 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:15:57 | batch update started 
+[SYS] 2025/04/05 - 21:15:57 | batch update finished 
+[SYS] 2025/04/05 - 21:16:02 | batch update started 
+[SYS] 2025/04/05 - 21:16:02 | batch update finished 
+[SYS] 2025/04/05 - 21:16:07 | batch update started 
+[SYS] 2025/04/05 - 21:16:07 | batch update finished 
+[SYS] 2025/04/05 - 21:16:12 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:16:12 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:16:12 | batch update started 
+[SYS] 2025/04/05 - 21:16:12 | batch update finished 
+[SYS] 2025/04/05 - 21:16:19 | batch update started 
+[SYS] 2025/04/05 - 21:16:19 | batch update finished 
+[SYS] 2025/04/05 - 21:16:24 | batch update started 
+[SYS] 2025/04/05 - 21:16:24 | batch update finished 
+[SYS] 2025/04/05 - 21:16:29 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:16:29 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:16:29 | batch update started 
+[SYS] 2025/04/05 - 21:16:29 | batch update finished 
+[SYS] 2025/04/05 - 21:16:34 | batch update started 
+[SYS] 2025/04/05 - 21:16:34 | batch update finished 
+[SYS] 2025/04/05 - 21:16:39 | batch update started 
+[SYS] 2025/04/05 - 21:16:39 | batch update finished 
+[SYS] 2025/04/05 - 21:16:43 | syncing options from database 
+[SYS] 2025/04/05 - 21:16:44 | syncing channels from database 
+[SYS] 2025/04/05 - 21:16:44 | channels synced from database 
+[SYS] 2025/04/05 - 21:16:44 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:16:44 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:16:44 | batch update started 
+[SYS] 2025/04/05 - 21:16:44 | batch update finished 
+[SYS] 2025/04/05 - 21:16:49 | batch update started 
+[SYS] 2025/04/05 - 21:16:49 | batch update finished 
+[SYS] 2025/04/05 - 21:16:56 | batch update started 
+[SYS] 2025/04/05 - 21:16:56 | batch update finished 
+[SYS] 2025/04/05 - 21:17:00 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:17:00 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:17:01 | batch update started 
+[SYS] 2025/04/05 - 21:17:01 | batch update finished 
+[SYS] 2025/04/05 - 21:17:06 | batch update started 
+[SYS] 2025/04/05 - 21:17:06 | batch update finished 
+[SYS] 2025/04/05 - 21:17:11 | batch update started 
+[SYS] 2025/04/05 - 21:17:11 | batch update finished 
+[SYS] 2025/04/05 - 21:17:15 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:17:15 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:17:16 | batch update started 
+[SYS] 2025/04/05 - 21:17:16 | batch update finished 
+[SYS] 2025/04/05 - 21:17:21 | batch update started 
+[SYS] 2025/04/05 - 21:17:21 | batch update finished 
+[SYS] 2025/04/05 - 21:17:27 | batch update started 
+[SYS] 2025/04/05 - 21:17:27 | batch update finished 
+[SYS] 2025/04/05 - 21:17:32 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:17:32 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:17:32 | batch update started 
+[SYS] 2025/04/05 - 21:17:32 | batch update finished 
+[SYS] 2025/04/05 - 21:17:37 | batch update started 
+[SYS] 2025/04/05 - 21:17:37 | batch update finished 
+[SYS] 2025/04/05 - 21:17:42 | batch update started 
+[SYS] 2025/04/05 - 21:17:42 | batch update finished 
+[SYS] 2025/04/05 - 21:17:47 | syncing options from database 
+[SYS] 2025/04/05 - 21:17:47 | syncing channels from database 
+[SYS] 2025/04/05 - 21:17:47 | channels synced from database 
+[SYS] 2025/04/05 - 21:17:47 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:17:47 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:17:47 | batch update started 
+[SYS] 2025/04/05 - 21:17:47 | batch update finished 
+[SYS] 2025/04/05 - 21:17:52 | batch update started 
+[SYS] 2025/04/05 - 21:17:52 | batch update finished 
+[SYS] 2025/04/05 - 21:17:57 | batch update started 
+[SYS] 2025/04/05 - 21:17:57 | batch update finished 
+[SYS] 2025/04/05 - 21:18:04 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:18:04 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:18:04 | batch update started 
+[SYS] 2025/04/05 - 21:18:04 | batch update finished 
+[SYS] 2025/04/05 - 21:18:09 | batch update started 
+[SYS] 2025/04/05 - 21:18:09 | batch update finished 
+[SYS] 2025/04/05 - 21:18:14 | batch update started 
+[SYS] 2025/04/05 - 21:18:14 | batch update finished 
+[SYS] 2025/04/05 - 21:18:19 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:18:19 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:18:19 | batch update started 
+[SYS] 2025/04/05 - 21:18:19 | batch update finished 
+[SYS] 2025/04/05 - 21:18:24 | batch update started 
+[SYS] 2025/04/05 - 21:18:24 | batch update finished 
+[SYS] 2025/04/05 - 21:18:29 | batch update started 
+[SYS] 2025/04/05 - 21:18:29 | batch update finished 
+[SYS] 2025/04/05 - 21:18:36 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:18:36 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:18:36 | batch update started 
+[SYS] 2025/04/05 - 21:18:36 | batch update finished 
+[SYS] 2025/04/05 - 21:18:41 | batch update started 
+[SYS] 2025/04/05 - 21:18:41 | batch update finished 
+[SYS] 2025/04/05 - 21:18:46 | batch update started 
+[SYS] 2025/04/05 - 21:18:46 | batch update finished 
+[SYS] 2025/04/05 - 21:18:51 | syncing options from database 
+[SYS] 2025/04/05 - 21:18:51 | syncing channels from database 
+[SYS] 2025/04/05 - 21:18:51 | channels synced from database 
+[SYS] 2025/04/05 - 21:18:51 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:18:51 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:18:51 | batch update started 
+[SYS] 2025/04/05 - 21:18:51 | batch update finished 
+[SYS] 2025/04/05 - 21:18:56 | batch update started 
+[SYS] 2025/04/05 - 21:18:56 | batch update finished 
+[SYS] 2025/04/05 - 21:19:01 | batch update started 
+[SYS] 2025/04/05 - 21:19:01 | batch update finished 
+[SYS] 2025/04/05 - 21:19:06 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:19:06 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:19:06 | batch update started 
+[SYS] 2025/04/05 - 21:19:06 | batch update finished 
+[SYS] 2025/04/05 - 21:19:13 | batch update started 
+[SYS] 2025/04/05 - 21:19:13 | batch update finished 
+[SYS] 2025/04/05 - 21:19:18 | batch update started 
+[SYS] 2025/04/05 - 21:19:18 | batch update finished 
+[SYS] 2025/04/05 - 21:19:23 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:19:23 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:19:23 | batch update started 
+[SYS] 2025/04/05 - 21:19:23 | batch update finished 
+[SYS] 2025/04/05 - 21:19:28 | batch update started 
+[SYS] 2025/04/05 - 21:19:28 | batch update finished 
+[SYS] 2025/04/05 - 21:19:33 | batch update started 
+[SYS] 2025/04/05 - 21:19:33 | batch update finished 
+[SYS] 2025/04/05 - 21:19:38 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:19:38 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:19:38 | batch update started 
+[SYS] 2025/04/05 - 21:19:38 | batch update finished 
+[SYS] 2025/04/05 - 21:19:45 | batch update started 
+[SYS] 2025/04/05 - 21:19:45 | batch update finished 
+[SYS] 2025/04/05 - 21:19:50 | batch update started 
+[SYS] 2025/04/05 - 21:19:50 | batch update finished 
+[SYS] 2025/04/05 - 21:19:55 | syncing options from database 
+[SYS] 2025/04/05 - 21:19:55 | syncing channels from database 
+[SYS] 2025/04/05 - 21:19:55 | channels synced from database 
+[SYS] 2025/04/05 - 21:19:55 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:19:55 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:19:55 | batch update started 
+[SYS] 2025/04/05 - 21:19:55 | batch update finished 
+[SYS] 2025/04/05 - 21:20:00 | batch update started 
+[SYS] 2025/04/05 - 21:20:00 | batch update finished 
+[SYS] 2025/04/05 - 21:20:05 | batch update started 
+[SYS] 2025/04/05 - 21:20:05 | batch update finished 
+[SYS] 2025/04/05 - 21:20:10 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:20:10 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:20:10 | batch update started 
+[SYS] 2025/04/05 - 21:20:10 | batch update finished 
+[SYS] 2025/04/05 - 21:20:15 | batch update started 
+[SYS] 2025/04/05 - 21:20:15 | batch update finished 
+[SYS] 2025/04/05 - 21:20:22 | batch update started 
+[SYS] 2025/04/05 - 21:20:22 | batch update finished 
+[SYS] 2025/04/05 - 21:20:27 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:20:27 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:20:27 | batch update started 
+[SYS] 2025/04/05 - 21:20:27 | batch update finished 
+[SYS] 2025/04/05 - 21:20:32 | batch update started 
+[SYS] 2025/04/05 - 21:20:32 | batch update finished 
+[SYS] 2025/04/05 - 21:20:37 | batch update started 
+[SYS] 2025/04/05 - 21:20:37 | batch update finished 
+[SYS] 2025/04/05 - 21:20:42 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:20:42 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:20:42 | batch update started 
+[SYS] 2025/04/05 - 21:20:42 | batch update finished 
+[SYS] 2025/04/05 - 21:20:47 | batch update started 
+[SYS] 2025/04/05 - 21:20:47 | batch update finished 
+[SYS] 2025/04/05 - 21:20:54 | batch update started 
+[SYS] 2025/04/05 - 21:20:54 | batch update finished 
+[SYS] 2025/04/05 - 21:20:58 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:20:58 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:20:58 | syncing options from database 
+[SYS] 2025/04/05 - 21:20:58 | syncing channels from database 
+[SYS] 2025/04/05 - 21:20:58 | channels synced from database 
+[SYS] 2025/04/05 - 21:20:59 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:20:59 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:20:59 | batch update started 
+[SYS] 2025/04/05 - 21:20:59 | batch update finished 
+[SYS] 2025/04/05 - 21:21:04 | batch update started 
+[SYS] 2025/04/05 - 21:21:04 | batch update finished 
+[SYS] 2025/04/05 - 21:21:09 | batch update started 
+[SYS] 2025/04/05 - 21:21:09 | batch update finished 
+[SYS] 2025/04/05 - 21:21:14 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:21:14 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:21:14 | batch update started 
+[SYS] 2025/04/05 - 21:21:14 | batch update finished 
+[SYS] 2025/04/05 - 21:21:19 | batch update started 
+[SYS] 2025/04/05 - 21:21:19 | batch update finished 
+[SYS] 2025/04/05 - 21:21:24 | batch update started 
+[SYS] 2025/04/05 - 21:21:24 | batch update finished 
+[SYS] 2025/04/05 - 21:21:30 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:21:30 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:21:30 | batch update started 
+[SYS] 2025/04/05 - 21:21:30 | batch update finished 
+[SYS] 2025/04/05 - 21:21:35 | batch update started 
+[SYS] 2025/04/05 - 21:21:35 | batch update finished 
+[SYS] 2025/04/05 - 21:21:40 | batch update started 
+[SYS] 2025/04/05 - 21:21:40 | batch update finished 
+[SYS] 2025/04/05 - 21:21:45 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:21:45 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:21:45 | batch update started 
+[SYS] 2025/04/05 - 21:21:45 | batch update finished 
+[SYS] 2025/04/05 - 21:21:50 | batch update started 
+[SYS] 2025/04/05 - 21:21:50 | batch update finished 
+[SYS] 2025/04/05 - 21:21:55 | batch update started 
+[SYS] 2025/04/05 - 21:21:55 | batch update finished 
+[SYS] 2025/04/05 - 21:22:02 | syncing options from database 
+[SYS] 2025/04/05 - 21:22:02 | syncing channels from database 
+[SYS] 2025/04/05 - 21:22:02 | channels synced from database 
+[SYS] 2025/04/05 - 21:22:02 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:22:02 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:22:02 | batch update started 
+[SYS] 2025/04/05 - 21:22:02 | batch update finished 
+[SYS] 2025/04/05 - 21:22:07 | batch update started 
+[SYS] 2025/04/05 - 21:22:07 | batch update finished 
+[SYS] 2025/04/05 - 21:22:12 | batch update started 
+[SYS] 2025/04/05 - 21:22:12 | batch update finished 
+[SYS] 2025/04/05 - 21:22:17 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:22:17 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:22:17 | batch update started 
+[SYS] 2025/04/05 - 21:22:17 | batch update finished 
+[SYS] 2025/04/05 - 21:22:22 | batch update started 
+[SYS] 2025/04/05 - 21:22:22 | batch update finished 
+[SYS] 2025/04/05 - 21:22:27 | batch update started 
+[SYS] 2025/04/05 - 21:22:27 | batch update finished 
+[SYS] 2025/04/05 - 21:22:32 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:22:32 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:22:32 | batch update started 
+[SYS] 2025/04/05 - 21:22:32 | batch update finished 
+[SYS] 2025/04/05 - 21:22:39 | batch update started 
+[SYS] 2025/04/05 - 21:22:39 | batch update finished 
+[SYS] 2025/04/05 - 21:22:44 | batch update started 
+[SYS] 2025/04/05 - 21:22:44 | batch update finished 
+[SYS] 2025/04/05 - 21:22:49 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:22:49 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:22:49 | batch update started 
+[SYS] 2025/04/05 - 21:22:49 | batch update finished 
+[SYS] 2025/04/05 - 21:22:54 | batch update started 
+[SYS] 2025/04/05 - 21:22:54 | batch update finished 
+[SYS] 2025/04/05 - 21:22:59 | batch update started 
+[SYS] 2025/04/05 - 21:22:59 | batch update finished 
+[SYS] 2025/04/05 - 21:23:04 | syncing options from database 
+[SYS] 2025/04/05 - 21:23:04 | syncing channels from database 
+[SYS] 2025/04/05 - 21:23:04 | channels synced from database 
+[SYS] 2025/04/05 - 21:23:04 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:23:04 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:23:04 | batch update started 
+[SYS] 2025/04/05 - 21:23:04 | batch update finished 
+[SYS] 2025/04/05 - 21:23:09 | batch update started 
+[SYS] 2025/04/05 - 21:23:09 | batch update finished 
+[SYS] 2025/04/05 - 21:23:17 | batch update started 
+[SYS] 2025/04/05 - 21:23:17 | batch update finished 
+[SYS] 2025/04/05 - 21:23:21 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:23:21 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:23:22 | batch update started 
+[SYS] 2025/04/05 - 21:23:22 | batch update finished 
+[SYS] 2025/04/05 - 21:23:27 | batch update started 
+[SYS] 2025/04/05 - 21:23:27 | batch update finished 
+[SYS] 2025/04/05 - 21:23:32 | batch update started 
+[SYS] 2025/04/05 - 21:23:32 | batch update finished 
+[SYS] 2025/04/05 - 21:23:36 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:23:36 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:23:37 | batch update started 
+[SYS] 2025/04/05 - 21:23:37 | batch update finished 
+[SYS] 2025/04/05 - 21:23:42 | batch update started 
+[SYS] 2025/04/05 - 21:23:42 | batch update finished 
+[SYS] 2025/04/05 - 21:23:47 | batch update started 
+[SYS] 2025/04/05 - 21:23:47 | batch update finished 
+[SYS] 2025/04/05 - 21:23:53 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:23:53 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:23:53 | batch update started 
+[SYS] 2025/04/05 - 21:23:53 | batch update finished 
+[SYS] 2025/04/05 - 21:23:58 | batch update started 
+[SYS] 2025/04/05 - 21:23:58 | batch update finished 
+[SYS] 2025/04/05 - 21:24:03 | batch update started 
+[SYS] 2025/04/05 - 21:24:03 | batch update finished 
+[SYS] 2025/04/05 - 21:24:08 | syncing options from database 
+[SYS] 2025/04/05 - 21:24:08 | syncing channels from database 
+[SYS] 2025/04/05 - 21:24:08 | channels synced from database 
+[SYS] 2025/04/05 - 21:24:08 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:24:08 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:24:08 | batch update started 
+[SYS] 2025/04/05 - 21:24:08 | batch update finished 
+[SYS] 2025/04/05 - 21:24:13 | batch update started 
+[SYS] 2025/04/05 - 21:24:13 | batch update finished 
+[SYS] 2025/04/05 - 21:24:18 | batch update started 
+[SYS] 2025/04/05 - 21:24:18 | batch update finished 
+[SYS] 2025/04/05 - 21:24:25 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:24:25 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:24:25 | batch update started 
+[SYS] 2025/04/05 - 21:24:25 | batch update finished 
+[SYS] 2025/04/05 - 21:24:30 | batch update started 
+[SYS] 2025/04/05 - 21:24:30 | batch update finished 
+[SYS] 2025/04/05 - 21:24:35 | batch update started 
+[SYS] 2025/04/05 - 21:24:35 | batch update finished 
+[SYS] 2025/04/05 - 21:24:40 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:24:40 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:24:40 | batch update started 
+[SYS] 2025/04/05 - 21:24:40 | batch update finished 
+[SYS] 2025/04/05 - 21:24:45 | batch update started 
+[SYS] 2025/04/05 - 21:24:45 | batch update finished 
+[SYS] 2025/04/05 - 21:24:50 | batch update started 
+[SYS] 2025/04/05 - 21:24:50 | batch update finished 
+[SYS] 2025/04/05 - 21:24:55 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:24:55 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:24:55 | batch update started 
+[SYS] 2025/04/05 - 21:24:55 | batch update finished 
+[SYS] 2025/04/05 - 21:25:02 | batch update started 
+[SYS] 2025/04/05 - 21:25:02 | batch update finished 
+[SYS] 2025/04/05 - 21:25:07 | batch update started 
+[SYS] 2025/04/05 - 21:25:07 | batch update finished 
+[SYS] 2025/04/05 - 21:25:12 | syncing options from database 
+[SYS] 2025/04/05 - 21:25:12 | syncing channels from database 
+[SYS] 2025/04/05 - 21:25:12 | channels synced from database 
+[SYS] 2025/04/05 - 21:25:12 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:25:12 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:25:12 | batch update started 
+[SYS] 2025/04/05 - 21:25:12 | batch update finished 
+[SYS] 2025/04/05 - 21:25:17 | batch update started 
+[SYS] 2025/04/05 - 21:25:17 | batch update finished 
+[SYS] 2025/04/05 - 21:25:22 | batch update started 
+[SYS] 2025/04/05 - 21:25:22 | batch update finished 
+[SYS] 2025/04/05 - 21:25:27 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:25:27 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:25:27 | batch update started 
+[SYS] 2025/04/05 - 21:25:27 | batch update finished 
+[SYS] 2025/04/05 - 21:25:34 | batch update started 
+[SYS] 2025/04/05 - 21:25:34 | batch update finished 
+[SYS] 2025/04/05 - 21:25:39 | batch update started 
+[SYS] 2025/04/05 - 21:25:39 | batch update finished 
+[SYS] 2025/04/05 - 21:25:44 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:25:44 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:25:44 | batch update started 
+[SYS] 2025/04/05 - 21:25:44 | batch update finished 
+[SYS] 2025/04/05 - 21:25:49 | batch update started 
+[SYS] 2025/04/05 - 21:25:49 | batch update finished 
+[SYS] 2025/04/05 - 21:25:54 | batch update started 
+[SYS] 2025/04/05 - 21:25:54 | batch update finished 
+[SYS] 2025/04/05 - 21:25:59 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:25:59 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:25:59 | batch update started 
+[SYS] 2025/04/05 - 21:25:59 | batch update finished 
+[SYS] 2025/04/05 - 21:26:04 | batch update started 
+[SYS] 2025/04/05 - 21:26:04 | batch update finished 
+[SYS] 2025/04/05 - 21:26:11 | batch update started 
+[SYS] 2025/04/05 - 21:26:11 | batch update finished 
+[SYS] 2025/04/05 - 21:26:16 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:26:16 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:26:16 | testing all channels 
+[SYS] 2025/04/05 - 21:26:16 | channel test finished 
+[SYS] 2025/04/05 - 21:26:16 | syncing options from database 
+[SYS] 2025/04/05 - 21:26:16 | syncing channels from database 
+[SYS] 2025/04/05 - 21:26:16 | channels synced from database 
+[SYS] 2025/04/05 - 21:26:16 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:26:16 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:26:16 | batch update started 
+[SYS] 2025/04/05 - 21:26:16 | batch update finished 
+[SYS] 2025/04/05 - 21:26:21 | batch update started 
+[SYS] 2025/04/05 - 21:26:21 | batch update finished 
+[SYS] 2025/04/05 - 21:26:26 | batch update started 
+[SYS] 2025/04/05 - 21:26:26 | batch update finished 
+[SYS] 2025/04/05 - 21:26:31 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:26:31 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:26:31 | batch update started 
+[SYS] 2025/04/05 - 21:26:31 | batch update finished 
+[SYS] 2025/04/05 - 21:26:36 | batch update started 
+[SYS] 2025/04/05 - 21:26:36 | batch update finished 
+[SYS] 2025/04/05 - 21:26:43 | batch update started 
+[SYS] 2025/04/05 - 21:26:43 | batch update finished 
+[SYS] 2025/04/05 - 21:26:48 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:26:48 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:26:48 | batch update started 
+[SYS] 2025/04/05 - 21:26:48 | batch update finished 
+[SYS] 2025/04/05 - 21:26:53 | batch update started 
+[SYS] 2025/04/05 - 21:26:53 | batch update finished 
+[SYS] 2025/04/05 - 21:26:58 | batch update started 
+[SYS] 2025/04/05 - 21:26:58 | batch update finished 
+[SYS] 2025/04/05 - 21:27:03 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:27:03 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:27:03 | batch update started 
+[SYS] 2025/04/05 - 21:27:03 | batch update finished 
+[SYS] 2025/04/05 - 21:27:08 | batch update started 
+[SYS] 2025/04/05 - 21:27:08 | batch update finished 
+[SYS] 2025/04/05 - 21:27:13 | batch update started 
+[SYS] 2025/04/05 - 21:27:13 | batch update finished 
+[SYS] 2025/04/05 - 21:27:20 | syncing options from database 
+[SYS] 2025/04/05 - 21:27:20 | syncing channels from database 
+[SYS] 2025/04/05 - 21:27:20 | channels synced from database 
+[SYS] 2025/04/05 - 21:27:20 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:27:20 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:27:20 | batch update started 
+[SYS] 2025/04/05 - 21:27:20 | batch update finished 
+[SYS] 2025/04/05 - 21:27:25 | batch update started 
+[SYS] 2025/04/05 - 21:27:25 | batch update finished 
+[SYS] 2025/04/05 - 21:27:30 | batch update started 
+[SYS] 2025/04/05 - 21:27:30 | batch update finished 
+[SYS] 2025/04/05 - 21:27:35 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:27:35 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:27:35 | batch update started 
+[SYS] 2025/04/05 - 21:27:35 | batch update finished 
+[SYS] 2025/04/05 - 21:27:40 | batch update started 
+[SYS] 2025/04/05 - 21:27:40 | batch update finished 
+[SYS] 2025/04/05 - 21:27:45 | batch update started 
+[SYS] 2025/04/05 - 21:27:45 | batch update finished 
+[SYS] 2025/04/05 - 21:27:52 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:27:52 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:27:53 | batch update started 
+[SYS] 2025/04/05 - 21:27:53 | batch update finished 
+[SYS] 2025/04/05 - 21:27:58 | batch update started 
+[SYS] 2025/04/05 - 21:27:58 | batch update finished 
+[SYS] 2025/04/05 - 21:28:03 | batch update started 
+[SYS] 2025/04/05 - 21:28:03 | batch update finished 
+[SYS] 2025/04/05 - 21:28:07 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:28:07 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:28:08 | batch update started 
+[SYS] 2025/04/05 - 21:28:08 | batch update finished 
+[SYS] 2025/04/05 - 21:28:13 | batch update started 
+[SYS] 2025/04/05 - 21:28:13 | batch update finished 
+[SYS] 2025/04/05 - 21:28:18 | batch update started 
+[SYS] 2025/04/05 - 21:28:18 | batch update finished 
+[SYS] 2025/04/05 - 21:28:24 | syncing options from database 
+[SYS] 2025/04/05 - 21:28:24 | syncing channels from database 
+[SYS] 2025/04/05 - 21:28:24 | channels synced from database 
+[SYS] 2025/04/05 - 21:28:24 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:28:24 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:28:24 | batch update started 
+[SYS] 2025/04/05 - 21:28:24 | batch update finished 
+[SYS] 2025/04/05 - 21:28:29 | batch update started 
+[SYS] 2025/04/05 - 21:28:29 | batch update finished 
+[SYS] 2025/04/05 - 21:28:34 | batch update started 
+[SYS] 2025/04/05 - 21:28:34 | batch update finished 
+[SYS] 2025/04/05 - 21:28:39 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:28:39 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:28:39 | batch update started 
+[SYS] 2025/04/05 - 21:28:39 | batch update finished 
+[SYS] 2025/04/05 - 21:28:44 | batch update started 
+[SYS] 2025/04/05 - 21:28:44 | batch update finished 
+[SYS] 2025/04/05 - 21:28:49 | batch update started 
+[SYS] 2025/04/05 - 21:28:49 | batch update finished 
+[SYS] 2025/04/05 - 21:28:54 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:28:54 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:28:55 | batch update started 
+[SYS] 2025/04/05 - 21:28:55 | batch update finished 
+[SYS] 2025/04/05 - 21:29:01 | batch update started 
+[SYS] 2025/04/05 - 21:29:01 | batch update finished 
+[SYS] 2025/04/05 - 21:29:06 | batch update started 
+[SYS] 2025/04/05 - 21:29:06 | batch update finished 
+[SYS] 2025/04/05 - 21:29:11 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:29:11 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:29:11 | batch update started 
+[SYS] 2025/04/05 - 21:29:11 | batch update finished 
+[SYS] 2025/04/05 - 21:29:16 | batch update started 
+[SYS] 2025/04/05 - 21:29:16 | batch update finished 
+[SYS] 2025/04/05 - 21:29:21 | batch update started 
+[SYS] 2025/04/05 - 21:29:21 | batch update finished 
+[SYS] 2025/04/05 - 21:29:26 | syncing options from database 
+[SYS] 2025/04/05 - 21:29:26 | syncing channels from database 
+[SYS] 2025/04/05 - 21:29:26 | channels synced from database 
+[SYS] 2025/04/05 - 21:29:26 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:29:26 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:29:26 | batch update started 
+[SYS] 2025/04/05 - 21:29:26 | batch update finished 
+[SYS] 2025/04/05 - 21:29:33 | batch update started 
+[SYS] 2025/04/05 - 21:29:33 | batch update finished 
+[SYS] 2025/04/05 - 21:29:38 | batch update started 
+[SYS] 2025/04/05 - 21:29:38 | batch update finished 
+[SYS] 2025/04/05 - 21:29:43 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:29:43 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:29:43 | batch update started 
+[SYS] 2025/04/05 - 21:29:43 | batch update finished 
+[SYS] 2025/04/05 - 21:29:48 | batch update started 
+[SYS] 2025/04/05 - 21:29:48 | batch update finished 
+[SYS] 2025/04/05 - 21:29:53 | batch update started 
+[SYS] 2025/04/05 - 21:29:53 | batch update finished 
+[SYS] 2025/04/05 - 21:29:58 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:29:58 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:29:58 | batch update started 
+[SYS] 2025/04/05 - 21:29:58 | batch update finished 
+[SYS] 2025/04/05 - 21:30:03 | batch update started 
+[SYS] 2025/04/05 - 21:30:03 | batch update finished 
+[SYS] 2025/04/05 - 21:30:10 | batch update started 
+[SYS] 2025/04/05 - 21:30:10 | batch update finished 
+[SYS] 2025/04/05 - 21:30:15 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:30:15 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:30:15 | batch update started 
+[SYS] 2025/04/05 - 21:30:15 | batch update finished 
+[SYS] 2025/04/05 - 21:30:20 | batch update started 
+[SYS] 2025/04/05 - 21:30:20 | batch update finished 
+[SYS] 2025/04/05 - 21:30:25 | batch update started 
+[SYS] 2025/04/05 - 21:30:25 | batch update finished 
+[SYS] 2025/04/05 - 21:30:30 | syncing options from database 
+[SYS] 2025/04/05 - 21:30:30 | syncing channels from database 
+[SYS] 2025/04/05 - 21:30:30 | channels synced from database 
+[SYS] 2025/04/05 - 21:30:30 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:30:30 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:30:30 | batch update started 
+[SYS] 2025/04/05 - 21:30:30 | batch update finished 
+[SYS] 2025/04/05 - 21:30:35 | batch update started 
+[SYS] 2025/04/05 - 21:30:35 | batch update finished 
+[SYS] 2025/04/05 - 21:30:42 | batch update started 
+[SYS] 2025/04/05 - 21:30:42 | batch update finished 
+[SYS] 2025/04/05 - 21:30:47 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:30:47 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:30:47 | batch update started 
+[SYS] 2025/04/05 - 21:30:47 | batch update finished 
+[SYS] 2025/04/05 - 21:30:52 | batch update started 
+[SYS] 2025/04/05 - 21:30:52 | batch update finished 
+[SYS] 2025/04/05 - 21:30:57 | batch update started 
+[SYS] 2025/04/05 - 21:30:57 | batch update finished 
+[SYS] 2025/04/05 - 21:31:02 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:31:02 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:31:02 | batch update started 
+[SYS] 2025/04/05 - 21:31:02 | batch update finished 
+[SYS] 2025/04/05 - 21:31:07 | batch update started 
+[SYS] 2025/04/05 - 21:31:07 | batch update finished 
+[SYS] 2025/04/05 - 21:31:12 | batch update started 
+[SYS] 2025/04/05 - 21:31:12 | batch update finished 
+[SYS] 2025/04/05 - 21:31:19 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:31:19 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:31:19 | batch update started 
+[SYS] 2025/04/05 - 21:31:19 | batch update finished 
+[SYS] 2025/04/05 - 21:31:24 | batch update started 
+[SYS] 2025/04/05 - 21:31:24 | batch update finished 
+[SYS] 2025/04/05 - 21:31:29 | batch update started 
+[SYS] 2025/04/05 - 21:31:29 | batch update finished 
+[SYS] 2025/04/05 - 21:31:34 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:31:34 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:31:34 | syncing options from database 
+[SYS] 2025/04/05 - 21:31:34 | syncing channels from database 
+[SYS] 2025/04/05 - 21:31:34 | channels synced from database 
+[SYS] 2025/04/05 - 21:31:34 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:31:34 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:31:34 | batch update started 
+[SYS] 2025/04/05 - 21:31:34 | batch update finished 
+[SYS] 2025/04/05 - 21:31:39 | batch update started 
+[SYS] 2025/04/05 - 21:31:39 | batch update finished 
+[SYS] 2025/04/05 - 21:31:44 | batch update started 
+[SYS] 2025/04/05 - 21:31:44 | batch update finished 
+[SYS] 2025/04/05 - 21:31:51 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:31:51 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:31:51 | batch update started 
+[SYS] 2025/04/05 - 21:31:51 | batch update finished 
+[SYS] 2025/04/05 - 21:31:56 | batch update started 
+[SYS] 2025/04/05 - 21:31:56 | batch update finished 
+[SYS] 2025/04/05 - 21:32:01 | batch update started 
+[SYS] 2025/04/05 - 21:32:01 | batch update finished 
+[SYS] 2025/04/05 - 21:32:06 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:32:06 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:32:06 | batch update started 
+[SYS] 2025/04/05 - 21:32:06 | batch update finished 
+[SYS] 2025/04/05 - 21:32:11 | batch update started 
+[SYS] 2025/04/05 - 21:32:11 | batch update finished 
+[SYS] 2025/04/05 - 21:32:16 | batch update started 
+[SYS] 2025/04/05 - 21:32:16 | batch update finished 
+[SYS] 2025/04/05 - 21:32:21 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:32:21 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:32:21 | batch update started 
+[SYS] 2025/04/05 - 21:32:21 | batch update finished 
+[SYS] 2025/04/05 - 21:32:28 | batch update started 
+[SYS] 2025/04/05 - 21:32:28 | batch update finished 
+[SYS] 2025/04/05 - 21:32:33 | batch update started 
+[SYS] 2025/04/05 - 21:32:33 | batch update finished 
+[SYS] 2025/04/05 - 21:32:38 | syncing options from database 
+[SYS] 2025/04/05 - 21:32:38 | syncing channels from database 
+[SYS] 2025/04/05 - 21:32:38 | channels synced from database 
+[SYS] 2025/04/05 - 21:32:38 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:32:38 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:32:38 | batch update started 
+[SYS] 2025/04/05 - 21:32:38 | batch update finished 
+[SYS] 2025/04/05 - 21:32:43 | batch update started 
+[SYS] 2025/04/05 - 21:32:43 | batch update finished 
+[SYS] 2025/04/05 - 21:32:48 | batch update started 
+[SYS] 2025/04/05 - 21:32:48 | batch update finished 
+[SYS] 2025/04/05 - 21:32:53 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:32:53 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:32:53 | batch update started 
+[SYS] 2025/04/05 - 21:32:53 | batch update finished 
+[SYS] 2025/04/05 - 21:33:00 | batch update started 
+[SYS] 2025/04/05 - 21:33:00 | batch update finished 
+[SYS] 2025/04/05 - 21:33:05 | batch update started 
+[SYS] 2025/04/05 - 21:33:05 | batch update finished 
+[SYS] 2025/04/05 - 21:33:10 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:33:10 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:33:10 | batch update started 
+[SYS] 2025/04/05 - 21:33:10 | batch update finished 
+[SYS] 2025/04/05 - 21:33:15 | batch update started 
+[SYS] 2025/04/05 - 21:33:15 | batch update finished 
+[SYS] 2025/04/05 - 21:33:20 | batch update started 
+[SYS] 2025/04/05 - 21:33:20 | batch update finished 
+[SYS] 2025/04/05 - 21:33:25 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:33:25 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:33:25 | batch update started 
+[SYS] 2025/04/05 - 21:33:25 | batch update finished 
+[SYS] 2025/04/05 - 21:33:32 | batch update started 
+[SYS] 2025/04/05 - 21:33:32 | batch update finished 
+[SYS] 2025/04/05 - 21:33:37 | batch update started 
+[SYS] 2025/04/05 - 21:33:37 | batch update finished 
+[SYS] 2025/04/05 - 21:33:42 | syncing options from database 
+[SYS] 2025/04/05 - 21:33:42 | syncing channels from database 
+[SYS] 2025/04/05 - 21:33:42 | channels synced from database 
+[SYS] 2025/04/05 - 21:33:42 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:33:42 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:33:42 | batch update started 
+[SYS] 2025/04/05 - 21:33:42 | batch update finished 
+[SYS] 2025/04/05 - 21:33:47 | batch update started 
+[SYS] 2025/04/05 - 21:33:47 | batch update finished 
+[SYS] 2025/04/05 - 21:33:52 | batch update started 
+[SYS] 2025/04/05 - 21:33:52 | batch update finished 
+[SYS] 2025/04/05 - 21:33:57 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:33:57 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:33:57 | batch update started 
+[SYS] 2025/04/05 - 21:33:57 | batch update finished 
+[SYS] 2025/04/05 - 21:34:02 | batch update started 
+[SYS] 2025/04/05 - 21:34:02 | batch update finished 
+[SYS] 2025/04/05 - 21:34:09 | batch update started 
+[SYS] 2025/04/05 - 21:34:09 | batch update finished 
+[SYS] 2025/04/05 - 21:34:14 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:34:14 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:34:14 | batch update started 
+[SYS] 2025/04/05 - 21:34:14 | batch update finished 
+[SYS] 2025/04/05 - 21:34:19 | batch update started 
+[SYS] 2025/04/05 - 21:34:19 | batch update finished 
+[SYS] 2025/04/05 - 21:34:24 | batch update started 
+[SYS] 2025/04/05 - 21:34:24 | batch update finished 
+[SYS] 2025/04/05 - 21:34:29 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:34:29 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:34:29 | batch update started 
+[SYS] 2025/04/05 - 21:34:29 | batch update finished 
+[SYS] 2025/04/05 - 21:34:34 | batch update started 
+[SYS] 2025/04/05 - 21:34:34 | batch update finished 
+[SYS] 2025/04/05 - 21:34:41 | batch update started 
+[SYS] 2025/04/05 - 21:34:41 | batch update finished 
+[SYS] 2025/04/05 - 21:34:46 | syncing options from database 
+[SYS] 2025/04/05 - 21:34:46 | syncing channels from database 
+[SYS] 2025/04/05 - 21:34:46 | channels synced from database 
+[SYS] 2025/04/05 - 21:34:46 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:34:46 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:34:46 | batch update started 
+[SYS] 2025/04/05 - 21:34:46 | batch update finished 
+[SYS] 2025/04/05 - 21:34:51 | batch update started 
+[SYS] 2025/04/05 - 21:34:51 | batch update finished 
+[SYS] 2025/04/05 - 21:34:56 | batch update started 
+[SYS] 2025/04/05 - 21:34:56 | batch update finished 
+[SYS] 2025/04/05 - 21:35:01 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:35:01 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:35:01 | batch update started 
+[SYS] 2025/04/05 - 21:35:01 | batch update finished 
+[SYS] 2025/04/05 - 21:35:06 | batch update started 
+[SYS] 2025/04/05 - 21:35:06 | batch update finished 
+[SYS] 2025/04/05 - 21:35:11 | batch update started 
+[SYS] 2025/04/05 - 21:35:11 | batch update finished 
+[SYS] 2025/04/05 - 21:35:18 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:35:18 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:35:18 | batch update started 
+[SYS] 2025/04/05 - 21:35:18 | batch update finished 
+[SYS] 2025/04/05 - 21:35:23 | batch update started 
+[SYS] 2025/04/05 - 21:35:23 | batch update finished 
+[SYS] 2025/04/05 - 21:35:28 | batch update started 
+[SYS] 2025/04/05 - 21:35:28 | batch update finished 
+[SYS] 2025/04/05 - 21:35:33 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:35:33 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:35:33 | batch update started 
+[SYS] 2025/04/05 - 21:35:33 | batch update finished 
+[SYS] 2025/04/05 - 21:35:38 | batch update started 
+[SYS] 2025/04/05 - 21:35:38 | batch update finished 
+[SYS] 2025/04/05 - 21:35:43 | batch update started 
+[SYS] 2025/04/05 - 21:35:43 | batch update finished 
+[SYS] 2025/04/05 - 21:35:49 | syncing options from database 
+[SYS] 2025/04/05 - 21:35:49 | syncing channels from database 
+[SYS] 2025/04/05 - 21:35:49 | channels synced from database 
+[SYS] 2025/04/05 - 21:35:50 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:35:50 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:35:50 | batch update started 
+[SYS] 2025/04/05 - 21:35:50 | batch update finished 
+[SYS] 2025/04/05 - 21:35:55 | batch update started 
+[SYS] 2025/04/05 - 21:35:55 | batch update finished 
+[SYS] 2025/04/05 - 21:36:00 | batch update started 
+[SYS] 2025/04/05 - 21:36:00 | batch update finished 
+[SYS] 2025/04/05 - 21:36:05 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:36:05 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:36:05 | batch update started 
+[SYS] 2025/04/05 - 21:36:05 | batch update finished 
+[SYS] 2025/04/05 - 21:36:10 | batch update started 
+[SYS] 2025/04/05 - 21:36:10 | batch update finished 
+[SYS] 2025/04/05 - 21:36:15 | batch update started 
+[SYS] 2025/04/05 - 21:36:15 | batch update finished 
+[SYS] 2025/04/05 - 21:36:20 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:36:20 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:36:20 | batch update started 
+[SYS] 2025/04/05 - 21:36:20 | batch update finished 
+[SYS] 2025/04/05 - 21:36:27 | batch update started 
+[SYS] 2025/04/05 - 21:36:27 | batch update finished 
+[SYS] 2025/04/05 - 21:36:32 | batch update started 
+[SYS] 2025/04/05 - 21:36:32 | batch update finished 
+[SYS] 2025/04/05 - 21:36:37 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:36:37 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:36:37 | batch update started 
+[SYS] 2025/04/05 - 21:36:37 | batch update finished 
+[SYS] 2025/04/05 - 21:36:42 | batch update started 
+[SYS] 2025/04/05 - 21:36:42 | batch update finished 
+[SYS] 2025/04/05 - 21:36:47 | batch update started 
+[SYS] 2025/04/05 - 21:36:47 | batch update finished 
+[SYS] 2025/04/05 - 21:36:51 | updating all channels 
+[SYS] 2025/04/05 - 21:36:51 | channels update done 
+[SYS] 2025/04/05 - 21:36:51 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:36:51 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:36:51 | testing all channels 
+[SYS] 2025/04/05 - 21:36:51 | channel test finished 
+[SYS] 2025/04/05 - 21:36:51 | syncing options from database 
+[SYS] 2025/04/05 - 21:36:52 | syncing channels from database 
+[SYS] 2025/04/05 - 21:36:52 | channels synced from database 
+[SYS] 2025/04/05 - 21:36:52 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:36:52 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:36:52 | batch update started 
+[SYS] 2025/04/05 - 21:36:52 | batch update finished 
+[SYS] 2025/04/05 - 21:36:59 | batch update started 
+[SYS] 2025/04/05 - 21:36:59 | batch update finished 
+[SYS] 2025/04/05 - 21:37:04 | batch update started 
+[SYS] 2025/04/05 - 21:37:04 | batch update finished 
+[SYS] 2025/04/05 - 21:37:09 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:37:09 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:37:09 | batch update started 
+[SYS] 2025/04/05 - 21:37:09 | batch update finished 
+[SYS] 2025/04/05 - 21:37:14 | batch update started 
+[SYS] 2025/04/05 - 21:37:14 | batch update finished 
+[SYS] 2025/04/05 - 21:37:19 | batch update started 
+[SYS] 2025/04/05 - 21:37:19 | batch update finished 
+[SYS] 2025/04/05 - 21:37:24 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:37:24 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:37:24 | batch update started 
+[SYS] 2025/04/05 - 21:37:24 | batch update finished 
+[SYS] 2025/04/05 - 21:37:29 | batch update started 
+[SYS] 2025/04/05 - 21:37:29 | batch update finished 
+[SYS] 2025/04/05 - 21:37:36 | batch update started 
+[SYS] 2025/04/05 - 21:37:36 | batch update finished 
+[SYS] 2025/04/05 - 21:37:41 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:37:41 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:37:41 | batch update started 
+[SYS] 2025/04/05 - 21:37:41 | batch update finished 
+[SYS] 2025/04/05 - 21:37:46 | batch update started 
+[SYS] 2025/04/05 - 21:37:46 | batch update finished 
+[SYS] 2025/04/05 - 21:37:51 | batch update started 
+[SYS] 2025/04/05 - 21:37:51 | batch update finished 
+[SYS] 2025/04/05 - 21:37:55 | syncing options from database 
+[SYS] 2025/04/05 - 21:37:55 | syncing channels from database 
+[SYS] 2025/04/05 - 21:37:55 | channels synced from database 
+[SYS] 2025/04/05 - 21:37:56 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:37:56 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:37:56 | batch update started 
+[SYS] 2025/04/05 - 21:37:56 | batch update finished 
+[SYS] 2025/04/05 - 21:38:01 | batch update started 
+[SYS] 2025/04/05 - 21:38:01 | batch update finished 
+[SYS] 2025/04/05 - 21:38:08 | batch update started 
+[SYS] 2025/04/05 - 21:38:08 | batch update finished 
+[SYS] 2025/04/05 - 21:38:13 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:38:13 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:38:13 | batch update started 
+[SYS] 2025/04/05 - 21:38:13 | batch update finished 
+[SYS] 2025/04/05 - 21:38:18 | batch update started 
+[SYS] 2025/04/05 - 21:38:18 | batch update finished 
+[SYS] 2025/04/05 - 21:38:23 | batch update started 
+[SYS] 2025/04/05 - 21:38:23 | batch update finished 
+[SYS] 2025/04/05 - 21:38:28 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:38:28 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:38:28 | batch update started 
+[SYS] 2025/04/05 - 21:38:28 | batch update finished 
+[SYS] 2025/04/05 - 21:38:33 | batch update started 
+[SYS] 2025/04/05 - 21:38:33 | batch update finished 
+[SYS] 2025/04/05 - 21:38:40 | batch update started 
+[SYS] 2025/04/05 - 21:38:40 | batch update finished 
+[SYS] 2025/04/05 - 21:38:45 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:38:45 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:38:45 | batch update started 
+[SYS] 2025/04/05 - 21:38:45 | batch update finished 
+[SYS] 2025/04/05 - 21:38:50 | batch update started 
+[SYS] 2025/04/05 - 21:38:50 | batch update finished 
+[SYS] 2025/04/05 - 21:38:55 | batch update started 
+[SYS] 2025/04/05 - 21:38:55 | batch update finished 
+[SYS] 2025/04/05 - 21:38:59 | syncing options from database 
+[SYS] 2025/04/05 - 21:38:59 | syncing channels from database 
+[SYS] 2025/04/05 - 21:38:59 | channels synced from database 
+[SYS] 2025/04/05 - 21:39:00 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:39:00 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:39:00 | batch update started 
+[SYS] 2025/04/05 - 21:39:00 | batch update finished 
+[SYS] 2025/04/05 - 21:39:05 | batch update started 
+[SYS] 2025/04/05 - 21:39:05 | batch update finished 
+[SYS] 2025/04/05 - 21:39:10 | batch update started 
+[SYS] 2025/04/05 - 21:39:10 | batch update finished 
+[SYS] 2025/04/05 - 21:39:17 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:39:17 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:39:17 | batch update started 
+[SYS] 2025/04/05 - 21:39:17 | batch update finished 
+[SYS] 2025/04/05 - 21:39:22 | batch update started 
+[SYS] 2025/04/05 - 21:39:22 | batch update finished 
+[SYS] 2025/04/05 - 21:39:27 | batch update started 
+[SYS] 2025/04/05 - 21:39:27 | batch update finished 
+[SYS] 2025/04/05 - 21:39:32 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:39:32 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:39:32 | batch update started 
+[SYS] 2025/04/05 - 21:39:32 | batch update finished 
+[SYS] 2025/04/05 - 21:39:37 | batch update started 
+[SYS] 2025/04/05 - 21:39:37 | batch update finished 
+[SYS] 2025/04/05 - 21:39:42 | batch update started 
+[SYS] 2025/04/05 - 21:39:42 | batch update finished 
+[SYS] 2025/04/05 - 21:39:49 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:39:49 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:39:49 | batch update started 
+[SYS] 2025/04/05 - 21:39:49 | batch update finished 
+[SYS] 2025/04/05 - 21:39:54 | batch update started 
+[SYS] 2025/04/05 - 21:39:54 | batch update finished 
+[SYS] 2025/04/05 - 21:39:59 | batch update started 
+[SYS] 2025/04/05 - 21:39:59 | batch update finished 
+[SYS] 2025/04/05 - 21:40:03 | syncing options from database 
+[SYS] 2025/04/05 - 21:40:03 | syncing channels from database 
+[SYS] 2025/04/05 - 21:40:03 | channels synced from database 
+[SYS] 2025/04/05 - 21:40:04 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:40:04 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:40:04 | batch update started 
+[SYS] 2025/04/05 - 21:40:04 | batch update finished 
+[SYS] 2025/04/05 - 21:40:09 | batch update started 
+[SYS] 2025/04/05 - 21:40:09 | batch update finished 
+[SYS] 2025/04/05 - 21:40:14 | batch update started 
+[SYS] 2025/04/05 - 21:40:14 | batch update finished 
+[SYS] 2025/04/05 - 21:40:19 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:40:19 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:40:19 | batch update started 
+[SYS] 2025/04/05 - 21:40:19 | batch update finished 
+[SYS] 2025/04/05 - 21:40:26 | batch update started 
+[SYS] 2025/04/05 - 21:40:26 | batch update finished 
+[SYS] 2025/04/05 - 21:40:31 | batch update started 
+[SYS] 2025/04/05 - 21:40:31 | batch update finished 
+[SYS] 2025/04/05 - 21:40:36 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:40:36 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:40:36 | batch update started 
+[SYS] 2025/04/05 - 21:40:36 | batch update finished 
+[SYS] 2025/04/05 - 21:40:41 | batch update started 
+[SYS] 2025/04/05 - 21:40:41 | batch update finished 
+[SYS] 2025/04/05 - 21:40:46 | batch update started 
+[SYS] 2025/04/05 - 21:40:46 | batch update finished 
+[SYS] 2025/04/05 - 21:40:51 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:40:51 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:40:51 | batch update started 
+[SYS] 2025/04/05 - 21:40:51 | batch update finished 
+[SYS] 2025/04/05 - 21:40:58 | batch update started 
+[SYS] 2025/04/05 - 21:40:58 | batch update finished 
+[SYS] 2025/04/05 - 21:41:03 | batch update started 
+[SYS] 2025/04/05 - 21:41:03 | batch update finished 
+[SYS] 2025/04/05 - 21:41:07 | syncing options from database 
+[SYS] 2025/04/05 - 21:41:07 | syncing channels from database 
+[SYS] 2025/04/05 - 21:41:07 | channels synced from database 
+[SYS] 2025/04/05 - 21:41:08 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:41:08 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:41:08 | batch update started 
+[SYS] 2025/04/05 - 21:41:08 | batch update finished 
+[SYS] 2025/04/05 - 21:41:13 | batch update started 
+[SYS] 2025/04/05 - 21:41:13 | batch update finished 
+[SYS] 2025/04/05 - 21:41:18 | batch update started 
+[SYS] 2025/04/05 - 21:41:18 | batch update finished 
+[SYS] 2025/04/05 - 21:41:23 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:41:23 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:41:23 | batch update started 
+[SYS] 2025/04/05 - 21:41:23 | batch update finished 
+[SYS] 2025/04/05 - 21:41:28 | batch update started 
+[SYS] 2025/04/05 - 21:41:28 | batch update finished 
+[SYS] 2025/04/05 - 21:41:35 | batch update started 
+[SYS] 2025/04/05 - 21:41:35 | batch update finished 
+[SYS] 2025/04/05 - 21:41:40 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:41:40 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:41:40 | batch update started 
+[SYS] 2025/04/05 - 21:41:40 | batch update finished 
+[SYS] 2025/04/05 - 21:41:45 | batch update started 
+[SYS] 2025/04/05 - 21:41:45 | batch update finished 
+[SYS] 2025/04/05 - 21:41:50 | batch update started 
+[SYS] 2025/04/05 - 21:41:50 | batch update finished 
+[SYS] 2025/04/05 - 21:41:55 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:41:55 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:41:55 | batch update started 
+[SYS] 2025/04/05 - 21:41:55 | batch update finished 
+[SYS] 2025/04/05 - 21:42:00 | batch update started 
+[SYS] 2025/04/05 - 21:42:00 | batch update finished 
+[SYS] 2025/04/05 - 21:42:07 | batch update started 
+[SYS] 2025/04/05 - 21:42:07 | batch update finished 
+[SYS] 2025/04/05 - 21:42:11 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:42:11 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:42:11 | syncing options from database 
+[SYS] 2025/04/05 - 21:42:11 | syncing channels from database 
+[SYS] 2025/04/05 - 21:42:11 | channels synced from database 
+[SYS] 2025/04/05 - 21:42:12 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:42:12 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:42:12 | batch update started 
+[SYS] 2025/04/05 - 21:42:12 | batch update finished 
+[SYS] 2025/04/05 - 21:42:17 | batch update started 
+[SYS] 2025/04/05 - 21:42:17 | batch update finished 
+[SYS] 2025/04/05 - 21:42:22 | batch update started 
+[SYS] 2025/04/05 - 21:42:22 | batch update finished 
+[SYS] 2025/04/05 - 21:42:27 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:42:27 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:42:27 | batch update started 
+[SYS] 2025/04/05 - 21:42:27 | batch update finished 
+[SYS] 2025/04/05 - 21:42:32 | batch update started 
+[SYS] 2025/04/05 - 21:42:32 | batch update finished 
+[SYS] 2025/04/05 - 21:42:37 | batch update started 
+[SYS] 2025/04/05 - 21:42:37 | batch update finished 
+[SYS] 2025/04/05 - 21:42:44 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:42:44 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:42:44 | batch update started 
+[SYS] 2025/04/05 - 21:42:44 | batch update finished 
+[SYS] 2025/04/05 - 21:42:49 | batch update started 
+[SYS] 2025/04/05 - 21:42:49 | batch update finished 
+[SYS] 2025/04/05 - 21:42:54 | batch update started 
+[SYS] 2025/04/05 - 21:42:54 | batch update finished 
+[SYS] 2025/04/05 - 21:42:59 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:42:59 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:42:59 | batch update started 
+[SYS] 2025/04/05 - 21:42:59 | batch update finished 
+[SYS] 2025/04/05 - 21:43:04 | batch update started 
+[SYS] 2025/04/05 - 21:43:04 | batch update finished 
+[SYS] 2025/04/05 - 21:43:09 | batch update started 
+[SYS] 2025/04/05 - 21:43:09 | batch update finished 
+[SYS] 2025/04/05 - 21:43:15 | syncing options from database 
+[SYS] 2025/04/05 - 21:43:15 | syncing channels from database 
+[SYS] 2025/04/05 - 21:43:15 | channels synced from database 
+[SYS] 2025/04/05 - 21:43:15 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:43:15 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:43:16 | batch update started 
+[SYS] 2025/04/05 - 21:43:16 | batch update finished 
+[SYS] 2025/04/05 - 21:43:21 | batch update started 
+[SYS] 2025/04/05 - 21:43:21 | batch update finished 
+[SYS] 2025/04/05 - 21:43:26 | batch update started 
+[SYS] 2025/04/05 - 21:43:26 | batch update finished 
+[SYS] 2025/04/05 - 21:43:30 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:43:30 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:43:31 | batch update started 
+[SYS] 2025/04/05 - 21:43:31 | batch update finished 
+[SYS] 2025/04/05 - 21:43:36 | batch update started 
+[SYS] 2025/04/05 - 21:43:36 | batch update finished 
+[SYS] 2025/04/05 - 21:43:41 | batch update started 
+[SYS] 2025/04/05 - 21:43:41 | batch update finished 
+[SYS] 2025/04/05 - 21:43:45 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:43:45 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:43:46 | batch update started 
+[SYS] 2025/04/05 - 21:43:46 | batch update finished 
+[SYS] 2025/04/05 - 21:43:53 | batch update started 
+[SYS] 2025/04/05 - 21:43:53 | batch update finished 
+[SYS] 2025/04/05 - 21:43:58 | batch update started 
+[SYS] 2025/04/05 - 21:43:58 | batch update finished 
+[SYS] 2025/04/05 - 21:44:02 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:44:02 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:44:03 | batch update started 
+[SYS] 2025/04/05 - 21:44:03 | batch update finished 
+[SYS] 2025/04/05 - 21:44:08 | batch update started 
+[SYS] 2025/04/05 - 21:44:08 | batch update finished 
+[SYS] 2025/04/05 - 21:44:13 | batch update started 
+[SYS] 2025/04/05 - 21:44:13 | batch update finished 
+[SYS] 2025/04/05 - 21:44:17 | syncing options from database 
+[SYS] 2025/04/05 - 21:44:17 | syncing channels from database 
+[SYS] 2025/04/05 - 21:44:17 | channels synced from database 
+[SYS] 2025/04/05 - 21:44:17 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:44:17 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:44:18 | batch update started 
+[SYS] 2025/04/05 - 21:44:18 | batch update finished 
+[SYS] 2025/04/05 - 21:44:24 | batch update started 
+[SYS] 2025/04/05 - 21:44:24 | batch update finished 
+[SYS] 2025/04/05 - 21:44:29 | batch update started 
+[SYS] 2025/04/05 - 21:44:29 | batch update finished 
+[SYS] 2025/04/05 - 21:44:34 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:44:34 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:44:34 | batch update started 
+[SYS] 2025/04/05 - 21:44:34 | batch update finished 
+[SYS] 2025/04/05 - 21:44:39 | batch update started 
+[SYS] 2025/04/05 - 21:44:39 | batch update finished 
+[SYS] 2025/04/05 - 21:44:44 | batch update started 
+[SYS] 2025/04/05 - 21:44:44 | batch update finished 
+[SYS] 2025/04/05 - 21:44:49 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:44:49 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:44:49 | batch update started 
+[SYS] 2025/04/05 - 21:44:49 | batch update finished 
+[SYS] 2025/04/05 - 21:44:57 | batch update started 
+[SYS] 2025/04/05 - 21:44:57 | batch update finished 
+[SYS] 2025/04/05 - 21:45:02 | batch update started 
+[SYS] 2025/04/05 - 21:45:02 | batch update finished 
+[SYS] 2025/04/05 - 21:45:06 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:45:06 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:45:07 | batch update started 
+[SYS] 2025/04/05 - 21:45:07 | batch update finished 
+[SYS] 2025/04/05 - 21:45:12 | batch update started 
+[SYS] 2025/04/05 - 21:45:12 | batch update finished 
+[SYS] 2025/04/05 - 21:45:17 | batch update started 
+[SYS] 2025/04/05 - 21:45:17 | batch update finished 
+[SYS] 2025/04/05 - 21:45:21 | syncing options from database 
+[SYS] 2025/04/05 - 21:45:21 | syncing channels from database 
+[SYS] 2025/04/05 - 21:45:21 | channels synced from database 
+[SYS] 2025/04/05 - 21:45:21 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:45:21 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:45:22 | batch update started 
+[SYS] 2025/04/05 - 21:45:22 | batch update finished 
+[SYS] 2025/04/05 - 21:45:27 | batch update started 
+[SYS] 2025/04/05 - 21:45:27 | batch update finished 
+[SYS] 2025/04/05 - 21:45:34 | batch update started 
+[SYS] 2025/04/05 - 21:45:34 | batch update finished 
+[SYS] 2025/04/05 - 21:45:38 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:45:38 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:45:39 | batch update started 
+[SYS] 2025/04/05 - 21:45:39 | batch update finished 
+[SYS] 2025/04/05 - 21:45:44 | batch update started 
+[SYS] 2025/04/05 - 21:45:44 | batch update finished 
+[SYS] 2025/04/05 - 21:45:49 | batch update started 
+[SYS] 2025/04/05 - 21:45:49 | batch update finished 
+[SYS] 2025/04/05 - 21:45:53 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:45:53 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:45:54 | batch update started 
+[SYS] 2025/04/05 - 21:45:54 | batch update finished 
+[SYS] 2025/04/05 - 21:45:59 | batch update started 
+[SYS] 2025/04/05 - 21:45:59 | batch update finished 
+[SYS] 2025/04/05 - 21:46:06 | batch update started 
+[SYS] 2025/04/05 - 21:46:06 | batch update finished 
+[SYS] 2025/04/05 - 21:46:11 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:46:11 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:46:11 | batch update started 
+[SYS] 2025/04/05 - 21:46:11 | batch update finished 
+[SYS] 2025/04/05 - 21:46:16 | batch update started 
+[SYS] 2025/04/05 - 21:46:16 | batch update finished 
+[SYS] 2025/04/05 - 21:46:21 | batch update started 
+[SYS] 2025/04/05 - 21:46:21 | batch update finished 
+[SYS] 2025/04/05 - 21:46:25 | syncing options from database 
+[SYS] 2025/04/05 - 21:46:25 | syncing channels from database 
+[SYS] 2025/04/05 - 21:46:25 | channels synced from database 
+[SYS] 2025/04/05 - 21:46:26 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:46:26 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:46:26 | batch update started 
+[SYS] 2025/04/05 - 21:46:26 | batch update finished 
+[SYS] 2025/04/05 - 21:46:31 | batch update started 
+[SYS] 2025/04/05 - 21:46:31 | batch update finished 
+[SYS] 2025/04/05 - 21:46:36 | batch update started 
+[SYS] 2025/04/05 - 21:46:36 | batch update finished 
+[SYS] 2025/04/05 - 21:46:43 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:46:43 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:46:43 | batch update started 
+[SYS] 2025/04/05 - 21:46:43 | batch update finished 
+[SYS] 2025/04/05 - 21:46:48 | batch update started 
+[SYS] 2025/04/05 - 21:46:48 | batch update finished 
+[SYS] 2025/04/05 - 21:46:53 | batch update started 
+[SYS] 2025/04/05 - 21:46:53 | batch update finished 
+[SYS] 2025/04/05 - 21:46:58 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:46:58 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:46:58 | batch update started 
+[SYS] 2025/04/05 - 21:46:58 | batch update finished 
+[SYS] 2025/04/05 - 21:47:03 | batch update started 
+[SYS] 2025/04/05 - 21:47:03 | batch update finished 
+[SYS] 2025/04/05 - 21:47:08 | batch update started 
+[SYS] 2025/04/05 - 21:47:08 | batch update finished 
+[SYS] 2025/04/05 - 21:47:15 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:47:15 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:47:15 | batch update started 
+[SYS] 2025/04/05 - 21:47:15 | batch update finished 
+[SYS] 2025/04/05 - 21:47:20 | batch update started 
+[SYS] 2025/04/05 - 21:47:20 | batch update finished 
+[SYS] 2025/04/05 - 21:47:25 | batch update started 
+[SYS] 2025/04/05 - 21:47:25 | batch update finished 
+[SYS] 2025/04/05 - 21:47:29 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 21:47:29 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 21:47:29 | testing all channels 
+[SYS] 2025/04/05 - 21:47:29 | channel test finished 
+[SYS] 2025/04/05 - 21:47:29 | syncing options from database 
+[SYS] 2025/04/05 - 21:47:29 | syncing channels from database 
+[SYS] 2025/04/05 - 21:47:29 | channels synced from database 
+[SYS] 2025/04/05 - 21:47:30 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:47:30 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:47:30 | batch update started 
+[SYS] 2025/04/05 - 21:47:30 | batch update finished 
+[SYS] 2025/04/05 - 21:47:35 | batch update started 
+[SYS] 2025/04/05 - 21:47:35 | batch update finished 
+[SYS] 2025/04/05 - 21:47:40 | batch update started 
+[SYS] 2025/04/05 - 21:47:40 | batch update finished 
+[SYS] 2025/04/05 - 21:47:45 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:47:45 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:47:45 | batch update started 
+[SYS] 2025/04/05 - 21:47:45 | batch update finished 
+[GIN] 2025/04/05 - 21:47:51 | 20250405214751911910813S2Xr10S4 | 200 |   10.444345ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /
+[SYS] 2025/04/05 - 21:47:52 | batch update started 
+[SYS] 2025/04/05 - 21:47:52 | batch update finished 
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752332855075G0dj8FaB | 200 |   40.510936ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/index-Dl1QuHvo.js
+[GIN] 2025/04/05 - 21:47:52 | 202504052147523824771668tm5dXsj | 200 |    21.87167ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/i18n-BxeGqGqW.js
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752376711241DPOyEx8Q | 200 |   37.585129ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/react-core-DpH4LOSy.js
+[GIN] 2025/04/05 - 21:47:52 | 202504052147523852826500BkYdIFP | 200 |   45.480148ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/react-components-BRi9inch.js
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752385495113mL1Iq4tH | 200 |  103.436988ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/tools-OB6rbXpn.js
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752386626321ToWTVASi | 200 |  156.289964ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/semantic-CNjhwsQN.js
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752382730054Usyn7j6l | 200 |  178.978559ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/semi-ui-Jq3oSxx4.css
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752383224631zBFIXQKc | 200 |   204.34719ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/index-AeaT-tDw.css
+[GIN] 2025/04/05 - 21:47:52 | 20250405214752385666868ZsZfddyd | 200 |  292.082105ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/semi-ui-7dVDupzr.js
+[GIN] 2025/04/05 - 21:47:55 | 20250405214755608680406ZlwJatdn | 200 |    2.073702ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/index-Mkcm2XCc.js
+[GIN] 2025/04/05 - 21:47:55 | 20250405214755609988978h5r6t9Ry | 200 |    3.633833ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/lato-v15-latin-regular-CNtt3gFW.woff2
+[GIN] 2025/04/05 - 21:47:55 | 20250405214755607115095bwgI4LMw | 200 |    6.623416ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/status
+[GIN] 2025/04/05 - 21:47:55 | 20250405214755607237453gGCFFSl8 | 200 |   12.167899ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /logo.png
+[GIN] 2025/04/05 - 21:47:55 | 20250405214755981815768dTu4yWCs | 200 |     653.038µs | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/notice
+[GIN] 2025/04/05 - 21:47:55 | 20250405214755981929802AEBlGRj6 | 200 |    2.113378ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/home_page_content
+[GIN] 2025/04/05 - 21:47:56 | 20250405214756350937460ZBVSaUTh | 200 |    8.764724ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/home_page_content
+[GIN] 2025/04/05 - 21:47:56 | 20250405214756337456086sfpGtEc5 | 200 |   36.323354ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/notice
+[GIN] 2025/04/05 - 21:47:56 | 20250405214756380944448BpdqHYpZ | 200 |   14.604235ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /assets/lato-v15-latin-bold-Dj654xud.woff2
+[GIN] 2025/04/05 - 21:47:56 | 20250405214756647803565g04mH3gT | 200 |     901.452µs | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/home_page_content
+[GIN] 2025/04/05 - 21:47:56 | 20250405214756647813461KwGZRsst | 200 |    1.247994ms | 2c0f:f5c0:496:10c2:80d7:dba:ebe5:dbb3 |     GET /api/notice
+[SYS] 2025/04/05 - 21:47:57 | batch update started 
+[SYS] 2025/04/05 - 21:47:57 | batch update finished 
+[SYS] 2025/04/05 - 21:48:01 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:48:01 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:48:02 | batch update started 
+[SYS] 2025/04/05 - 21:48:02 | batch update finished 
+[SYS] 2025/04/05 - 21:48:07 | batch update started 
+[SYS] 2025/04/05 - 21:48:07 | batch update finished 
+[SYS] 2025/04/05 - 21:48:12 | batch update started 
+[SYS] 2025/04/05 - 21:48:12 | batch update finished 
+[SYS] 2025/04/05 - 21:48:16 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:48:16 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:48:17 | batch update started 
+[SYS] 2025/04/05 - 21:48:17 | batch update finished 
+[SYS] 2025/04/05 - 21:48:24 | batch update started 
+[SYS] 2025/04/05 - 21:48:24 | batch update finished 
+[SYS] 2025/04/05 - 21:48:29 | batch update started 
+[SYS] 2025/04/05 - 21:48:29 | batch update finished 
+[SYS] 2025/04/05 - 21:48:33 | syncing options from database 
+[SYS] 2025/04/05 - 21:48:33 | syncing channels from database 
+[SYS] 2025/04/05 - 21:48:33 | channels synced from database 
+[SYS] 2025/04/05 - 21:48:34 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:48:34 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:48:34 | batch update started 
+[SYS] 2025/04/05 - 21:48:34 | batch update finished 
+[SYS] 2025/04/05 - 21:48:39 | batch update started 
+[SYS] 2025/04/05 - 21:48:39 | batch update finished 
+[SYS] 2025/04/05 - 21:48:44 | batch update started 
+[SYS] 2025/04/05 - 21:48:44 | batch update finished 
+[SYS] 2025/04/05 - 21:48:49 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:48:49 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:48:49 | batch update started 
+[SYS] 2025/04/05 - 21:48:49 | batch update finished 
+[SYS] 2025/04/05 - 21:48:54 | batch update started 
+[SYS] 2025/04/05 - 21:48:54 | batch update finished 
+[SYS] 2025/04/05 - 21:49:01 | batch update started 
+[SYS] 2025/04/05 - 21:49:01 | batch update finished 
+[SYS] 2025/04/05 - 21:49:05 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:49:06 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:49:06 | batch update started 
+[SYS] 2025/04/05 - 21:49:06 | batch update finished 
+[SYS] 2025/04/05 - 21:49:11 | batch update started 
+[SYS] 2025/04/05 - 21:49:11 | batch update finished 
+[SYS] 2025/04/05 - 21:49:16 | batch update started 
+[SYS] 2025/04/05 - 21:49:16 | batch update finished 
+[SYS] 2025/04/05 - 21:49:21 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:49:21 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:49:21 | batch update started 
+[SYS] 2025/04/05 - 21:49:21 | batch update finished 
+[SYS] 2025/04/05 - 21:49:26 | batch update started 
+[SYS] 2025/04/05 - 21:49:26 | batch update finished 
+[SYS] 2025/04/05 - 21:49:33 | batch update started 
+[SYS] 2025/04/05 - 21:49:33 | batch update finished 
+[SYS] 2025/04/05 - 21:49:37 | syncing options from database 
+[SYS] 2025/04/05 - 21:49:37 | syncing channels from database 
+[SYS] 2025/04/05 - 21:49:37 | channels synced from database 
+[SYS] 2025/04/05 - 21:49:38 | 任务进度轮询开始 
+[SYS] 2025/04/05 - 21:49:38 | 任务进度轮询完成 
+[SYS] 2025/04/05 - 21:49:38 | batch update started 
+[SYS] 2025/04/05 - 21:49:38 | batch update finished 
+[SYS] 2025/04/05 - 21:49:43 | batch update started 
+[SYS] 2025/04/05 - 21:49:43 | batch update finished 
+[SYS] 2025/04/05 - 21:49:48 | batch update started 
+[SYS] 2025/04/05 - 21:49:48 | batch update finished 

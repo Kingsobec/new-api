@@ -1,0 +1,56 @@
+[SYS] 2025/04/21 - 20:19:45 | New API v0.6.6.2 started 
+[SYS] 2025/04/21 - 20:19:45 | using MySQL as database 
+[SYS] 2025/04/21 - 20:19:46 | database migration started 
+[SYS] 2025/04/21 - 20:19:46 | database migrated 
+[SYS] 2025/04/21 - 20:19:46 | system is not initialized, but root user exists 
+[SYS] 2025/04/21 - 20:19:46 | SYNC_FREQUENCY not set, use default value 60 
+[SYS] 2025/04/21 - 20:19:46 | Redis is enabled 
+[SYS] 2025/04/21 - 20:19:46 | memory cache enabled 
+[SYS] 2025/04/21 - 20:19:46 | sync frequency: 60 seconds 
+[SYS] 2025/04/21 - 20:19:46 | channels synced from database 
+[SYS] 2025/04/21 - 20:19:46 | 正在更新数据看板数据... 
+[SYS] 2025/04/21 - 20:19:46 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/21 - 20:19:46 | initializing token encoders 
+[SYS] 2025/04/21 - 20:19:52 | token encoders initialized 
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953224098722Hki9ohdN | 200 |    6.797115ms |      172.18.0.1 |     GET /
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953314380822zRUGsEdX | 200 |  147.080787ms |      172.18.0.1 |     GET /assets/index-BqeQ9zsP.js
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953433411252T1xJr0d9 | 200 |   76.716607ms |      172.18.0.1 |     GET /assets/i18n-DQ1FDSfV.js
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953506437475R2JepJZl | 200 |   41.728596ms |      172.18.0.1 |     GET /assets/tools-Dg_NdmXJ.js
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953445074971ybJwEaEz | 200 |  106.662237ms |      172.18.0.1 |     GET /assets/react-components-Dd_QYlv7.js
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953429957790HcZWss88 | 200 |  223.346414ms |      172.18.0.1 |     GET /assets/semi-ui-CWmeb87a.css
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953492800454DiYKcH4i | 200 |  199.978493ms |      172.18.0.1 |     GET /assets/semantic-pvq99r8K.js
+[GIN] 2025/04/21 - 20:19:53 | 20250421201953316743960u9YQlhFO | 200 |   464.96488ms |      172.18.0.1 |     GET /assets/semi-ui-ClFUTkHb.js
+[GIN] 2025/04/21 - 20:19:54 | 20250421201954625515672Xhr4XZ4J | 200 |    1.188622ms |      172.18.0.1 |     GET /assets/index-hxx6H6M1.js
+[GIN] 2025/04/21 - 20:19:54 | 20250421201954677804668kCLriLrV | 200 |   12.036992ms |      172.18.0.1 |     GET /api/status
+[GIN] 2025/04/21 - 20:19:55 | 2025042120195543151983996AURGOS | 200 |  121.176949ms |      172.18.0.1 |     GET /api/notice
+[GIN] 2025/04/21 - 20:19:55 | 202504212019554336963985Mj8NPTq | 200 |  140.202743ms |      172.18.0.1 |     GET /api/home_page_content
+[SYS] 2025/04/21 - 20:20:01 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:20:01 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:20:05 | 20250421202005245458307jux2qU1H | 200 |    1.872021ms |      172.18.0.1 |     GET /
+[GIN] 2025/04/21 - 20:20:06 | 20250421202006524393520wOiD29TL | 200 |    1.659962ms |      172.18.0.1 |     GET /api/status
+[GIN] 2025/04/21 - 20:20:06 | 20250421202006773147710THEGroRj | 200 |   14.763796ms |      172.18.0.1 |     GET /api/notice
+[GIN] 2025/04/21 - 20:20:06 | 20250421202006789303752vE5KAXYv | 200 |     1.01008ms |      172.18.0.1 |     GET /api/home_page_content
+[GIN] 2025/04/21 - 20:20:13 | 20250421202013831602345ezSWUVFM | 200 |    1.480019ms |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:20:14 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:20:14 | 任务进度轮询完成 
+[SYS] 2025/04/21 - 20:20:29 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:20:29 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:20:43 | 20250421202043310237719KaYJ7Mpx | 200 |     953.685µs |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:20:44 | syncing options from database 
+[SYS] 2025/04/21 - 20:20:44 | syncing channels from database 
+[SYS] 2025/04/21 - 20:20:44 | channels synced from database 
+[SYS] 2025/04/21 - 20:20:44 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:20:44 | 任务进度轮询完成 
+[SYS] 2025/04/21 - 20:20:57 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:20:57 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:21:12 | 2025042120211263074195qEbccCdO | 200 |    1.030052ms |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:21:12 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:21:12 | 任务进度轮询完成 
+[SYS] 2025/04/21 - 20:21:26 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:21:26 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:21:40 | 20250421202140869228811tT03Mnu9 | 200 |     907.998µs |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:21:41 | syncing channels from database 
+[SYS] 2025/04/21 - 20:21:41 | syncing options from database 
+[SYS] 2025/04/21 - 20:21:41 | channels synced from database 
+[SYS] 2025/04/21 - 20:21:41 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:21:41 | 任务进度轮询完成 

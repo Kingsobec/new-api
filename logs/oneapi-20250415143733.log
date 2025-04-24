@@ -1,0 +1,37 @@
+[SYS] 2025/04/15 - 14:37:33 | New API v0.0.0 started 
+[SYS] 2025/04/15 - 14:37:33 | using MySQL as database 
+[SYS] 2025/04/15 - 14:37:33 | database migration started 
+[SYS] 2025/04/15 - 14:37:33 | database migrated 
+[SYS] 2025/04/15 - 14:37:33 | using MySQL as database 
+[SYS] 2025/04/15 - 14:37:33 | database migration started 
+[SYS] 2025/04/15 - 14:37:33 | Redis is enabled 
+[SYS] 2025/04/15 - 14:37:31 | memory cache enabled 
+[SYS] 2025/04/15 - 14:37:31 | sync frequency: 60 seconds 
+[SYS] 2025/04/15 - 14:37:31 | channels synced from database 
+[SYS] 2025/04/15 - 14:37:31 | batch update enabled with interval 5s 
+[SYS] 2025/04/15 - 14:37:31 | pprof enabled 
+[SYS] 2025/04/15 - 14:37:31 | initializing token encoders 
+[SYS] 2025/04/15 - 14:37:31 | 正在更新数据看板数据... 
+[SYS] 2025/04/15 - 14:37:31 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/15 - 14:37:32 | token encoders initialized 
+[SYS] 2025/04/15 - 14:37:32 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/04/15 - 14:37:36 | batch update started 
+[SYS] 2025/04/15 - 14:37:36 | batch update finished 
+[SYS] 2025/04/15 - 14:37:42 | batch update started 
+[SYS] 2025/04/15 - 14:37:42 | batch update finished 
+[SYS] 2025/04/15 - 14:37:47 | 任务进度轮询开始 
+[SYS] 2025/04/15 - 14:37:47 | batch update started 
+[SYS] 2025/04/15 - 14:37:47 | batch update finished 
+[SYS] 2025/04/15 - 14:37:47 | 任务进度轮询完成 
+[SYS] 2025/04/15 - 14:37:52 | batch update started 
+[SYS] 2025/04/15 - 14:37:52 | batch update finished 
+[SYS] 2025/04/15 - 14:37:57 | batch update started 
+[SYS] 2025/04/15 - 14:37:57 | batch update finished 
+[SYS] 2025/04/15 - 14:38:02 | 任务进度轮询开始 
+[SYS] 2025/04/15 - 14:38:02 | batch update started 
+[SYS] 2025/04/15 - 14:38:02 | batch update finished 
+[SYS] 2025/04/15 - 14:38:02 | 任务进度轮询完成 
+[SYS] 2025/04/15 - 14:38:05 | batch update started 
+[SYS] 2025/04/15 - 14:38:05 | batch update finished 
+[SYS] 2025/04/15 - 14:38:10 | batch update started 
+[SYS] 2025/04/15 - 14:38:10 | batch update finished 

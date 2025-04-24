@@ -1,0 +1,9 @@
+[SYS] 2025/03/19 - 17:12:37 | New API v0.0.0 started 
+[SYS] 2025/03/19 - 17:12:37 | SQL_DSN not set, using SQLite as database 
+[SYS] 2025/03/19 - 17:12:37 | database migration started 
+[SYS] 2025/03/19 - 17:12:37 | database migrated 
+[SYS] 2025/03/19 - 17:12:37 | REDIS_CONN_STRING not set, Redis is not enabled 
+[SYS] 2025/03/19 - 17:12:37 | 正在更新数据看板数据... 
+[SYS] 2025/03/19 - 17:12:37 | initializing token encoders 
+[SYS] 2025/03/19 - 17:12:37 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/03/19 - 17:12:49 | token encoders initialized 

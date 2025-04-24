@@ -1,0 +1,15 @@
+[SYS] 2025/03/31 - 11:43:56 | New API v0.0.0 started 
+[SYS] 2025/03/31 - 11:43:56 | using MySQL as database 
+[SYS] 2025/03/31 - 11:43:56 | database migration started 
+[SYS] 2025/03/31 - 11:43:57 | database migrated 
+[SYS] 2025/03/31 - 11:43:57 | using MySQL as database 
+[SYS] 2025/03/31 - 11:43:57 | database migration started 
+[SYS] 2025/03/31 - 11:43:57 | Redis is enabled 
+[SYS] 2025/03/31 - 11:43:57 | memory cache enabled 
+[SYS] 2025/03/31 - 11:43:57 | sync frequency: 60 seconds 
+[SYS] 2025/03/31 - 11:43:57 | channels synced from database 
+[SYS] 2025/03/31 - 11:43:57 | batch update enabled with interval 5s 
+[SYS] 2025/03/31 - 11:43:57 | pprof enabled 
+[SYS] 2025/03/31 - 11:43:57 | initializing token encoders 
+[SYS] 2025/03/31 - 11:43:57 | 正在更新数据看板数据... 
+[SYS] 2025/03/31 - 11:43:57 | 保存数据看板数据成功，共保存0条数据 

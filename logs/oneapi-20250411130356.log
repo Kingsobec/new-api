@@ -1,0 +1,27 @@
+[SYS] 2025/04/11 - 13:03:56 | New API v0.0.0 started 
+[SYS] 2025/04/11 - 13:03:56 | using MySQL as database 
+[SYS] 2025/04/11 - 13:03:57 | database migration started 
+[SYS] 2025/04/11 - 13:03:57 | database migrated 
+[SYS] 2025/04/11 - 13:03:57 | using MySQL as database 
+[SYS] 2025/04/11 - 13:03:57 | database migration started 
+[SYS] 2025/04/11 - 13:03:57 | Redis is enabled 
+[SYS] 2025/04/11 - 13:03:57 | memory cache enabled 
+[SYS] 2025/04/11 - 13:03:57 | sync frequency: 60 seconds 
+[SYS] 2025/04/11 - 13:03:57 | channels synced from database 
+[SYS] 2025/04/11 - 13:03:57 | batch update enabled with interval 5s 
+[SYS] 2025/04/11 - 13:03:57 | pprof enabled 
+[SYS] 2025/04/11 - 13:03:57 | initializing token encoders 
+[SYS] 2025/04/11 - 13:03:57 | 正在更新数据看板数据... 
+[SYS] 2025/04/11 - 13:03:57 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/11 - 13:03:59 | token encoders initialized 
+[SYS] 2025/04/11 - 13:03:59 | FRONTEND_BASE_URL is ignored on master node 
+[GIN] 2025/04/11 - 13:04:00 | 20250411130400261675999dVl693D9 | 200 |   15.440753ms |             ::1 |     GET /pricing
+[SYS] 2025/04/11 - 13:04:02 | batch update started 
+[SYS] 2025/04/11 - 13:04:02 | batch update finished 
+[GIN] 2025/04/11 - 13:04:04 | 20250411130404810139248A41tgOH5 | 200 |     1.15068ms |             ::1 |     GET /home
+[SYS] 2025/04/11 - 13:04:07 | batch update started 
+[SYS] 2025/04/11 - 13:04:07 | batch update finished 
+[SYS] 2025/04/11 - 13:04:12 | 任务进度轮询开始 
+[SYS] 2025/04/11 - 13:04:12 | batch update started 
+[SYS] 2025/04/11 - 13:04:12 | batch update finished 
+[SYS] 2025/04/11 - 13:04:12 | 任务进度轮询完成 

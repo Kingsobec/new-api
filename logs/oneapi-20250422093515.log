@@ -1,0 +1,30 @@
+[SYS] 2025/04/22 - 09:35:15 | New API v0.0.0 started 
+[SYS] 2025/04/22 - 09:35:15 | using MySQL as database 
+[SYS] 2025/04/22 - 09:35:15 | database migration started 
+[SYS] 2025/04/22 - 09:35:16 | database migrated 
+[SYS] 2025/04/22 - 09:35:16 | using MySQL as database 
+[SYS] 2025/04/22 - 09:35:16 | database migration started 
+[SYS] 2025/04/22 - 09:35:17 | Redis is enabled 
+[SYS] 2025/04/22 - 09:35:17 | memory cache enabled 
+[SYS] 2025/04/22 - 09:35:17 | sync frequency: 60 seconds 
+[SYS] 2025/04/22 - 09:35:17 | channels synced from database 
+[SYS] 2025/04/22 - 09:35:17 | 正在更新数据看板数据... 
+[SYS] 2025/04/22 - 09:35:17 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/22 - 09:35:17 | batch update enabled with interval 5s 
+[SYS] 2025/04/22 - 09:35:17 | pprof enabled 
+[SYS] 2025/04/22 - 09:35:17 | initializing token encoders 
+[SYS] 2025/04/22 - 09:35:18 | token encoders initialized 
+[SYS] 2025/04/22 - 09:35:18 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/04/22 - 09:35:22 | batch update started 
+[SYS] 2025/04/22 - 09:35:22 | batch update finished 
+[GIN] 2025/04/22 - 09:35:25 | 20250422093525526644765W0iUEzUt | 200 |    1.177758ms |             ::1 |     GET /token
+[SYS] 2025/04/22 - 09:35:27 | batch update started 
+[SYS] 2025/04/22 - 09:35:27 | batch update finished 
+[GIN] 2025/04/22 - 09:35:28 | 20250422093528108977683xE1nDoNO | 200 |  162.770968ms |             ::1 |     GET /api/user/self/groups
+[GIN] 2025/04/22 - 09:35:28 | 20250422093528205384947gbYwKd3e | 200 |   179.95031ms |             ::1 |     GET /api/token/?p=0&size=10
+[GIN] 2025/04/22 - 09:35:28 | 20250422093528763634338dJFx3LGh | 200 |      934.78µs |             ::1 |     GET /api/status
+[GIN] 2025/04/22 - 09:35:29 | 20250422093528109259765P25Raga4 | 200 |  899.829986ms |             ::1 |     GET /api/user/models
+[SYS] 2025/04/22 - 09:35:32 | 任务进度轮询开始 
+[SYS] 2025/04/22 - 09:35:32 | 任务进度轮询完成 
+[SYS] 2025/04/22 - 09:35:32 | batch update started 
+[SYS] 2025/04/22 - 09:35:32 | batch update finished 

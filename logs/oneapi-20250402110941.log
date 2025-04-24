@@ -1,0 +1,121 @@
+[SYS] 2025/04/02 - 11:09:41 | New API v0.0.0 started 
+[SYS] 2025/04/02 - 11:09:41 | using MySQL as database 
+[SYS] 2025/04/02 - 11:09:41 | database migration started 
+[SYS] 2025/04/02 - 11:09:41 | database migrated 
+[SYS] 2025/04/02 - 11:09:41 | using MySQL as database 
+[SYS] 2025/04/02 - 11:09:41 | database migration started 
+[SYS] 2025/04/02 - 11:09:42 | Redis is enabled 
+[SYS] 2025/04/02 - 11:09:42 | memory cache enabled 
+[SYS] 2025/04/02 - 11:09:42 | sync frequency: 60 seconds 
+[SYS] 2025/04/02 - 11:09:42 | channels synced from database 
+[SYS] 2025/04/02 - 11:09:42 | batch update enabled with interval 5s 
+[SYS] 2025/04/02 - 11:09:42 | pprof enabled 
+[SYS] 2025/04/02 - 11:09:42 | initializing token encoders 
+[SYS] 2025/04/02 - 11:09:42 | 正在更新数据看板数据... 
+[SYS] 2025/04/02 - 11:09:42 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/02 - 11:09:43 | token encoders initialized 
+[SYS] 2025/04/02 - 11:09:43 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/04/02 - 11:09:48 | batch update started 
+[SYS] 2025/04/02 - 11:09:48 | batch update finished 
+[SYS] 2025/04/02 - 11:09:53 | batch update started 
+[SYS] 2025/04/02 - 11:09:53 | batch update finished 
+[SYS] 2025/04/02 - 11:09:58 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:09:58 | batch update started 
+[SYS] 2025/04/02 - 11:09:58 | batch update finished 
+[SYS] 2025/04/02 - 11:09:58 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:10:03 | batch update started 
+[SYS] 2025/04/02 - 11:10:03 | batch update finished 
+[SYS] 2025/04/02 - 11:10:08 | batch update started 
+[SYS] 2025/04/02 - 11:10:08 | batch update finished 
+[SYS] 2025/04/02 - 11:10:13 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:10:13 | batch update started 
+[SYS] 2025/04/02 - 11:10:13 | batch update finished 
+[SYS] 2025/04/02 - 11:10:13 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:10:19 | batch update started 
+[SYS] 2025/04/02 - 11:10:19 | batch update finished 
+[GIN] 2025/04/02 - 11:10:19 | 202504021110194809997500DvF6LHV | 307 |   27.370576ms |             ::1 |     GET /api/auth/google/login
+[SYS] 2025/04/02 - 11:10:24 | batch update started 
+[SYS] 2025/04/02 - 11:10:24 | batch update finished 
+[GIN] 2025/04/02 - 11:10:27 | 20250402111026576547820M2Jv7aqB | 303 |  1.289647443s |             ::1 |     GET /auth/google/callback?state=random_state&code=4%2F0AQSTgQFD_bRS8Hwhhyo4RlQj-ELs_QbVNNMcSV19UtTZEVW53WP94sJVplRRCkoRWyDSbw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none
+[GIN] 2025/04/02 - 11:10:27 | 2025040211102787782464340eEz7dn | 200 |    3.358848ms |             ::1 |     GET /login?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtpbmdzb2JlY0BnbWFpbC5jb20iLCJleHAiOjE3NDYxODA2MjcsImlkIjo0fQ.6se2eiV8p6MIev9cCZbNjdFbcrXK-gOvbx2BQi6q1nI
+[SYS] 2025/04/02 - 11:10:29 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:10:29 | batch update started 
+[SYS] 2025/04/02 - 11:10:29 | batch update finished 
+[SYS] 2025/04/02 - 11:10:29 | 任务进度轮询完成 
+[GIN] 2025/04/02 - 11:10:30 | 20250402111030928608352qqK5CfBN | 200 |   24.137017ms |             ::1 |     GET /api/user/self
+[GIN] 2025/04/02 - 11:10:30 | 20250402111030952344676pUb6wXep | 200 |    1.646349ms |             ::1 |     GET /api/status
+[GIN] 2025/04/02 - 11:10:31 | 20250402111031328644737QYnLZhy1 | 401 |  165.531107ms |             ::1 |     GET /api/user/models
+[GIN] 2025/04/02 - 11:10:31 | 20250402111031471230512hVMIHr49 | 401 |  109.090455ms |             ::1 |     GET /api/token/?p=0&size=10
+[GIN] 2025/04/02 - 11:10:31 | 20250402111031340423120RGeIiJhu | 401 |  356.474639ms |             ::1 |     GET /api/user/self/groups
+[GIN] 2025/04/02 - 11:10:31 | 20250402111031652251988B7JY3mBS | 200 |   76.099007ms |             ::1 |     GET /login?expired=true
+[GIN] 2025/04/02 - 11:10:34 | 2025040211103496631653rg9aylqH | 200 |     989.145µs |             ::1 |     GET /api/status
+[SYS] 2025/04/02 - 11:10:34 | batch update started 
+[SYS] 2025/04/02 - 11:10:34 | batch update finished 
+[SYS] 2025/04/02 - 11:10:39 | batch update started 
+[SYS] 2025/04/02 - 11:10:39 | batch update finished 
+[SYS] 2025/04/02 - 11:10:45 | syncing options from database 
+[SYS] 2025/04/02 - 11:10:45 | syncing channels from database 
+[SYS] 2025/04/02 - 11:10:45 | channels synced from database 
+[SYS] 2025/04/02 - 11:10:45 | batch update started 
+[SYS] 2025/04/02 - 11:10:45 | batch update finished 
+[SYS] 2025/04/02 - 11:10:45 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:10:45 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:10:50 | batch update started 
+[SYS] 2025/04/02 - 11:10:50 | batch update finished 
+[SYS] 2025/04/02 - 11:10:55 | batch update started 
+[SYS] 2025/04/02 - 11:10:55 | batch update finished 
+[SYS] 2025/04/02 - 11:11:00 | batch update started 
+[SYS] 2025/04/02 - 11:11:00 | batch update finished 
+[SYS] 2025/04/02 - 11:11:00 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:11:00 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:11:05 | batch update started 
+[SYS] 2025/04/02 - 11:11:05 | batch update finished 
+[SYS] 2025/04/02 - 11:11:10 | batch update started 
+[SYS] 2025/04/02 - 11:11:10 | batch update finished 
+[SYS] 2025/04/02 - 11:11:16 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:11:16 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:11:16 | batch update started 
+[SYS] 2025/04/02 - 11:11:16 | batch update finished 
+[SYS] 2025/04/02 - 11:11:22 | batch update started 
+[SYS] 2025/04/02 - 11:11:22 | batch update finished 
+[SYS] 2025/04/02 - 11:11:27 | batch update started 
+[SYS] 2025/04/02 - 11:11:27 | batch update finished 
+[SYS] 2025/04/02 - 11:11:32 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:11:32 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:11:32 | batch update started 
+[SYS] 2025/04/02 - 11:11:32 | batch update finished 
+[SYS] 2025/04/02 - 11:11:37 | batch update started 
+[SYS] 2025/04/02 - 11:11:37 | batch update finished 
+[SYS] 2025/04/02 - 11:11:42 | batch update started 
+[SYS] 2025/04/02 - 11:11:42 | batch update finished 
+[SYS] 2025/04/02 - 11:11:47 | syncing options from database 
+[SYS] 2025/04/02 - 11:11:47 | syncing channels from database 
+[SYS] 2025/04/02 - 11:11:47 | channels synced from database 
+[SYS] 2025/04/02 - 11:11:48 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:11:48 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:11:48 | batch update started 
+[SYS] 2025/04/02 - 11:11:48 | batch update finished 
+[SYS] 2025/04/02 - 11:11:53 | batch update started 
+[SYS] 2025/04/02 - 11:11:53 | batch update finished 
+[SYS] 2025/04/02 - 11:11:58 | batch update started 
+[SYS] 2025/04/02 - 11:11:58 | batch update finished 
+[SYS] 2025/04/02 - 11:12:03 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:12:03 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:12:03 | batch update started 
+[SYS] 2025/04/02 - 11:12:03 | batch update finished 
+[SYS] 2025/04/02 - 11:12:08 | batch update started 
+[SYS] 2025/04/02 - 11:12:08 | batch update finished 
+[SYS] 2025/04/02 - 11:12:13 | batch update started 
+[SYS] 2025/04/02 - 11:12:13 | batch update finished 
+[SYS] 2025/04/02 - 11:12:19 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:12:19 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:12:19 | batch update started 
+[SYS] 2025/04/02 - 11:12:19 | batch update finished 
+[SYS] 2025/04/02 - 11:12:25 | batch update started 
+[SYS] 2025/04/02 - 11:12:25 | batch update finished 
+[SYS] 2025/04/02 - 11:12:30 | batch update started 
+[SYS] 2025/04/02 - 11:12:30 | batch update finished 
+[SYS] 2025/04/02 - 11:12:35 | 任务进度轮询开始 
+[SYS] 2025/04/02 - 11:12:35 | 任务进度轮询完成 
+[SYS] 2025/04/02 - 11:12:35 | batch update started 
+[SYS] 2025/04/02 - 11:12:35 | batch update finished 

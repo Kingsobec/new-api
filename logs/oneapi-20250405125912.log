@@ -1,0 +1,17 @@
+[SYS] 2025/04/05 - 12:59:12 | New API v0.0.0 started 
+[SYS] 2025/04/05 - 12:59:12 | using MySQL as database 
+[SYS] 2025/04/05 - 12:59:12 | database migration started 
+[SYS] 2025/04/05 - 12:59:13 | database migrated 
+[SYS] 2025/04/05 - 12:59:13 | using MySQL as database 
+[SYS] 2025/04/05 - 12:59:13 | database migration started 
+[SYS] 2025/04/05 - 12:59:13 | Redis is enabled 
+[SYS] 2025/04/05 - 12:59:13 | memory cache enabled 
+[SYS] 2025/04/05 - 12:59:13 | sync frequency: 60 seconds 
+[SYS] 2025/04/05 - 12:59:13 | channels synced from database 
+[SYS] 2025/04/05 - 12:59:13 | batch update enabled with interval 5s 
+[SYS] 2025/04/05 - 12:59:13 | 正在更新数据看板数据... 
+[SYS] 2025/04/05 - 12:59:13 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/05 - 12:59:13 | pprof enabled 
+[SYS] 2025/04/05 - 12:59:13 | initializing token encoders 
+[SYS] 2025/04/05 - 12:59:16 | token encoders initialized 
+[SYS] 2025/04/05 - 12:59:16 | FRONTEND_BASE_URL is ignored on master node 

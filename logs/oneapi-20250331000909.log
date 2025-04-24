@@ -1,0 +1,43 @@
+[SYS] 2025/03/31 - 00:09:09 | New API v0.0.0 started 
+[SYS] 2025/03/31 - 00:09:09 | using MySQL as database 
+[SYS] 2025/03/31 - 00:09:10 | database migration started 
+[SYS] 2025/03/31 - 00:09:10 | database migrated 
+[SYS] 2025/03/31 - 00:09:10 | using MySQL as database 
+[SYS] 2025/03/31 - 00:09:10 | database migration started 
+[SYS] 2025/03/31 - 00:09:10 | Redis is enabled 
+[SYS] 2025/03/31 - 00:09:10 | memory cache enabled 
+[SYS] 2025/03/31 - 00:09:10 | sync frequency: 60 seconds 
+[SYS] 2025/03/31 - 00:09:10 | channels synced from database 
+[SYS] 2025/03/31 - 00:09:10 | batch update enabled with interval 5s 
+[SYS] 2025/03/31 - 00:09:10 | pprof enabled 
+[SYS] 2025/03/31 - 00:09:10 | initializing token encoders 
+[SYS] 2025/03/31 - 00:09:10 | 正在更新数据看板数据... 
+[SYS] 2025/03/31 - 00:09:10 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/03/31 - 00:09:11 | token encoders initialized 
+[SYS] 2025/03/31 - 00:09:11 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/03/31 - 00:09:13 | batch update started 
+[SYS] 2025/03/31 - 00:09:13 | batch update finished 
+[SYS] 2025/03/31 - 00:09:18 | batch update started 
+[SYS] 2025/03/31 - 00:09:18 | batch update finished 
+[SYS] 2025/03/31 - 00:09:23 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 00:09:23 | batch update started 
+[SYS] 2025/03/31 - 00:09:23 | batch update finished 
+[SYS] 2025/03/31 - 00:09:23 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 00:09:28 | batch update started 
+[SYS] 2025/03/31 - 00:09:28 | batch update finished 
+[SYS] 2025/03/31 - 00:09:33 | batch update started 
+[SYS] 2025/03/31 - 00:09:33 | batch update finished 
+[SYS] 2025/03/31 - 00:09:38 | batch update started 
+[SYS] 2025/03/31 - 00:09:38 | batch update finished 
+[SYS] 2025/03/31 - 00:09:38 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 00:09:38 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 00:09:41 | batch update started 
+[SYS] 2025/03/31 - 00:09:41 | batch update finished 
+[SYS] 2025/03/31 - 00:09:46 | batch update started 
+[SYS] 2025/03/31 - 00:09:46 | batch update finished 
+[SYS] 2025/03/31 - 00:09:51 | batch update started 
+[SYS] 2025/03/31 - 00:09:51 | batch update finished 
+[SYS] 2025/03/31 - 00:09:51 | 任务进度轮询开始 
+[SYS] 2025/03/31 - 00:09:51 | 任务进度轮询完成 
+[SYS] 2025/03/31 - 00:09:56 | batch update started 
+[SYS] 2025/03/31 - 00:09:56 | batch update finished 

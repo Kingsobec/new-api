@@ -1,0 +1,10 @@
+[SYS] 2025/03/28 - 15:15:35 | New API v0.0.0 started 
+[SYS] 2025/03/28 - 15:15:35 | SQL_DSN not set, using SQLite as database 
+[SYS] 2025/03/28 - 15:15:35 | database migration started 
+[SYS] 2025/03/28 - 15:15:35 | database migrated 
+[SYS] 2025/03/28 - 15:15:35 | REDIS_CONN_STRING not set, Redis is not enabled 
+[SYS] 2025/03/28 - 15:15:35 | initializing token encoders 
+[SYS] 2025/03/28 - 15:15:35 | 正在更新数据看板数据... 
+[SYS] 2025/03/28 - 15:15:35 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/03/28 - 15:15:36 | token encoders initialized 
+[FATAL] 2025/03/28 - 15:15:36 | [failed to start HTTP server: listen tcp :3000: bind: address already in use] 

@@ -1,0 +1,39 @@
+[SYS] 2025/03/30 - 23:06:48 | New API v0.0.0 started 
+[SYS] 2025/03/30 - 23:06:48 | using MySQL as database 
+[SYS] 2025/03/30 - 23:06:49 | database migration started 
+[SYS] 2025/03/30 - 23:06:50 | database migrated 
+[SYS] 2025/03/30 - 23:06:50 | using MySQL as database 
+[SYS] 2025/03/30 - 23:06:50 | database migration started 
+[SYS] 2025/03/30 - 23:06:50 | Redis is enabled 
+[SYS] 2025/03/30 - 23:06:50 | memory cache enabled 
+[SYS] 2025/03/30 - 23:06:50 | sync frequency: 60 seconds 
+[SYS] 2025/03/30 - 23:06:50 | channels synced from database 
+[SYS] 2025/03/30 - 23:06:50 | batch update enabled with interval 5s 
+[SYS] 2025/03/30 - 23:06:50 | pprof enabled 
+[SYS] 2025/03/30 - 23:06:50 | initializing token encoders 
+[SYS] 2025/03/30 - 23:06:50 | 正在更新数据看板数据... 
+[SYS] 2025/03/30 - 23:06:50 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/03/30 - 23:06:50 | token encoders initialized 
+[SYS] 2025/03/30 - 23:06:50 | FRONTEND_BASE_URL is ignored on master node 
+[SYS] 2025/03/30 - 23:06:55 | batch update started 
+[SYS] 2025/03/30 - 23:06:55 | batch update finished 
+[SYS] 2025/03/30 - 23:07:00 | batch update started 
+[SYS] 2025/03/30 - 23:07:00 | batch update finished 
+[SYS] 2025/03/30 - 23:07:05 | 任务进度轮询开始 
+[SYS] 2025/03/30 - 23:07:05 | batch update started 
+[SYS] 2025/03/30 - 23:07:05 | batch update finished 
+[SYS] 2025/03/30 - 23:07:05 | 任务进度轮询完成 
+[SYS] 2025/03/30 - 23:07:10 | batch update started 
+[SYS] 2025/03/30 - 23:07:10 | batch update finished 
+[GIN] 2025/03/30 - 23:07:11 | 20250330230711253899840mfz38ydS | 200 |    4.885617ms |             ::1 |     GET /login
+[GIN] 2025/03/30 - 23:07:13 | 20250330230713307694157cFdby65 | 200 |    4.034875ms |             ::1 |     GET /api/status
+[SYS] 2025/03/30 - 23:07:15 | batch update started 
+[SYS] 2025/03/30 - 23:07:15 | batch update finished 
+[GIN] 2025/03/30 - 23:07:16 | 20250330230716578899843QEjhcqvu | 200 |    1.945667ms |             ::1 |     GET /login
+[GIN] 2025/03/30 - 23:07:17 | 20250330230717948911993TpJPjuwp | 200 |    1.759116ms |             ::1 |     GET /api/status
+[SYS] 2025/03/30 - 23:07:18 | 任务进度轮询开始 
+[SYS] 2025/03/30 - 23:07:18 | batch update started 
+[SYS] 2025/03/30 - 23:07:18 | batch update finished 
+[SYS] 2025/03/30 - 23:07:18 | 任务进度轮询完成 
+[SYS] 2025/03/30 - 23:07:23 | batch update started 
+[SYS] 2025/03/30 - 23:07:23 | batch update finished 

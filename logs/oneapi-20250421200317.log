@@ -1,0 +1,20 @@
+[SYS] 2025/04/21 - 20:03:17 | New API v0.6.0.3 started 
+[SYS] 2025/04/21 - 20:03:17 | using MySQL as database 
+[SYS] 2025/04/21 - 20:03:18 | database migration started 
+[SYS] 2025/04/21 - 20:03:19 | database migrated 
+[SYS] 2025/04/21 - 20:03:19 | SYNC_FREQUENCY not set, use default value 60 
+[SYS] 2025/04/21 - 20:03:19 | Redis is enabled 
+[SYS] 2025/04/21 - 20:03:19 | memory cache enabled 
+[SYS] 2025/04/21 - 20:03:19 | sync frequency: 60 seconds 
+[SYS] 2025/04/21 - 20:03:19 | channels synced from database 
+[SYS] 2025/04/21 - 20:03:19 | initializing token encoders 
+[SYS] 2025/04/21 - 20:03:19 | 正在更新数据看板数据... 
+[SYS] 2025/04/21 - 20:03:19 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/21 - 20:03:21 | token encoders initialized 
+[SYS] 2025/04/21 - 20:03:34 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:03:34 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:03:46 | 20250421200346162977188e019OLFw | 200 |    3.870746ms |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:03:47 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:03:47 | 任务进度轮询完成 
+[SYS] 2025/04/21 - 20:04:02 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:04:02 | 任务进度轮询完成 

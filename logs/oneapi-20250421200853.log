@@ -1,0 +1,45 @@
+[SYS] 2025/04/21 - 20:08:53 | New API v0.6.0.3 started 
+[SYS] 2025/04/21 - 20:08:53 | using MySQL as database 
+[SYS] 2025/04/21 - 20:08:53 | database migration started 
+[SYS] 2025/04/21 - 20:08:54 | database migrated 
+[SYS] 2025/04/21 - 20:08:54 | SYNC_FREQUENCY not set, use default value 60 
+[SYS] 2025/04/21 - 20:08:54 | Redis is enabled 
+[SYS] 2025/04/21 - 20:08:54 | memory cache enabled 
+[SYS] 2025/04/21 - 20:08:54 | sync frequency: 60 seconds 
+[SYS] 2025/04/21 - 20:08:54 | channels synced from database 
+[SYS] 2025/04/21 - 20:08:54 | initializing token encoders 
+[SYS] 2025/04/21 - 20:08:54 | 正在更新数据看板数据... 
+[SYS] 2025/04/21 - 20:08:54 | 保存数据看板数据成功，共保存0条数据 
+[SYS] 2025/04/21 - 20:08:55 | token encoders initialized 
+[SYS] 2025/04/21 - 20:09:08 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:09:08 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:09:22 | 20250421200922187868214NQD3ZzAJ | 200 |   25.805487ms |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:09:23 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:09:23 | 任务进度轮询完成 
+[SYS] 2025/04/21 - 20:09:36 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:09:36 | 任务进度轮询完成 
+[GIN] 2025/04/21 - 20:09:44 | 20250421200944465267969M4a3ceOU | 200 |   23.246835ms |      172.18.0.1 |     GET /
+[GIN] 2025/04/21 - 20:09:44 | 20250421200944606098513eiG3hRmb | 200 |   60.634033ms |      172.18.0.1 |     GET /assets/react-core-DpH4LOSy.js
+[GIN] 2025/04/21 - 20:09:44 | 20250421200944597538292UYKuqCF5 | 200 |  149.099122ms |      172.18.0.1 |     GET /assets/index-BizBJ5GK.js
+[GIN] 2025/04/21 - 20:09:44 | 202504212009447942880823m5Td6mf | 200 |   18.782554ms |      172.18.0.1 |     GET /assets/react-components-j3b7lfq_.js
+[GIN] 2025/04/21 - 20:09:44 | 20250421200944811020720bQttPSB3 | 200 |   66.088028ms |      172.18.0.1 |     GET /assets/i18n-BcJQH7M3.js
+[GIN] 2025/04/21 - 20:09:45 | 20250421200944932829147EabISImj | 200 |  100.792048ms |      172.18.0.1 |     GET /assets/semantic-TpqxzIm-.js
+[GIN] 2025/04/21 - 20:09:45 | 2025042120094513447025fng60egj | 200 |   89.371055ms |      172.18.0.1 |     GET /assets/tools-BrivDCFi.js
+[GIN] 2025/04/21 - 20:09:45 | 2025042120094471335299601D9RkM4 | 200 |  391.206629ms |      172.18.0.1 |     GET /assets/index-AeaT-tDw.css
+[GIN] 2025/04/21 - 20:09:45 | 202504212009446399595906YTgxr1W | 200 |  532.166793ms |      172.18.0.1 |     GET /assets/semi-ui-DBHE-CIn.css
+[GIN] 2025/04/21 - 20:09:45 | 20250421200944990980534iXI9ovBp | 200 |  535.860093ms |      172.18.0.1 |     GET /assets/semi-ui-CC6i23fq.js
+[GIN] 2025/04/21 - 20:09:46 | 202504212009463485810541UObXGLx | 200 |    1.877792ms |      172.18.0.1 |     GET /assets/index-BtOAkqlc.js
+[GIN] 2025/04/21 - 20:09:46 | 20250421200946449286620Xo9Y71Fw | 200 |     4.54866ms |      172.18.0.1 |     GET /logo.png
+[GIN] 2025/04/21 - 20:09:46 | 20250421200946437919705lpimFjVh | 200 |  102.532226ms |      172.18.0.1 |     GET /api/status
+[GIN] 2025/04/21 - 20:09:46 | 20250421200946767225254TjSPljNv | 200 |    4.901746ms |      172.18.0.1 |     GET /assets/lato-v15-latin-regular-CNtt3gFW.woff2
+[GIN] 2025/04/21 - 20:09:47 | 202504212009479309824ysRVdoC7 | 200 |   16.982302ms |      172.18.0.1 |     GET /api/notice
+[GIN] 2025/04/21 - 20:09:47 | 2025042120094726931699juPp0yt2 | 200 |   11.717581ms |      172.18.0.1 |     GET /api/home_page_content
+[GIN] 2025/04/21 - 20:09:47 | 20250421200947127599704JyrWeM68 | 200 |    4.838094ms |      172.18.0.1 |     GET /assets/lato-v15-latin-bold-Dj654xud.woff2
+[GIN] 2025/04/21 - 20:09:47 | 20250421200947134913079Pxo5q2gz | 200 |    1.047263ms |      172.18.0.1 |     GET /api/notice
+[GIN] 2025/04/21 - 20:09:47 | 20250421200947135805367Nh01yKIK | 200 |   50.977206ms |      172.18.0.1 |     GET /api/home_page_content
+[GIN] 2025/04/21 - 20:09:51 | 2025042120095143587708c26M1aFV | 200 |    3.625651ms |             ::1 |     GET /api/status
+[SYS] 2025/04/21 - 20:09:51 | syncing channels from database 
+[SYS] 2025/04/21 - 20:09:51 | syncing options from database 
+[SYS] 2025/04/21 - 20:09:51 | channels synced from database 
+[SYS] 2025/04/21 - 20:09:51 | 任务进度轮询开始 
+[SYS] 2025/04/21 - 20:09:51 | 任务进度轮询完成 
